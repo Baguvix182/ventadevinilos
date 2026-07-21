@@ -1,0 +1,744 @@
+/* ==========================================================================
+   VARIABLES CSS (:root)
+   ========================================================================== */
+:root {
+    --bg-main: #F5F2EB;
+    --color-primary: #E4482D;
+    --color-dark: #1A1A1A;
+    --color-light: #FFFFFF;
+    --color-gray: #7A7A7A;
+    --color-footer-bg: #2B2927;
+    
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-handwriting: 'Permanent Marker', cursive;
+    
+    --shadow-card: 0 6px 15px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 12px 25px rgba(0, 0, 0, 0.15);
+    --shadow-polaroid: 4px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   RESET COMPLETO & BOX-SIZING
+   ========================================================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+}
+
+.logo-icon {
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+.logo-text-accent {
+    color: var(--color-primary);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--color-dark);
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.header-center {
+    flex: 0 1 320px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-main);
+    border: 1px solid #DCD8CE;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--color-gray);
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-dark);
+    background: transparent;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn {
+    color: var(--color-primary);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.icon-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* ==========================================================================
+   MAIN CONTENT WRAPPER
+   ========================================================================== */
+.main-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 50px 80px 50px;
+}
+
+/* ==========================================================================
+   SECCIÓN BIOGRAFÍA / ARTISTA
+   ========================================================================== */
+.artist-bio-section {
+    margin-bottom: 70px;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Polaroid Grande */
+.polaroid-frame {
+    background-color: var(--color-light);
+    padding: 20px 20px 60px 20px;
+    box-shadow: var(--shadow-polaroid);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.polaroid-frame.tilt-left {
+    transform: rotate(-3deg);
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+.polaroid-img-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.polaroid-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%) contrast(115%);
+    transition: filter 0.4s ease;
+}
+
+.polaroid-frame:hover .polaroid-img-wrapper img {
+    filter: grayscale(0%) contrast(100%);
+}
+
+/* Textos Biografía */
+.bio-text-col {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.artist-title {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+.artist-badges {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.badge-item {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+    background-color: transparent;
+    border: 2px solid var(--color-dark);
+    padding: 6px 16px;
+    border-radius: 2px;
+}
+
+.history-heading {
+    font-family: var(--font-handwriting);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.history-body p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+/* ==========================================================================
+   SECCIÓN ÁLBUMES
+   ========================================================================== */
+.albums-section {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    color: var(--color-dark);
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.album-card {
+    background-color: var(--color-light);
+    padding: 15px 15px 25px 15px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.album-card.tilt-left {
+    transform: rotate(-2deg);
+}
+
+.album-card.tilt-right {
+    transform: rotate(2deg);
+}
+
+.album-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    z-index: 2;
+}
+
+/* Borde naranja para la tarjeta activa / resaltada */
+.album-card.active-card {
+    border-left: 3px solid var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.album-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #EFEFEF;
+    margin-bottom: 15px;
+}
+
+.album-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.album-card:hover .album-image-wrapper img {
+    transform: scale(1.06);
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.album-meta {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    color: var(--color-gray);
+    margin-bottom: 12px;
+}
+
+.album-price {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   BANNER NEWSLETTER (JOIN THE RIOT)
+   ========================================================================== */
+.riot-banner-section {
+    width: 100%;
+}
+
+.riot-box {
+    background-color: var(--color-footer-bg);
+    color: var(--color-light);
+    padding: 45px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.riot-watermark {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-heading);
+    font-size: 13rem;
+    color: rgba(255, 255, 255, 0.04);
+    letter-spacing: 5px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.riot-content-left {
+    max-width: 520px;
+    z-index: 2;
+}
+
+.riot-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.riot-desc {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: #B0B0B0;
+    line-height: 1.6;
+}
+
+.riot-content-right {
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.riot-form {
+    display: flex;
+    gap: 0;
+}
+
+.riot-form input[type="email"] {
+    padding: 12px 20px;
+    width: 260px;
+    border: none;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    background-color: #EAE6DE;
+    color: var(--color-dark);
+}
+
+.riot-form button {
+    background-color: #C62810;
+    color: var(--color-light);
+    border: none;
+    padding: 12px 25px;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.riot-form button:hover {
+    background-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-light);
+    padding: 60px 50px 30px 50px;
+    font-size: 0.85rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    color: #A0A0A0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 320px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: var(--color-light);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+.social-icons svg {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-heading {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #A0A0A0;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-light);
+}
+
+.footer-bottom {
+    max-width: 1300px;
+    margin: 25px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.footer-social-mini {
+    display: flex;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-social-mini a {
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.footer-social-mini a:hover {
+    color: var(--color-light);
+}
+
+/* ==========================================================================
+   RESPONSIVE (MEDIA QUERIES)
+   ========================================================================== */
+
+/* 1200px */
+@media screen and (max-width: 1200px) {
+    .artist-title {
+        font-size: 4.2rem;
+    }
+    
+    .albums-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* 992px */
+@media screen and (max-width: 992px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 30px;
+    }
+
+    .header-center {
+        order: 3;
+        flex: 1 1 100%;
+    }
+
+    .main-content {
+        padding: 40px 30px 60px 30px;
+    }
+
+    .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .polaroid-frame {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .albums-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .riot-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 30px;
+    }
+
+    .riot-form {
+        width: 100%;
+    }
+
+    .riot-form input[type="email"] {
+        flex-grow: 1;
+        width: auto;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .artist-title {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .riot-title {
+        font-size: 2.3rem;
+    }
+
+    .footer {
+        padding: 40px 30px 20px 30px;
+    }
+}
+
+/* 480px */
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 30px 15px 50px 15px;
+    }
+
+    .artist-title {
+        font-size: 2.8rem;
+    }
+
+    .artist-badges {
+        gap: 8px;
+    }
+
+    .badge-item {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .albums-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .riot-form {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .riot-form input[type="email"],
+    .riot-form button {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-desc {
+        margin: 0 auto 20px auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
