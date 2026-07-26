@@ -2,15 +2,15 @@
    VARIABLES CSS (:root)
    ========================================================================== */
 :root {
-    --bg-main: #F5F2EB;
-    --color-primary: #E4482D;
-    --color-dark: #1A1A1A;
+    --bg-main: #F2EDE1;
+    --color-primary: #E23B1E;
+    --color-dark: #17151A;
     --color-light: #FFFFFF;
-    --color-gray: #7A7A7A;
-    --color-footer-bg: #2B2927;
-    
-    --font-heading: 'Bebas Neue', sans-serif;
-    --font-body: 'Montserrat', sans-serif;
+    --color-gray: #57534C;
+    --color-footer-bg: #17151A;
+
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
     --font-handwriting: 'Permanent Marker', cursive;
     
     --shadow-card: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -62,9 +62,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 50px;
+    padding: 20px 5%;
     background-color: var(--bg-main);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .header-left {
@@ -77,19 +76,13 @@ img {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.logo-text {
     font-family: var(--font-heading);
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     color: var(--color-dark);
-}
-
-.logo-icon {
-    color: var(--color-primary);
-    font-size: 1.7rem;
-}
-
-.logo-text-accent {
-    color: var(--color-primary);
 }
 
 .nav-menu {
@@ -98,19 +91,12 @@ img {
 }
 
 .nav-link {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 800;
     letter-spacing: 0.5px;
     color: var(--color-dark);
     position: relative;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--color-primary);
+    padding-bottom: 3px;
 }
 
 .nav-link.active::after {
@@ -120,25 +106,30 @@ img {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-dark);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
 }
 
 .header-center {
-    flex: 0 1 320px;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: var(--bg-main);
-    border: 1px solid #DCD8CE;
-    padding: 8px 16px;
-    border-radius: 4px;
+    background-color: var(--color-light);
+    border: 1px solid #CCCCCC;
+    padding: 8px 15px;
+    border-radius: 2px;
 }
 
 .search-icon {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     color: var(--color-gray);
     margin-right: 10px;
 }
@@ -148,43 +139,54 @@ img {
     outline: none;
     width: 100%;
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--color-dark);
-    background: transparent;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
-.icon-btn {
-    color: var(--color-primary);
-    width: 24px;
-    height: 24px;
+.btn-cart {
     display: flex;
     align-items: center;
+    gap: 8px;
+    background-color: var(--bg-main);
+    border: 2px solid var(--color-dark);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    position: relative;
+    box-shadow: 2px 2px 0px var(--color-dark);
+}
+
+.btn-cart:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-size: 0.65rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
-    transition: transform 0.2s ease;
-}
-
-.icon-btn:hover {
-    transform: scale(1.1);
-}
-
-.icon-btn svg {
-    width: 22px;
-    height: 22px;
+    align-items: center;
 }
 
 /* ==========================================================================
    MAIN CONTENT WRAPPER
    ========================================================================== */
 .main-content {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 50px 50px 80px 50px;
+    padding: 50px 5% 80px 5%;
 }
 
 /* ==========================================================================
@@ -487,7 +489,7 @@ img {
 .footer {
     background-color: var(--color-footer-bg);
     color: var(--color-light);
-    padding: 60px 50px 30px 50px;
+    padding: 60px 5% 30px 5%;
     font-size: 0.85rem;
 }
 
@@ -495,8 +497,6 @@ img {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 40px;
-    max-width: 1300px;
-    margin: 0 auto;
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -539,9 +539,8 @@ img {
     color: var(--color-light);
 }
 
-.social-icons svg {
-    width: 18px;
-    height: 18px;
+.social-icons i {
+    font-size: 18px;
 }
 
 .footer-heading {
@@ -568,8 +567,7 @@ img {
 }
 
 .footer-bottom {
-    max-width: 1300px;
-    margin: 25px auto 0 auto;
+    margin: 25px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -617,7 +615,7 @@ img {
     .header {
         flex-wrap: wrap;
         gap: 15px;
-        padding: 15px 30px;
+        padding: 15px 5%;
     }
 
     .header-center {
@@ -626,7 +624,7 @@ img {
     }
 
     .main-content {
-        padding: 40px 30px 60px 30px;
+        padding: 40px 5% 60px 5%;
     }
 
     .bio-grid {
@@ -684,14 +682,14 @@ img {
     }
 
     .footer {
-        padding: 40px 30px 20px 30px;
+        padding: 40px 5% 20px 5%;
     }
 }
 
 /* 480px */
 @media screen and (max-width: 480px) {
     .main-content {
-        padding: 30px 15px 50px 15px;
+        padding: 30px 5% 50px 5%;
     }
 
     .artist-title {

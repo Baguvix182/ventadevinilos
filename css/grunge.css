@@ -1,23 +1,23 @@
 /* ================= VARIABLES CSS (:root) ================= */
 :root {
-    --bg-main: #F4F1EA;
-    --bg-hero-dark: #2C2B29;
-    --bg-footer: #2C2B29;
+    --bg-main: #F2EDE1;
+    --bg-hero-dark: #17151A;
+    --bg-footer: #17151A;
     --bg-white: #FFFFFF;
-    
-    --text-dark: #181818;
-    --text-gray: #777777;
+
+    --text-dark: #17151A;
+    --text-gray: #57534C;
     --text-light-gray: #A8A8A8;
     --text-white: #FFFFFF;
-    --accent-red: #E3482D;
+    --accent-red: #E23B1E;
     --accent-yellow: #FFB800;
     --border-color: #CCCCCC;
-    
-    --font-heading: 'Bebas Neue', sans-serif;
-    --font-body: 'Montserrat', sans-serif;
+
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
     --font-handwriting: 'Permanent Marker', cursive;
-    
-    --shadow-box: 4px 4px 0px #181818;
+
+    --shadow-box: 4px 4px 0px #17151A;
     --shadow-card-hover: 0 16px 32px rgba(0, 0, 0, 0.18);
     --transition-fast: all 0.3s ease;
 }
@@ -58,14 +58,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 20px 5%;
     background-color: var(--bg-main);
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 40px;
 }
 
 .logo-container {
@@ -74,45 +74,35 @@ img {
     gap: 8px;
 }
 
-/* Estilos actualizados para el nuevo Logotipo de Remix Icon (ri-disc-line) */
-.logo-icon {
-    font-size: 2.3rem;
-    color: var(--accent-red);
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    transition: transform var(--transition-fast);
-}
-
-
 .logo-text {
     font-family: var(--font-heading);
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     color: var(--text-dark);
-    line-height: 1;
-}
-
-.logo-text-accent {
-    color: var(--accent-red);
 }
 
 .nav-menu {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-link {
-    font-size: 0.8rem;
-    font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
     color: var(--text-dark);
     position: relative;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 
-.nav-link.active {
-    color: var(--accent-red);
-    border-bottom: 2px solid var(--accent-red);
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-dark);
 }
 
 .nav-link:hover {
@@ -121,22 +111,21 @@ img {
 
 .header-center {
     flex: 1;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 20px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #EAE6DD;
+    background-color: var(--bg-white);
     border: 1px solid var(--border-color);
     padding: 8px 15px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .search-icon {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     color: var(--text-gray);
     margin-right: 10px;
 }
@@ -148,35 +137,28 @@ img {
     font-family: var(--font-body);
     font-size: 0.8rem;
     color: var(--text-dark);
-    background: transparent;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
-/* Botón de Carrito */
-.cart-btn {
-    position: relative;
+.btn-cart {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--bg-white);
+    gap: 8px;
+    background-color: var(--bg-main);
     border: 2px solid var(--text-dark);
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    position: relative;
     box-shadow: 2px 2px 0px var(--text-dark);
-    padding: 6px 18px;
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    color: var(--text-dark);
-    font-weight: bold;
-    transition: var(--transition-fast);
 }
 
-.cart-btn:hover {
-    background-color: var(--accent-red);
+.btn-cart:hover {
+    background-color: var(--text-dark);
     color: var(--text-white);
 }
 
@@ -186,16 +168,14 @@ img {
     right: -8px;
     background-color: var(--accent-red);
     color: var(--text-white);
-    font-family: var(--font-body);
     font-size: 0.65rem;
-    font-weight: 800;
+    font-weight: 700;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1.5px solid var(--bg-white);
+    align-items: center;
 }
 
 /* ================= HERO BANNER ================= */
@@ -468,9 +448,8 @@ img {
     color: var(--text-white);
 }
 
-.social-icons svg {
-    width: 16px;
-    height: 16px;
+.social-icons i {
+    font-size: 16px;
 }
 
 .footer-heading {

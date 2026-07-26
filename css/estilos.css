@@ -2,23 +2,23 @@
 
 /* ================= VARIABLES CSS (:root) ================= */
 :root {
-    --bg-main: #F4F1EA;
-    --bg-hero: #E3482D;
-    --bg-footer: #2C2B29;
+    --bg-main: #F2EDE1;
+    --bg-hero: #E23B1E;
+    --bg-footer: #17151A;
     --bg-white: #FFFFFF;
-    
-    --text-dark: #181818;
-    --text-gray: #777777;
+
+    --text-dark: #17151A;
+    --text-gray: #57534C;
     --text-light-gray: #A8A8A8;
     --text-white: #FFFFFF;
-    --accent-red: #E3482D;
+    --accent-red: #E23B1E;
     --border-color: #CCCCCC;
-    
-    --font-heading: 'Bebas Neue', sans-serif;
-    --font-body: 'Montserrat', sans-serif;
+
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
     --font-handwriting: 'Permanent Marker', cursive;
-    
-    --shadow-box: 4px 4px 0px #181818;
+
+    --shadow-box: 4px 4px 0px #17151A;
     --shadow-card-hover: 0 16px 32px rgba(0, 0, 0, 0.18);
     --transition-fast: all 0.3s ease;
 }
@@ -75,14 +75,6 @@ img {
     gap: 8px;
 }
 
-.logo-icon {
-    width: 24px;
-    height: 24px;
-    background-color: var(--accent-red);
-    border-radius: 50%;
-    border: 4px solid var(--text-dark);
-}
-
 .logo-text {
     font-family: var(--font-heading);
     font-size: 1.8rem;
@@ -134,8 +126,7 @@ img {
 }
 
 .search-icon {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     color: var(--text-gray);
     margin-right: 10px;
 }
@@ -390,9 +381,8 @@ img {
     color: var(--text-white);
 }
 
-.social-icons svg {
-    width: 16px;
-    height: 16px;
+.social-icons i {
+    font-size: 16px;
 }
 
 .footer-heading {
