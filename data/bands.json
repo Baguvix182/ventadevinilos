@@ -1,0 +1,1681 @@
+{
+  "grunge": [
+    {
+      "id": "red-hot-chili-peppers",
+      "name": "RED HOT CHILI PEPPERS",
+      "city": "LOS ÁNGELES, CA",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfFtROeuf0Kxm9Z5fa6amXiHN-fKH0ZPLIbZrQWVCwJlFFKBoJ4f3l8W2&s=10",
+      "alt": "Red Hot Chili Peppers",
+      "bio": {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfFtROeuf0Kxm9Z5fa6amXiHN-fKH0ZPLIbZrQWVCwJlFFKBoJ4f3l8W2&s=10",
+        "alt": "Red Hot Chili Peppers",
+        "badges": [
+          "FUNK ROCK",
+          "1983–PRESENTE",
+          "LOS ÁNGELES, CA"
+        ],
+        "history": [
+          "Formados en Los Ángeles en 1983, los Red Hot Chili Peppers fusionaron funk, punk y rock alternativo en un sonido inconfundible, sostenido por el bajo de Flea y la voz de Anthony Kiedis.",
+          "Tras años como banda de culto, Blood Sugar Sex Magik (1991) los llevó a los estadios de todo el mundo, y Californication (1999) abrió una segunda era dorada junto al guitarrista John Frusciante."
+        ]
+      },
+      "albums": [
+        {
+          "title": "BLOOD SUGAR SEX MAGIK",
+          "year": 1991,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Blood Sugar Sex Magik - 2LP"
+        },
+        {
+          "title": "CALIFORNICATION",
+          "year": 1999,
+          "format": "2LP",
+          "price": 42.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Californication - 2LP"
+        },
+        {
+          "title": "BY THE WAY",
+          "year": 2002,
+          "format": "2LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "By the Way - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "nirvana",
+      "name": "NIRVANA",
+      "city": "ABERDEEN, WA",
+      "records": 12,
+      "boss": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCd99lc0InIof8rvGe4NgYCTqIk_dhCsswlBkUUtn5D1AQdzYbOm4WIo&s=10",
+      "alt": "Nirvana",
+      "bio": {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCd99lc0InIof8rvGe4NgYCTqIk_dhCsswlBkUUtn5D1AQdzYbOm4WIo&s=10",
+        "alt": "Nirvana - Kurt Cobain, Krist Novoselic, Dave Grohl",
+        "badges": [
+          "GRUNGE",
+          "1987–1994",
+          "SEATTLE, WA"
+        ],
+        "history": [
+          "Un grupo de músicos de la escena local de Aberdeen se unió para fusionar la energía del punk con melodías pop y terminó definiendo el sonido y la revolución del rock alternativo de los años 90.",
+          "La banda fue formada por Kurt Cobain y Krist Novoselic en 1987, y Dave Grohl se unió poco después en la batería. Con su energía desbordante llevaron el rock alternativo a la radio de prácticamente todo el mundo.",
+          "Su álbum revolucionario, Nevermind, tardó unos meses en despegar, pero terminó vendiendo más de 30 millones de copias. Con himnos como Smells Like Teen Spirit y Come as You Are, su sonido potente, crudo y directo se convirtió en un referente fundamental para toda una década."
+        ]
+      },
+      "albums": [
+        {
+          "title": "NEVERMIND",
+          "year": 1991,
+          "format": "LP",
+          "price": 50.99,
+          "featured": true,
+          "image": "https://maskguyrecords.com/cdn/shop/files/nevermindnirvana.png?v=1751340703&width=840",
+          "alt": "Nevermind - LP"
+        },
+        {
+          "title": "BLEACH",
+          "year": 1989,
+          "format": "LP",
+          "price": 14.99,
+          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-bleach_d7dbcaf7-fb3b-481f-96c7-c6dbbcd83142.png?v=1728275810&width=840",
+          "alt": "Bleach - LP"
+        },
+        {
+          "title": "IN UTERO",
+          "year": 1993,
+          "format": "LP",
+          "price": 25.99,
+          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-in_utero_abd5b7e4-c265-4b60-90a5-819aede04bd0.png?v=1728275840&width=840",
+          "alt": "In Utero - LP"
+        },
+        {
+          "title": "MTV UNPLUGGED IN NEW YORK",
+          "year": 1994,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-mtv_unplugged_in_new_york.png?v=1727051969&width=840",
+          "alt": "MTV Unplugged in New York - LP"
+        }
+      ]
+    },
+    {
+      "id": "pearl-jam",
+      "name": "PEARL JAM",
+      "city": "SEATTLE, WA",
+      "records": 12,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKgvSk5tnx-6DnEgIW-Mvi9Rv3dPMNekChCnyq5GTEPVbpppbsu4FSNWg&s=10",
+      "alt": "Pearl Jam",
+      "bio": {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKgvSk5tnx-6DnEgIW-Mvi9Rv3dPMNekChCnyq5GTEPVbpppbsu4FSNWg&s=10",
+        "alt": "Pearl Jam",
+        "badges": [
+          "GRUNGE",
+          "1990–PRESENTE",
+          "SEATTLE, WA"
+        ],
+        "history": [
+          "Surgidos de las cenizas de Mother Love Bone, Pearl Jam se formó en Seattle en 1990 con Eddie Vedder al frente. Su debut, Ten, se convirtió en uno de los discos más vendidos de la era grunge.",
+          "A diferencia de muchos contemporáneos, la banda sobrevivió a los 90: décadas después sigue girando y grabando, fiel a su ética independiente, incluida su famosa batalla contra Ticketmaster."
+        ]
+      },
+      "albums": [
+        {
+          "title": "TEN",
+          "year": 1991,
+          "format": "LP",
+          "price": 45.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ten - LP"
+        },
+        {
+          "title": "VS.",
+          "year": 1993,
+          "format": "LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Vs. - LP"
+        },
+        {
+          "title": "VITALOGY",
+          "year": 1994,
+          "format": "LP",
+          "price": 25.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Vitalogy - LP"
+        }
+      ]
+    },
+    {
+      "id": "linkin-park",
+      "name": "LINKIN PARK",
+      "city": "AGOURA HILLS, CA",
+      "records": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1KSurxJEN8Dza0E3jKNBDUMYsBUmihGy1_DHJcp7RTIijh3dbJru_ysM&s=10",
+      "alt": "Linkin Park",
+      "bio": {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1KSurxJEN8Dza0E3jKNBDUMYsBUmihGy1_DHJcp7RTIijh3dbJru_ysM&s=10",
+        "alt": "Linkin Park",
+        "badges": [
+          "NU METAL",
+          "1996–PRESENTE",
+          "AGOURA HILLS, CA"
+        ],
+        "history": [
+          "Formados en Agoura Hills, California, en 1996, Linkin Park mezcló metal alternativo, rap y electrónica. Su debut, Hybrid Theory (2000), fue el álbum más vendido del nuevo milenio.",
+          "Con Chester Bennington y Mike Shinoda al frente redefinieron el rock de los 2000. Tras la muerte de Bennington en 2017, la banda regresó en 2024 con nueva vocalista y un disco número uno."
+        ]
+      },
+      "albums": [
+        {
+          "title": "HYBRID THEORY",
+          "year": 2000,
+          "format": "LP",
+          "price": 39.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Hybrid Theory - LP"
+        },
+        {
+          "title": "METEORA",
+          "year": 2003,
+          "format": "LP",
+          "price": 31.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Meteora - LP"
+        },
+        {
+          "title": "MINUTES TO MIDNIGHT",
+          "year": 2007,
+          "format": "LP",
+          "price": 24.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Minutes to Midnight - LP"
+        }
+      ]
+    },
+    {
+      "id": "soundgarden",
+      "name": "SOUNDGARDEN",
+      "city": "SEATTLE, WA",
+      "records": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlsRIHv8KHPh_TblcXqeRjgKEkqX5ljjDnU61Cy5-j7_n2JkpRyfTQJ5x&s=10",
+      "alt": "Soundgarden",
+      "bio": {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlsRIHv8KHPh_TblcXqeRjgKEkqX5ljjDnU61Cy5-j7_n2JkpRyfTQJ5x&s=10",
+        "alt": "Soundgarden",
+        "badges": [
+          "GRUNGE",
+          "1984–2017",
+          "SEATTLE, WA"
+        ],
+        "history": [
+          "Pioneros del sonido de Seattle, Soundgarden se formó en 1984 y fue de las primeras bandas grunge en firmar con una discográfica grande, impulsada por la voz descomunal de Chris Cornell.",
+          "Superunknown (1994), con Black Hole Sun, los llevó a lo más alto. Se separaron en 1997, regresaron en 2010 y la historia se cerró definitivamente con la muerte de Cornell en 2017."
+        ]
+      },
+      "albums": [
+        {
+          "title": "BADMOTORFINGER",
+          "year": 1991,
+          "format": "LP",
+          "price": 26.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Badmotorfinger - LP"
+        },
+        {
+          "title": "SUPERUNKNOWN",
+          "year": 1994,
+          "format": "2LP",
+          "price": 44.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Superunknown - 2LP"
+        },
+        {
+          "title": "DOWN ON THE UPSIDE",
+          "year": 1996,
+          "format": "2LP",
+          "price": 28.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Down on the Upside - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "the-smashing-pumpkins",
+      "name": "THE SMASHING PUMPKINS",
+      "city": "CHICAGO, IL",
+      "image": "https://c4.wallpaperflare.com/wallpaper/256/576/922/band-music-the-smashing-pumpkins-musique-smashing-wallpaper-preview.jpg",
+      "alt": "The Smashing Pumpkins",
+      "bio": {
+        "image": "https://c4.wallpaperflare.com/wallpaper/256/576/922/band-music-the-smashing-pumpkins-musique-smashing-wallpaper-preview.jpg",
+        "alt": "The Smashing Pumpkins",
+        "badges": [
+          "ALT ROCK",
+          "1988–PRESENTE",
+          "CHICAGO, IL"
+        ],
+        "history": [
+          "Formados en Chicago en 1988 alrededor de Billy Corgan, combinaron rock alternativo, dream pop y metal con una ambición sinfónica única en su generación.",
+          "Siamese Dream (1993) y el doble Mellon Collie and the Infinite Sadness (1995) los convirtieron en una de las bandas más grandes de los años 90."
+        ]
+      },
+      "albums": [
+        {
+          "title": "GISH",
+          "year": 1991,
+          "format": "LP",
+          "price": 23.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Gish - LP"
+        },
+        {
+          "title": "SIAMESE DREAM",
+          "year": 1993,
+          "format": "2LP",
+          "price": 41.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Siamese Dream - 2LP"
+        },
+        {
+          "title": "MELLON COLLIE AND THE INFINITE SADNESS",
+          "year": 1995,
+          "format": "2LP",
+          "price": 49.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Mellon Collie and the Infinite Sadness - 2LP"
+        }
+      ]
+    }
+  ],
+  "pop-punk": [
+    {
+      "id": "blink-182",
+      "name": "BLINK-182",
+      "city": "POWAY, CA",
+      "records": 3,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "blink-182",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "blink-182",
+        "badges": [
+          "POP-PUNK",
+          "1992–PRESENTE",
+          "POWAY, CA"
+        ],
+        "history": [
+          "Formados en Poway, California, en 1992, blink-182 convirtió el punk melódico y el humor adolescente en un fenómeno global.",
+          "Enema of the State (1999) los lanzó al estrellato con himnos como All the Small Things y What's My Age Again?, definiendo el pop-punk para toda una generación."
+        ]
+      },
+      "albums": [
+        {
+          "title": "DUDE RANCH",
+          "year": 1997,
+          "format": "LP",
+          "price": 22.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Dude Ranch - LP"
+        },
+        {
+          "title": "ENEMA OF THE STATE",
+          "year": 1999,
+          "format": "LP",
+          "price": 46.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Enema of the State - LP"
+        },
+        {
+          "title": "TAKE OFF YOUR PANTS AND JACKET",
+          "year": 2001,
+          "format": "LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Take Off Your Pants and Jacket - LP"
+        }
+      ]
+    },
+    {
+      "id": "green-day",
+      "name": "GREEN DAY",
+      "city": "BERKELEY, CA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Green Day",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Green Day",
+        "badges": [
+          "POP-PUNK",
+          "1987–PRESENTE",
+          "BERKELEY, CA"
+        ],
+        "history": [
+          "Nacidos en la escena punk de Berkeley (el mítico club 924 Gilman Street) en 1987, Green Day llevaron el punk californiano a la radio de todo el mundo con Dookie (1994).",
+          "Una década después se reinventaron con la ópera punk American Idiot (2004), conquistando a nuevas generaciones de fans."
+        ]
+      },
+      "albums": [
+        {
+          "title": "DOOKIE",
+          "year": 1994,
+          "format": "LP",
+          "price": 43.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Dookie - LP"
+        },
+        {
+          "title": "INSOMNIAC",
+          "year": 1995,
+          "format": "LP",
+          "price": 24.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Insomniac - LP"
+        },
+        {
+          "title": "AMERICAN IDIOT",
+          "year": 2004,
+          "format": "2LP",
+          "price": 38.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "American Idiot - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "the-offspring",
+      "name": "THE OFFSPRING",
+      "city": "GARDEN GROVE, CA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "The Offspring",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "The Offspring",
+        "badges": [
+          "PUNK ROCK",
+          "1984–PRESENTE",
+          "GARDEN GROVE, CA"
+        ],
+        "history": [
+          "Formados en el condado de Orange, California, en 1984, The Offspring explotaron con Smash (1994), todavía el álbum más vendido de la historia editado por un sello independiente.",
+          "Con himnos como Self Esteem y Pretty Fly (for a White Guy) mantuvieron el punk rock en las listas durante toda la década."
+        ]
+      },
+      "albums": [
+        {
+          "title": "SMASH",
+          "year": 1994,
+          "format": "LP",
+          "price": 39.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Smash - LP"
+        },
+        {
+          "title": "IXNAY ON THE HOMBRE",
+          "year": 1997,
+          "format": "LP",
+          "price": 21.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ixnay on the Hombre - LP"
+        },
+        {
+          "title": "AMERICANA",
+          "year": 1998,
+          "format": "LP",
+          "price": 26.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Americana - LP"
+        }
+      ]
+    },
+    {
+      "id": "sum-41",
+      "name": "SUM 41",
+      "city": "AJAX, ON",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Sum 41",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Sum 41",
+        "badges": [
+          "POP-PUNK",
+          "1996–2025",
+          "AJAX, ON"
+        ],
+        "history": [
+          "Desde Ajax, Canadá, Sum 41 irrumpió en 2001 con All Killer No Filler y el himno Fat Lip, mezclando pop-punk con guiños al metal.",
+          "La banda se despidió de los escenarios en 2025 tras casi tres décadas de carrera."
+        ]
+      },
+      "albums": [
+        {
+          "title": "ALL KILLER NO FILLER",
+          "year": 2001,
+          "format": "LP",
+          "price": 33.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "All Killer No Filler - LP"
+        },
+        {
+          "title": "DOES THIS LOOK INFECTED?",
+          "year": 2002,
+          "format": "LP",
+          "price": 23.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Does This Look Infected? - LP"
+        },
+        {
+          "title": "CHUCK",
+          "year": 2004,
+          "format": "LP",
+          "price": 22.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Chuck - LP"
+        }
+      ]
+    }
+  ],
+  "latin-rock": [
+    {
+      "id": "soda-stereo",
+      "name": "SODA STEREO",
+      "city": "BUENOS AIRES, AR",
+      "records": 3,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Soda Stereo",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Soda Stereo - Gustavo Cerati, Zeta Bosio, Charly Alberti",
+        "badges": [
+          "LATIN ROCK",
+          "1982–1997",
+          "BUENOS AIRES, AR"
+        ],
+        "history": [
+          "Formados en Buenos Aires en 1982, Soda Stereo es la banda más influyente del rock en español. Gustavo Cerati, Zeta Bosio y Charly Alberti conquistaron toda Latinoamérica.",
+          "Canción Animal (1990) y el histórico concierto gratuito en la Avenida 9 de Julio los consagraron como leyenda; su separación en 1997 se despidió con el eterno «gracias totales»."
+        ]
+      },
+      "albums": [
+        {
+          "title": "SIGNOS",
+          "year": 1986,
+          "format": "LP",
+          "price": 28.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Signos - LP"
+        },
+        {
+          "title": "CANCIÓN ANIMAL",
+          "year": 1990,
+          "format": "LP",
+          "price": 47.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Canción Animal - LP"
+        },
+        {
+          "title": "SUEÑO STEREO",
+          "year": 1995,
+          "format": "2LP",
+          "price": 36.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sueño Stereo - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "cafe-tacvba",
+      "name": "CAFÉ TACVBA",
+      "city": "CIUDAD DE MÉXICO, MX",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Café Tacvba",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Café Tacvba",
+        "badges": [
+          "ROCK MEXICANO",
+          "1989–PRESENTE",
+          "CIUDAD DE MÉXICO, MX"
+        ],
+        "history": [
+          "Surgidos en Ciudad Satélite, México, en 1989, Café Tacvba mezcla rock con folclore mexicano, punk y electrónica sin pedir permiso.",
+          "Re (1994) es considerado por la crítica uno de los mejores discos del rock latinoamericano de todos los tiempos."
+        ]
+      },
+      "albums": [
+        {
+          "title": "CAFÉ TACVBA",
+          "year": 1992,
+          "format": "LP",
+          "price": 25.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Café Tacvba - LP"
+        },
+        {
+          "title": "RE",
+          "year": 1994,
+          "format": "2LP",
+          "price": 45.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Re - 2LP"
+        },
+        {
+          "title": "REVÉS/YO SOY",
+          "year": 1999,
+          "format": "2LP",
+          "price": 32.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Revés/Yo Soy - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "los-fabulosos-cadillacs",
+      "name": "LOS FABULOSOS CADILLACS",
+      "city": "BUENOS AIRES, AR",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Los Fabulosos Cadillacs",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Los Fabulosos Cadillacs",
+        "badges": [
+          "SKA ROCK",
+          "1985–PRESENTE",
+          "BUENOS AIRES, AR"
+        ],
+        "history": [
+          "Desde Buenos Aires, Los Fabulosos Cadillacs fusionan ska, rock y ritmos latinos desde 1985.",
+          "Vasos Vacíos (1993), con el clásico Matador, los convirtió en embajadores del rock latino, y Fabulosos Calavera (1997) les valió un Grammy y estatus de leyenda."
+        ]
+      },
+      "albums": [
+        {
+          "title": "EL LEÓN",
+          "year": 1992,
+          "format": "LP",
+          "price": 24.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "El León - LP"
+        },
+        {
+          "title": "VASOS VACÍOS",
+          "year": 1993,
+          "format": "2LP",
+          "price": 41.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Vasos Vacíos - 2LP"
+        },
+        {
+          "title": "FABULOSOS CALAVERA",
+          "year": 1997,
+          "format": "LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Fabulosos Calavera - LP"
+        }
+      ]
+    },
+    {
+      "id": "mana",
+      "name": "MANÁ",
+      "city": "GUADALAJARA, MX",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Maná",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Maná",
+        "badges": [
+          "POP ROCK",
+          "1986–PRESENTE",
+          "GUADALAJARA, MX"
+        ],
+        "history": [
+          "Formados en Guadalajara, México, Maná llevó el pop-rock en español a estadios de todo el mundo.",
+          "¿Dónde Jugarán los Niños? (1992) es uno de los discos en español más vendidos de la historia, con himnos como Oye Mi Amor y Vivir Sin Aire."
+        ]
+      },
+      "albums": [
+        {
+          "title": "¿DÓNDE JUGARÁN LOS NIÑOS?",
+          "year": 1992,
+          "format": "LP",
+          "price": 40.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "¿Dónde Jugarán los Niños? - LP"
+        },
+        {
+          "title": "CUANDO LOS ÁNGELES LLORAN",
+          "year": 1995,
+          "format": "LP",
+          "price": 26.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Cuando los Ángeles Lloran - LP"
+        },
+        {
+          "title": "SUEÑOS LÍQUIDOS",
+          "year": 1997,
+          "format": "LP",
+          "price": 25.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sueños Líquidos - LP"
+        }
+      ]
+    }
+  ],
+  "hip-hop": [
+    {
+      "id": "eminem",
+      "name": "EMINEM",
+      "city": "DETROIT, MI",
+      "records": 3,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Eminem",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Eminem",
+        "badges": [
+          "HIP-HOP",
+          "1996–PRESENTE",
+          "DETROIT, MI"
+        ],
+        "history": [
+          "Marshall Mathers creció en Detroit y pasó de las batallas de freestyle a convertirse en el rapero más vendido de la historia bajo el ala de Dr. Dre.",
+          "The Marshall Mathers LP (2000) rompió récords de ventas y su alter ego Slim Shady redefinió lo que se podía decir en un disco de rap."
+        ]
+      },
+      "albums": [
+        {
+          "title": "THE SLIM SHADY LP",
+          "year": 1999,
+          "format": "2LP",
+          "price": 32.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Slim Shady LP - 2LP"
+        },
+        {
+          "title": "THE MARSHALL MATHERS LP",
+          "year": 2000,
+          "format": "2LP",
+          "price": 48.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Marshall Mathers LP - 2LP"
+        },
+        {
+          "title": "THE EMINEM SHOW",
+          "year": 2002,
+          "format": "2LP",
+          "price": 36.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Eminem Show - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "the-notorious-big",
+      "name": "THE NOTORIOUS B.I.G.",
+      "city": "BROOKLYN, NY",
+      "records": 2,
+      "image": "../img/placeholder-band.svg",
+      "alt": "The Notorious B.I.G.",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "The Notorious B.I.G.",
+        "badges": [
+          "EAST COAST",
+          "1992–1997",
+          "BROOKLYN, NY"
+        ],
+        "history": [
+          "Christopher Wallace, The Notorious B.I.G., salió de las esquinas de Brooklyn para convertirse en la voz definitiva del rap de la costa este.",
+          "Con solo dos álbumes —Ready to Die (1994) y el doble póstumo Life After Death (1997)— dejó una huella imborrable antes de su asesinato en 1997, a los 24 años."
+        ]
+      },
+      "albums": [
+        {
+          "title": "READY TO DIE",
+          "year": 1994,
+          "format": "2LP",
+          "price": 44.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ready to Die - 2LP"
+        },
+        {
+          "title": "LIFE AFTER DEATH",
+          "year": 1997,
+          "format": "3LP",
+          "price": 54.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Life After Death - 3LP"
+        }
+      ]
+    },
+    {
+      "id": "kendrick-lamar",
+      "name": "KENDRICK LAMAR",
+      "city": "COMPTON, CA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Kendrick Lamar",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Kendrick Lamar",
+        "badges": [
+          "WEST COAST",
+          "2011–PRESENTE",
+          "COMPTON, CA"
+        ],
+        "history": [
+          "Desde Compton, California, Kendrick Lamar elevó el rap a literatura: good kid, m.A.A.d city (2012) narra su adolescencia como una película.",
+          "To Pimp a Butterfly (2015) fusionó jazz, funk y política, y en 2018 se convirtió en el primer artista de hip-hop en ganar el Premio Pulitzer de música, por DAMN."
+        ]
+      },
+      "albums": [
+        {
+          "title": "GOOD KID, M.A.A.D CITY",
+          "year": 2012,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "good kid, m.A.A.d city - 2LP"
+        },
+        {
+          "title": "TO PIMP A BUTTERFLY",
+          "year": 2015,
+          "format": "2LP",
+          "price": 46.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "To Pimp a Butterfly - 2LP"
+        },
+        {
+          "title": "DAMN.",
+          "year": 2017,
+          "format": "LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "DAMN. - LP"
+        }
+      ]
+    },
+    {
+      "id": "snoop-dogg",
+      "name": "SNOOP DOGG",
+      "city": "LONG BEACH, CA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Snoop Dogg",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Snoop Dogg",
+        "badges": [
+          "G-FUNK",
+          "1992–PRESENTE",
+          "LONG BEACH, CA"
+        ],
+        "history": [
+          "Calvin Broadus debutó en The Chronic de Dr. Dre, y su primer disco, Doggystyle (1993), hizo historia con el flow más relajado y reconocible del g-funk de la costa oeste.",
+          "Tres décadas después sigue siendo un icono cultural que trasciende el hip-hop."
+        ]
+      },
+      "albums": [
+        {
+          "title": "DOGGYSTYLE",
+          "year": 1993,
+          "format": "2LP",
+          "price": 42.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Doggystyle - 2LP"
+        },
+        {
+          "title": "THA DOGGFATHER",
+          "year": 1996,
+          "format": "2LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Tha Doggfather - 2LP"
+        },
+        {
+          "title": "R&G: THE MASTERPIECE",
+          "year": 2004,
+          "format": "2LP",
+          "price": 25.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "R&G: The Masterpiece - 2LP"
+        }
+      ]
+    }
+  ],
+  "pop": [
+    {
+      "id": "michael-jackson",
+      "name": "MICHAEL JACKSON",
+      "city": "GARY, IN",
+      "records": 4,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Michael Jackson",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Michael Jackson",
+        "badges": [
+          "POP",
+          "1964–2009",
+          "GARY, IN"
+        ],
+        "history": [
+          "Nacido en Gary, Indiana, Michael Jackson debutó de niño con los Jackson 5 y se convirtió en el Rey del Pop.",
+          "Thriller (1982) sigue siendo el álbum más vendido de la historia; sus videoclips, su moonwalk y su voz definieron la música pop del siglo XX."
+        ]
+      },
+      "albums": [
+        {
+          "title": "OFF THE WALL",
+          "year": 1979,
+          "format": "LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Off the Wall - LP"
+        },
+        {
+          "title": "THRILLER",
+          "year": 1982,
+          "format": "LP",
+          "price": 52.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Thriller - LP"
+        },
+        {
+          "title": "BAD",
+          "year": 1987,
+          "format": "LP",
+          "price": 31.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Bad - LP"
+        },
+        {
+          "title": "DANGEROUS",
+          "year": 1991,
+          "format": "2LP",
+          "price": 33.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Dangerous - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "madonna",
+      "name": "MADONNA",
+      "city": "BAY CITY, MI",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Madonna",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Madonna",
+        "badges": [
+          "POP",
+          "1982–PRESENTE",
+          "BAY CITY, MI"
+        ],
+        "history": [
+          "Llegó a Nueva York con 35 dólares en el bolsillo y se convirtió en la Reina del Pop: Madonna ha reinventado su imagen y su sonido en cada década desde 1982.",
+          "Like a Prayer (1989) y Ray of Light (1998) muestran a una artista que convirtió la provocación y la reinvención en un arte."
+        ]
+      },
+      "albums": [
+        {
+          "title": "LIKE A VIRGIN",
+          "year": 1984,
+          "format": "LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Like a Virgin - LP"
+        },
+        {
+          "title": "LIKE A PRAYER",
+          "year": 1989,
+          "format": "LP",
+          "price": 43.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Like a Prayer - LP"
+        },
+        {
+          "title": "RAY OF LIGHT",
+          "year": 1998,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ray of Light - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "prince",
+      "name": "PRINCE",
+      "city": "MINNEAPOLIS, MN",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Prince",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Prince",
+        "badges": [
+          "POP / FUNK",
+          "1978–2016",
+          "MINNEAPOLIS, MN"
+        ],
+        "history": [
+          "Genio de Minneapolis que tocaba prácticamente todos los instrumentos de sus discos, Prince fusionó funk, rock, pop y R&B como nadie.",
+          "Purple Rain (1984) vendió más de 25 millones de copias y su catálogo, tan vasto como legendario, siguió creciendo hasta su muerte en 2016."
+        ]
+      },
+      "albums": [
+        {
+          "title": "1999",
+          "year": 1982,
+          "format": "2LP",
+          "price": 35.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "1999 - 2LP"
+        },
+        {
+          "title": "PURPLE RAIN",
+          "year": 1984,
+          "format": "LP",
+          "price": 49.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Purple Rain - LP"
+        },
+        {
+          "title": "SIGN O' THE TIMES",
+          "year": 1987,
+          "format": "2LP",
+          "price": 39.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sign o' the Times - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "whitney-houston",
+      "name": "WHITNEY HOUSTON",
+      "city": "NEWARK, NJ",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Whitney Houston",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Whitney Houston",
+        "badges": [
+          "POP / R&B",
+          "1985–2012",
+          "NEWARK, NJ"
+        ],
+        "history": [
+          "Nacida en Newark en una familia de voces legendarias, Whitney Houston poseía una de las voces más extraordinarias de la música popular.",
+          "Su debut de 1985 y la banda sonora de The Bodyguard (1992), con I Will Always Love You, rompieron todos los récords para una artista femenina."
+        ]
+      },
+      "albums": [
+        {
+          "title": "WHITNEY HOUSTON",
+          "year": 1985,
+          "format": "LP",
+          "price": 38.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Whitney Houston - LP"
+        },
+        {
+          "title": "WHITNEY",
+          "year": 1987,
+          "format": "LP",
+          "price": 26.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Whitney - LP"
+        },
+        {
+          "title": "THE BODYGUARD (BSO)",
+          "year": 1992,
+          "format": "LP",
+          "price": 32.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Bodyguard (banda sonora) - LP"
+        }
+      ]
+    }
+  ],
+  "classic-rock": [
+    {
+      "id": "the-beatles",
+      "name": "THE BEATLES",
+      "city": "LIVERPOOL, UK",
+      "records": 4,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "The Beatles",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "The Beatles - John, Paul, George y Ringo",
+        "badges": [
+          "CLASSIC ROCK",
+          "1960–1970",
+          "LIVERPOOL, UK"
+        ],
+        "history": [
+          "Cuatro chicos de Liverpool cambiaron la música popular para siempre: The Beatles pasaron de los clubes de Hamburgo a la Beatlemanía mundial en menos de tres años.",
+          "Entre 1963 y 1970 publicaron trece álbumes que reinventaron lo que podía ser el pop, de Revolver a Abbey Road, y siguen siendo la banda más influyente de la historia."
+        ]
+      },
+      "albums": [
+        {
+          "title": "REVOLVER",
+          "year": 1966,
+          "format": "LP",
+          "price": 36.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Revolver - LP"
+        },
+        {
+          "title": "SGT. PEPPER'S LONELY HEARTS CLUB BAND",
+          "year": 1967,
+          "format": "LP",
+          "price": 44.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sgt. Pepper's Lonely Hearts Club Band - LP"
+        },
+        {
+          "title": "THE BEATLES (WHITE ALBUM)",
+          "year": 1968,
+          "format": "2LP",
+          "price": 49.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Beatles (White Album) - 2LP"
+        },
+        {
+          "title": "ABBEY ROAD",
+          "year": 1969,
+          "format": "LP",
+          "price": 54.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Abbey Road - LP"
+        }
+      ]
+    },
+    {
+      "id": "queen",
+      "name": "QUEEN",
+      "city": "LONDRES, UK",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Queen",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Queen - Freddie Mercury, Brian May, Roger Taylor, John Deacon",
+        "badges": [
+          "CLASSIC ROCK",
+          "1970–PRESENTE",
+          "LONDRES, UK"
+        ],
+        "history": [
+          "Liderados por la voz irrepetible de Freddie Mercury, Queen convirtió el rock en espectáculo teatral desde Londres.",
+          "Bohemian Rhapsody (1975) desafió todas las reglas de la radio, y su actuación en Live Aid (1985) es considerada la mejor de la historia."
+        ]
+      },
+      "albums": [
+        {
+          "title": "A NIGHT AT THE OPERA",
+          "year": 1975,
+          "format": "LP",
+          "price": 47.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "A Night at the Opera - LP"
+        },
+        {
+          "title": "NEWS OF THE WORLD",
+          "year": 1977,
+          "format": "LP",
+          "price": 31.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "News of the World - LP"
+        },
+        {
+          "title": "THE GAME",
+          "year": 1980,
+          "format": "LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Game - LP"
+        }
+      ]
+    },
+    {
+      "id": "the-rolling-stones",
+      "name": "THE ROLLING STONES",
+      "city": "LONDRES, UK",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "The Rolling Stones",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "The Rolling Stones",
+        "badges": [
+          "ROCK & ROLL",
+          "1962–PRESENTE",
+          "LONDRES, UK"
+        ],
+        "history": [
+          "La banda de rock más longeva del mundo: desde 1962, Mick Jagger y Keith Richards destilan blues, rock y actitud.",
+          "Su racha de 1968 a 1972 —de Beggars Banquet a Exile on Main St.— es posiblemente la mejor secuencia de discos del rock."
+        ]
+      },
+      "albums": [
+        {
+          "title": "LET IT BLEED",
+          "year": 1969,
+          "format": "LP",
+          "price": 34.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Let It Bleed - LP"
+        },
+        {
+          "title": "STICKY FINGERS",
+          "year": 1971,
+          "format": "LP",
+          "price": 42.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sticky Fingers - LP"
+        },
+        {
+          "title": "EXILE ON MAIN ST.",
+          "year": 1972,
+          "format": "2LP",
+          "price": 46.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Exile on Main St. - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "led-zeppelin",
+      "name": "LED ZEPPELIN",
+      "city": "LONDRES, UK",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Led Zeppelin",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Led Zeppelin",
+        "badges": [
+          "HARD ROCK",
+          "1968–1980",
+          "LONDRES, UK"
+        ],
+        "history": [
+          "Jimmy Page reclutó a Robert Plant, John Paul Jones y John Bonham en 1968, y juntos inventaron buena parte del hard rock y el heavy metal.",
+          "Led Zeppelin IV (1971), con Stairway to Heaven, los convirtió en la banda más grande de los 70; se separaron en 1980 tras la muerte de Bonham."
+        ]
+      },
+      "albums": [
+        {
+          "title": "LED ZEPPELIN II",
+          "year": 1969,
+          "format": "LP",
+          "price": 33.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Led Zeppelin II - LP"
+        },
+        {
+          "title": "LED ZEPPELIN IV",
+          "year": 1971,
+          "format": "LP",
+          "price": 48.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Led Zeppelin IV - LP"
+        },
+        {
+          "title": "PHYSICAL GRAFFITI",
+          "year": 1975,
+          "format": "2LP",
+          "price": 45.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Physical Graffiti - 2LP"
+        }
+      ]
+    }
+  ],
+  "jazz": [
+    {
+      "id": "miles-davis",
+      "name": "MILES DAVIS",
+      "city": "ALTON, IL",
+      "records": 3,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Miles Davis",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Miles Davis",
+        "badges": [
+          "JAZZ",
+          "1945–1991",
+          "ALTON, IL"
+        ],
+        "history": [
+          "Trompetista y visionario, Miles Davis reinventó el jazz media docena de veces: del bebop al cool, del modal al fusion.",
+          "Kind of Blue (1959) es el disco de jazz más vendido de la historia y Bitches Brew (1970) abrió la puerta al jazz eléctrico."
+        ]
+      },
+      "albums": [
+        {
+          "title": "KIND OF BLUE",
+          "year": 1959,
+          "format": "LP",
+          "price": 51.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Kind of Blue - LP"
+        },
+        {
+          "title": "SKETCHES OF SPAIN",
+          "year": 1960,
+          "format": "LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Sketches of Spain - LP"
+        },
+        {
+          "title": "BITCHES BREW",
+          "year": 1970,
+          "format": "2LP",
+          "price": 44.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Bitches Brew - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "john-coltrane",
+      "name": "JOHN COLTRANE",
+      "city": "HAMLET, NC",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "John Coltrane",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "John Coltrane",
+        "badges": [
+          "JAZZ",
+          "1945–1967",
+          "HAMLET, NC"
+        ],
+        "history": [
+          "John Coltrane llevó el saxofón tenor a una intensidad espiritual sin precedentes, de los «sheets of sound» a la libertad total.",
+          "A Love Supreme (1965) es su obra maestra: una suite devocional grabada en una sola sesión que sigue siendo una cima del jazz."
+        ]
+      },
+      "albums": [
+        {
+          "title": "BLUE TRAIN",
+          "year": 1958,
+          "format": "LP",
+          "price": 31.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Blue Train - LP"
+        },
+        {
+          "title": "GIANT STEPS",
+          "year": 1960,
+          "format": "LP",
+          "price": 33.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Giant Steps - LP"
+        },
+        {
+          "title": "A LOVE SUPREME",
+          "year": 1965,
+          "format": "LP",
+          "price": 49.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "A Love Supreme - LP"
+        }
+      ]
+    },
+    {
+      "id": "ella-fitzgerald",
+      "name": "ELLA FITZGERALD",
+      "city": "NEWPORT NEWS, VA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Ella Fitzgerald",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Ella Fitzgerald",
+        "badges": [
+          "VOCAL JAZZ",
+          "1934–1993",
+          "NEWPORT NEWS, VA"
+        ],
+        "history": [
+          "La Primera Dama de la Canción: Ella Fitzgerald poseía una afinación perfecta, un swing natural y el mejor scat jamás grabado.",
+          "Sus Song Books de los años 50 definieron el Gran Cancionero Americano y le valieron una colección de premios Grammy."
+        ]
+      },
+      "albums": [
+        {
+          "title": "ELLA SINGS THE COLE PORTER SONG BOOK",
+          "year": 1956,
+          "format": "2LP",
+          "price": 42.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ella Fitzgerald Sings the Cole Porter Song Book - 2LP"
+        },
+        {
+          "title": "ELLA AND LOUIS",
+          "year": 1956,
+          "format": "LP",
+          "price": 35.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ella and Louis - LP"
+        },
+        {
+          "title": "ELLA IN BERLIN",
+          "year": 1960,
+          "format": "LP",
+          "price": 28.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ella in Berlin - LP"
+        }
+      ]
+    },
+    {
+      "id": "thelonious-monk",
+      "name": "THELONIOUS MONK",
+      "city": "NUEVA YORK, NY",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Thelonious Monk",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Thelonious Monk",
+        "badges": [
+          "BEBOP",
+          "1947–1976",
+          "NUEVA YORK, NY"
+        ],
+        "history": [
+          "Pianista y compositor único, Thelonious Monk construyó un lenguaje propio de silencios, ángulos y disonancias desde el Minton's de Nueva York.",
+          "Composiciones como Round Midnight y Blue Monk son estándares eternos; su excentricidad solo era comparable a su genio."
+        ]
+      },
+      "albums": [
+        {
+          "title": "BRILLIANT CORNERS",
+          "year": 1957,
+          "format": "LP",
+          "price": 39.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Brilliant Corners - LP"
+        },
+        {
+          "title": "MONK'S DREAM",
+          "year": 1963,
+          "format": "LP",
+          "price": 27.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Monk's Dream - LP"
+        },
+        {
+          "title": "UNDERGROUND",
+          "year": 1968,
+          "format": "LP",
+          "price": 26.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Underground - LP"
+        }
+      ]
+    }
+  ],
+  "metal": [
+    {
+      "id": "metallica",
+      "name": "METALLICA",
+      "city": "LOS ÁNGELES, CA",
+      "records": 4,
+      "boss": true,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Metallica",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Metallica",
+        "badges": [
+          "THRASH METAL",
+          "1981–PRESENTE",
+          "LOS ÁNGELES, CA"
+        ],
+        "history": [
+          "Formados en Los Ángeles en 1981 y consolidados en San Francisco, Metallica llevó el thrash metal del underground a los estadios.",
+          "Master of Puppets (1986) es considerado por muchos el mejor disco de metal de la historia, y el Álbum Negro (1991) vendió más de 30 millones de copias."
+        ]
+      },
+      "albums": [
+        {
+          "title": "RIDE THE LIGHTNING",
+          "year": 1984,
+          "format": "LP",
+          "price": 32.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Ride the Lightning - LP"
+        },
+        {
+          "title": "MASTER OF PUPPETS",
+          "year": 1986,
+          "format": "LP",
+          "price": 49.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Master of Puppets - LP"
+        },
+        {
+          "title": "...AND JUSTICE FOR ALL",
+          "year": 1988,
+          "format": "2LP",
+          "price": 37.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "...And Justice for All - 2LP"
+        },
+        {
+          "title": "METALLICA (BLACK ALBUM)",
+          "year": 1991,
+          "format": "2LP",
+          "price": 44.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Metallica (Black Album) - 2LP"
+        }
+      ]
+    },
+    {
+      "id": "iron-maiden",
+      "name": "IRON MAIDEN",
+      "city": "LONDRES, UK",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Iron Maiden",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Iron Maiden",
+        "badges": [
+          "HEAVY METAL",
+          "1975–PRESENTE",
+          "LONDRES, UK"
+        ],
+        "history": [
+          "Nacidos en el este de Londres en 1975, Iron Maiden definió el heavy metal británico con galopes de bajo, guitarras gemelas y la voz operística de Bruce Dickinson.",
+          "The Number of the Beast (1982) y su mascota Eddie los convirtieron en la banda de metal más querida del planeta."
+        ]
+      },
+      "albums": [
+        {
+          "title": "THE NUMBER OF THE BEAST",
+          "year": 1982,
+          "format": "LP",
+          "price": 45.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "The Number of the Beast - LP"
+        },
+        {
+          "title": "PIECE OF MIND",
+          "year": 1983,
+          "format": "LP",
+          "price": 29.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Piece of Mind - LP"
+        },
+        {
+          "title": "POWERSLAVE",
+          "year": 1984,
+          "format": "LP",
+          "price": 31.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Powerslave - LP"
+        }
+      ]
+    },
+    {
+      "id": "black-sabbath",
+      "name": "BLACK SABBATH",
+      "city": "BIRMINGHAM, UK",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Black Sabbath",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Black Sabbath - Ozzy Osbourne, Tony Iommi, Geezer Butler, Bill Ward",
+        "badges": [
+          "HEAVY METAL",
+          "1968–2025",
+          "BIRMINGHAM, UK"
+        ],
+        "history": [
+          "En 1968, cuatro obreros de Birmingham bajaron la afinación, oscurecieron el blues e inventaron el heavy metal.",
+          "Paranoid (1970) contiene medio catálogo esencial del género: War Pigs, Iron Man y el propio Paranoid. Se despidieron en 2025 con un concierto histórico en su ciudad natal."
+        ]
+      },
+      "albums": [
+        {
+          "title": "BLACK SABBATH",
+          "year": 1970,
+          "format": "LP",
+          "price": 34.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Black Sabbath - LP"
+        },
+        {
+          "title": "PARANOID",
+          "year": 1970,
+          "format": "LP",
+          "price": 47.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Paranoid - LP"
+        },
+        {
+          "title": "MASTER OF REALITY",
+          "year": 1971,
+          "format": "LP",
+          "price": 30.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Master of Reality - LP"
+        }
+      ]
+    },
+    {
+      "id": "megadeth",
+      "name": "MEGADETH",
+      "city": "LOS ÁNGELES, CA",
+      "records": 3,
+      "image": "../img/placeholder-band.svg",
+      "alt": "Megadeth",
+      "bio": {
+        "image": "../img/placeholder-band.svg",
+        "alt": "Megadeth",
+        "badges": [
+          "THRASH METAL",
+          "1983–PRESENTE",
+          "LOS ÁNGELES, CA"
+        ],
+        "history": [
+          "Tras su salida de Metallica en 1983, Dave Mustaine formó Megadeth con una misión: ser más rápido y más técnico que nadie.",
+          "Rust in Peace (1990) es un hito del thrash técnico, y la rivalidad con sus antiguos compañeros alimentó dos décadas doradas del metal."
+        ]
+      },
+      "albums": [
+        {
+          "title": "PEACE SELLS... BUT WHO'S BUYING?",
+          "year": 1986,
+          "format": "LP",
+          "price": 33.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Peace Sells... but Who's Buying? - LP"
+        },
+        {
+          "title": "RUST IN PEACE",
+          "year": 1990,
+          "format": "LP",
+          "price": 46.99,
+          "featured": true,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Rust in Peace - LP"
+        },
+        {
+          "title": "COUNTDOWN TO EXTINCTION",
+          "year": 1992,
+          "format": "LP",
+          "price": 28.99,
+          "image": "../img/placeholder-album.svg",
+          "alt": "Countdown to Extinction - LP"
+        }
+      ]
+    }
+  ]
+}

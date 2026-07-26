@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Género</title>
+
+    <link rel="icon" href="data:," />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/genre.css" />
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text"
+            ><i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+              style="color: #e23b1e"
+              >STORE</span
+            ></span
+          >
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">GÉNEROS</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" placeholder="Buscar bandas, álbumes..." />
+        </div>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="btn-cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero del género generado con template literals desde ../data/genres.json según ?genre=<id> (ver js/app.js) -->
+      <section class="hero-wrapper" data-genre-hero></section>
+
+      <section class="artists-section">
+        <h2 class="section-title">THE ARTISTS</h2>
+
+        <!-- Tarjetas de bandas generadas con template literals desde ../data/bands.json según ?genre=<id> (ver js/app.js) -->
+        <div class="artists-grid" data-genre-bands></div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">NO TE PIERDAS EL DROP</h2>
+          <p class="newsletter-desc">
+            Únete a más de 20,000 buscadores de vinilos y recibe notificaciones
+            cuando nuevos lanzamientos, ediciones limitadas y clásicos de tu
+            género favorito lleguen a la tienda.
+          </p>
+          <form
+            class="newsletter-form"
+            action="#"
+            method="post"
+            onsubmit="return false;"
+          >
+            <input type="email" placeholder="TU CORREO ELECTRÓNICO" required />
+            <button type="submit">JOIN THE RIOT</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+      </div>
+    </footer>
+  </body>
+</html>

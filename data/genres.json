@@ -1,0 +1,98 @@
+[
+  {
+    "id": "grunge",
+    "title": "GRUNGE / ALT",
+    "heroTitle": "GRUNGE & ALT",
+    "leader": "NIRVANA",
+    "leaderType": "banda",
+    "description": "Franela, pedales de fuzz y mucha distorsión. El sonido de Seattle que revolucionó el rock, liderado por la banda más alternativa y a la vez más exitosa de todos los tiempos.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM75l516hCceSP8_xCn6KfNHGLCdYPIaElT0RiTy0VcVJqO5d8OKCBnWPr&s=10",
+    "alt": "Grunge Alt",
+    "heroImage": "https://external-preview.redd.it/rolling-stones-50-best-grunge-albums-list-nevermind-ranking-v0-2PfWeu-fn-CmbvwmCh03TwF2wK8dZB6SpIBAtuGYFpw.jpg?width=640&crop=smart&auto=webp&s=eb013595aca7168eba0e8d925637b4188409d543",
+    "heroAlt": "Nirvana Live"
+  },
+  {
+    "id": "pop-punk",
+    "title": "POP-PUNK",
+    "heroTitle": "POP-PUNK",
+    "leader": "BLINK-182",
+    "leaderType": "banda",
+    "description": "Tres acordes, melodías pegadizas y letras sobre crecer (o negarse a hacerlo). Del skatepark californiano a la radio mundial, con blink-182 al mando.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsX9ekLgTUbbRP4s1EFQSHiYPeThQ653BWFtwd-7TpgLMaJIw8cObOeXI&s=10",
+    "alt": "Pop Punk",
+    "heroImage": "https://es.rollingstone.com/wp-content/uploads/2022/10/Los-25-mejores-albumes-de-pop-punk.jpg",
+    "heroAlt": "Pop-Punk"
+  },
+  {
+    "id": "latin-rock",
+    "title": "LATIN ROCK",
+    "heroTitle": "LATIN ROCK",
+    "leader": "SODA STEREO",
+    "leaderType": "banda",
+    "description": "Del ska porteño al folclore mexicano eléctrico: el rock en español que conquistó un continente entero, con Soda Stereo como leyenda absoluta.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXePN_mW2NWTj5g3ActdTQtIlwutKuiLjuIVqAUyqMFQZsF0hSTpKTacc&s=10",
+    "alt": "Latin Rock",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Latin Rock"
+  },
+  {
+    "id": "hip-hop",
+    "title": "HIP-HOP",
+    "heroTitle": "HIP-HOP",
+    "leader": "EMINEM",
+    "leaderType": "artista",
+    "description": "Beats, rimas y actitud. De las esquinas de Nueva York a dominar las listas de todo el planeta, con Eminem como el MC más vendido de la historia.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwFzqj_lJP0lW2ih5oBdTkIoXa_xAUAan1P4hVZRCZx3NSk3cnjMPTZnk&s=10",
+    "alt": "Hip Hop",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Hip-Hop"
+  },
+  {
+    "id": "pop",
+    "title": "POP",
+    "heroTitle": "POP",
+    "leader": "MICHAEL JACKSON",
+    "leaderType": "artista",
+    "description": "Melodías perfectas y estrellas más grandes que la vida. El género que definió la cultura de masas, coronado por el Rey del Pop: Michael Jackson.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWmFNJXxavf8xTdDfF0VvmzDfJmWIIrFITD-Z5ROlI1kpCDQSw4Nf4X4&s=10",
+    "alt": "Pop",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Pop"
+  },
+  {
+    "id": "classic-rock",
+    "title": "CLASSIC ROCK",
+    "heroTitle": "CLASSIC ROCK",
+    "leader": "THE BEATLES",
+    "leaderType": "banda",
+    "description": "Los discos que construyeron el rock: guitarras, himnos de estadio y vinilos que nunca dejan de sonar, encabezados por The Beatles.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeZVXvaSdDredvt--xAWFE57OtxDQp3BS0f4MJYS_VBn3DW5VWu2-mEef&s=10",
+    "alt": "Classic Rock",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Classic Rock"
+  },
+  {
+    "id": "jazz",
+    "title": "JAZZ",
+    "heroTitle": "JAZZ",
+    "leader": "MILES DAVIS",
+    "leaderType": "artista",
+    "description": "Improvisación, swing y libertad absoluta. La música clásica de América en su formato ideal: el vinilo, con Miles Davis como eterno visionario.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FplJFGC7ECmJpN6Y84XnWMqUTs17asYwp0fW_W3nLQ&s=10",
+    "alt": "Jazz",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Jazz"
+  },
+  {
+    "id": "metal",
+    "title": "METAL",
+    "heroTitle": "METAL",
+    "leader": "METALLICA",
+    "leaderType": "banda",
+    "description": "Distorsión, velocidad y riffs de acero. Del underground a llenar estadios en todo el mundo, comandado por Metallica.",
+    "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2017/07/06/e272d4db-1dd6-4317-9063-e89fc438afff/metallica-interview",
+    "alt": "Metal",
+    "heroImage": "../img/placeholder-hero.svg",
+    "heroAlt": "Metal"
+  }
+]
