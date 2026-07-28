@@ -1,244 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groove Store - Nevermind</title>
-    <link rel="stylesheet" href="../css/nevermind.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Nevermind</title>
+    <link rel="icon" href="data:," />
 
-    <!-- HEADER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/nevermind.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <span class="logo-black">GROOVE</span><span class="logo-red">STORE</span>
-            </div>
-            <nav class="nav-menu">
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link active">Géneros</a>
-                <a href="#" class="nav-link">Noticias</a>
-                <a href="#" class="nav-link">Novedades</a>
-            </nav>
-            <div class="header-right">
-                <div class="search-bar">
-                    <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="text" placeholder="Search the crate...">
-                </div>
-                <div class="header-icons">
-                    <button class="icon-btn" aria-label="Carrito">
-                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="#D33924" stroke-width="1.8" fill="none">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <path d="M16 10a4 4 0 0 1-8 0"></path>
-                        </svg>
-                    </button>
-                    <button class="icon-btn" aria-label="Usuario">
-                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="#D33924" stroke-width="1.8" fill="none">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text"
+            ><i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+              style="color: #e23b1e"
+              >STORE</span
+            ></span
+          >
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">GÉNEROS</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
+      </div>
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" placeholder="Buscar bandas, álbumes..." />
         </div>
+      </div>
+      <div class="header-right">
+        <a href="#" class="btn-cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
     </header>
-
-    <!-- MAIN PRODUCT SECTION -->
     <main class="product-main">
-        <div class="product-container">
-            
-            <!-- LEFT COLUMN: IMAGES -->
-            <div class="product-gallery">
-                <div class="main-image-wrapper">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg" alt="Nirvana Nevermind Cover" class="main-image">
-                    <div class="pressing-badge">180G PRESSING</div>
-                </div>
-                <div class="thumbnails-row">
-                    <div class="thumb circle-thumb"></div>
-                    <div class="thumb square-thumb"></div>
-                    <div class="thumb square-thumb"></div>
-                    <div class="thumb square-thumb"></div>
-                </div>
-            </div>
-
-            <!-- RIGHT COLUMN: PRODUCT INFO -->
-            <div class="product-details">
-                <div class="artist-name">NIRVANA</div>
-                <h1 class="album-title">NEVERMIND</h1>
-
-                <div class="tags-row">
-                    <span class="tag-box">LP &bull; 33&#8531; RPM</span>
-                    <span class="tag-box">180G BLACK</span>
-                    <span class="tag-box">REMASTERED</span>
-                </div>
-
-                <div class="price-row">
-                    <span class="price-amount">$34.99</span>
-                    <span class="availability-text">DISPONIBLE &mdash; ENV&Iacute;O EN 24H</span>
-                </div>
-
-                <div class="actions-row">
-                    <button class="add-to-cart-btn">A&Ntilde;ADIR AL CARRITO</button>
-                    <button class="wishlist-btn" aria-label="Añadir a favoritos">
-                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="#000" stroke-width="2" fill="none">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- TRACKLIST -->
-                <div class="tracklist-section">
-                    <h2 class="tracklist-title">TRACKLIST &ndash; SIDE A / SIDE B</h2>
-                    
-                    <div class="tracklist-grid">
-                        <!-- SIDE A -->
-                        <div class="track-col">
-                            <div class="track-item">
-                                <span class="track-number">A1</span>
-                                <span class="track-name">Smells Like Teen Spirit</span>
-                                <span class="track-duration">5:01</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">A2</span>
-                                <span class="track-name">In Bloom</span>
-                                <span class="track-duration">4:14</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">A3</span>
-                                <span class="track-name">Come as You Are</span>
-                                <span class="track-duration">3:39</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">A4</span>
-                                <span class="track-name">Breed</span>
-                                <span class="track-duration">3:03</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">A5</span>
-                                <span class="track-name">Lithium</span>
-                                <span class="track-duration">4:17</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">A6</span>
-                                <span class="track-name">Polly</span>
-                                <span class="track-duration">2:57</span>
-                            </div>
-                        </div>
-
-                        <!-- SIDE B -->
-                        <div class="track-col">
-                            <div class="track-item">
-                                <span class="track-number">B1</span>
-                                <span class="track-name">Territorial Pissings</span>
-                                <span class="track-duration">2:22</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">B2</span>
-                                <span class="track-name">Drain You</span>
-                                <span class="track-duration">3:43</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">B3</span>
-                                <span class="track-name">Lounge Act</span>
-                                <span class="track-duration">2:36</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">B4</span>
-                                <span class="track-name">Stay Away</span>
-                                <span class="track-duration">3:32</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">B5</span>
-                                <span class="track-name">On a Plain</span>
-                                <span class="track-duration">3:16</span>
-                            </div>
-                            <div class="track-item">
-                                <span class="track-number">B6</span>
-                                <span class="track-name">Something in the Way</span>
-                                <span class="track-duration">3:52</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+      <div class="product-container">
+        <div class="product-gallery">
+          <div class="main-image-wrapper">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg"
+              alt="Nirvana Nevermind Cover"
+              class="main-image"
+            />
+            <div class="pressing-badge">180G PRESSING</div>
+          </div>
         </div>
+        <div class="product-details">
+          <div class="artist-name">NIRVANA</div>
+          <h1 class="album-title">NEVERMIND</h1>
+          <div class="tags-row">
+            <span class="tag-box">LP • 33⅓ RPM</span>
+            <span class="tag-box">180G BLACK</span>
+            <span class="tag-box">REMASTERED</span>
+          </div>
+          <div class="price-row">
+            <span class="price-amount">$34.99</span>
+            <span class="availability-text"> DISPONIBLE — ENVÍO EN 24H </span>
+          </div>
+          <div class="actions-row">
+            <button class="add-to-cart-btn">AÑADIR AL CARRITO</button>
+            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="#000"
+                stroke-width="2"
+                fill="none"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="tracklist-section">
+            <h2 class="tracklist-title">TRACKLIST &ndash; SIDE A / SIDE B</h2>
+            <div class="tracklist-grid">
+              <div class="track-col">
+                <div class="track-item">
+                  <span class="track-number">A1</span>
+                  <span class="track-name">Smells Like Teen Spirit</span>
+                  <span class="track-duration">5:01</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">A2</span>
+                  <span class="track-name">In Bloom</span>
+                  <span class="track-duration">4:14</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">A3</span>
+                  <span class="track-name">Come as You Are</span>
+                  <span class="track-duration">3:39</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">A4</span>
+                  <span class="track-name">Breed</span>
+                  <span class="track-duration">3:03</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">A5</span>
+                  <span class="track-name">Lithium</span>
+                  <span class="track-duration">4:17</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">A6</span>
+                  <span class="track-name">Polly</span>
+                  <span class="track-duration">2:57</span>
+                </div>
+              </div>
+              <div class="track-col">
+                <div class="track-item">
+                  <span class="track-number">B1</span>
+                  <span class="track-name">Territorial Pissings</span>
+                  <span class="track-duration">2:22</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">B2</span>
+                  <span class="track-name">Drain You</span>
+                  <span class="track-duration">3:43</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">B3</span>
+                  <span class="track-name">Lounge Act</span>
+                  <span class="track-duration">2:36</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">B4</span>
+                  <span class="track-name">Stay Away</span>
+                  <span class="track-duration">3:32</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">B5</span>
+                  <span class="track-name">On a Plain</span>
+                  <span class="track-duration">3:16</span>
+                </div>
+                <div class="track-item">
+                  <span class="track-number">B6</span>
+                  <span class="track-name">Something in the Way</span>
+                  <span class="track-duration">3:52</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-col brand-col">
-                    <h3 class="footer-logo">GROOVE STORE</h3>
-                    <p class="footer-desc">
-                        El destino definitivo para los buscadores de vinilos digitales. Prensados premium, hallazgos raros y la cultura que defini&oacute; la m&uacute;sica.
-                    </p>
-                    <div class="footer-brand-icons">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D33924" stroke-width="2">
-                            <circle cx="12" cy="12" r="9"/>
-                            <circle cx="12" cy="12" r="3"/>
-                        </svg>
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D33924" stroke-width="2">
-                            <rect x="2" y="6" width="20" height="12" rx="2"/>
-                            <circle cx="8" cy="12" r="2"/>
-                            <circle cx="16" cy="12" r="2"/>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-heading">TIENDA</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">Los m&aacute;s vendidos</a></li>
-                        <li><a href="#">Discos usados</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-heading">SOPORTE</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Env&iacute;os</a></li>
-                        <li><a href="#">Devoluciones</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-heading">LEGAL</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">T&eacute;rminos</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 Vinyl Riot. All rights reserved. Keep it loud.</p>
-                <div class="payment-methods">
-                    <svg width="26" height="18" viewBox="0 0 24 16" fill="none" stroke="#777777" stroke-width="1.5">
-                        <rect x="1" y="1" width="22" height="14" rx="2"/>
-                        <line x1="1" y1="5" x2="23" y2="5"/>
-                    </svg>
-                    <svg width="26" height="18" viewBox="0 0 24 16" fill="none" stroke="#777777" stroke-width="1.5">
-                        <rect x="1" y="1" width="22" height="14" rx="2"/>
-                        <circle cx="8" cy="10" r="2.5"/>
-                        <circle cx="16" cy="10" r="2.5"/>
-                    </svg>
-                    <svg width="26" height="18" viewBox="0 0 24 16" fill="none" stroke="#777777" stroke-width="1.5">
-                        <rect x="1" y="1" width="22" height="14" rx="2"/>
-                        <path d="M7 11l5-6 5 6"/>
-                    </svg>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
         </div>
-    </footer>
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
 
-</body>
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+      </div>
+    </footer>
+  </body>
 </html>
