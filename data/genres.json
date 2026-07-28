@@ -32,7 +32,7 @@
     "description": "Del ska porteño al folclore mexicano eléctrico: el rock en español que conquistó un continente entero, con Soda Stereo como leyenda absoluta.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXePN_mW2NWTj5g3ActdTQtIlwutKuiLjuIVqAUyqMFQZsF0hSTpKTacc&s=10",
     "alt": "Latin Rock",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://morefmon.com/_next/image?url=https%3A%2F%2Fstorage-matriz.s3.us-east-2.amazonaws.com%2Fblog%2F8108c8da-7d6f-4c7c-b768-9f91968880c9-2025-03-11T19%3A23%3A06.219Z.jpeg&w=2048&q=75",
     "heroAlt": "Latin Rock"
   },
   {
@@ -44,7 +44,7 @@
     "description": "Beats, rimas y actitud. De las esquinas de Nueva York a dominar las listas de todo el planeta, con Eminem como el MC más vendido de la historia.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwFzqj_lJP0lW2ih5oBdTkIoXa_xAUAan1P4hVZRCZx3NSk3cnjMPTZnk&s=10",
     "alt": "Hip Hop",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://www.aarp.org/content/dam/aarp/entertainment/music/2019/11/1140x655-hip-hop-banner-esp.jpg",
     "heroAlt": "Hip-Hop"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Melodías perfectas y estrellas más grandes que la vida. El género que definió la cultura de masas, coronado por el Rey del Pop: Michael Jackson.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWmFNJXxavf8xTdDfF0VvmzDfJmWIIrFITD-Z5ROlI1kpCDQSw4Nf4X4&s=10",
     "alt": "Pop",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQageWPvxPPIZPbXV0xOaKIW1qMN9VbYQjKmKuvSjZ4jPxI6bhPRODUD8Y&s=10",
     "heroAlt": "Pop"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Los discos que construyeron el rock: guitarras, himnos de estadio y vinilos que nunca dejan de sonar, encabezados por The Beatles.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeZVXvaSdDredvt--xAWFE57OtxDQp3BS0f4MJYS_VBn3DW5VWu2-mEef&s=10",
     "alt": "Classic Rock",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://townsquare.media/site/295/files/2017/02/Collage.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89&format=natural",
     "heroAlt": "Classic Rock"
   },
   {
@@ -80,7 +80,7 @@
     "description": "Improvisación, swing y libertad absoluta. La música clásica de América en su formato ideal: el vinilo, con Miles Davis como eterno visionario.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FplJFGC7ECmJpN6Y84XnWMqUTs17asYwp0fW_W3nLQ&s=10",
     "alt": "Jazz",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://i.pinimg.com/736x/a6/49/99/a649998ddd79f7378123278216898d30.jpg",
     "heroAlt": "Jazz"
   },
   {
@@ -92,7 +92,7 @@
     "description": "Distorsión, velocidad y riffs de acero. Del underground a llenar estadios en todo el mundo, comandado por Metallica.",
     "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2017/07/06/e272d4db-1dd6-4317-9063-e89fc438afff/metallica-interview",
     "alt": "Metal",
-    "heroImage": "../img/placeholder-hero.svg",
+    "heroImage": "https://www.rollingstone.com/wp-content/uploads/2022/12/RS-EOY-Lists-METAL-ALBUMS.jpg",
     "heroAlt": "Metal"
   }
 ]
