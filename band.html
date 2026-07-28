@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Banda</title>
+
+    <link rel="icon" href="data:," />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/band.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text"
+            ><i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+              style="color: #e23b1e"
+              >STORE</span
+            ></span
+          >
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">GÉNEROS</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" placeholder="Buscar bandas, álbumes..." />
+        </div>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="btn-cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Biografía generada con template literals desde ../data/bands.json según ?band=<id> (ver js/app.js) -->
+      <section class="artist-bio-section" data-band-bio></section>
+
+      <section class="albums-section">
+        <h2 class="section-title">ÁLBUMES</h2>
+
+        <!-- Tarjetas de álbumes generadas con template literals desde ../data/bands.json según ?band=<id> (ver js/app.js) -->
+        <div class="albums-grid" data-band-albums></div>
+      </section>
+
+      <section class="riot-banner-section">
+        <div class="riot-box">
+          <span class="riot-watermark">RIOT</span>
+
+          <div class="riot-content-left">
+            <h2 class="riot-title">JOIN THE RIOT</h2>
+            <p class="riot-desc">
+              Enterate de los lanzamientos, reposiciones de artistas y hallazgos
+              de almacén antes de que lleguen a las cajas. Sin spam, sólo puro
+              ruido.
+            </p>
+          </div>
+
+          <div class="riot-content-right">
+            <form
+              class="riot-form"
+              action="#"
+              method="post"
+              onsubmit="return false;"
+            >
+              <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+              />
+              <button type="submit">SUSCRIBIRSE</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+      </div>
+    </footer>
+  </body>
+</html>
