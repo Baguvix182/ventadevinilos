@@ -40,11 +40,16 @@ body {
 .logo {
   font-weight: 900;
   font-size: 20px;
-  color: #ff3b00; /* Color rojo de la marca */
+  color: #1a1a1a; /* Color rojo de la marca */
   text-decoration: none;
   letter-spacing: -0.5px;
   font-family: Impact, "Arial Black", sans-serif;
 }
+.logo span {
+  color: #e23b1e; /* Color anaranjado */
+}
+
+
 
 .nav-links {
   display: flex;
@@ -83,7 +88,6 @@ body {
   justify-content: center;
   text-decoration: none;
 }
-
 /* ----------------------------------
    Contenido Principal (Main)
 ---------------------------------- */
