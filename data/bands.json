@@ -4,10 +4,10 @@
       "id": "red-hot-chili-peppers",
       "name": "RED HOT CHILI PEPPERS",
       "city": "LOS ÁNGELES, CA",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfFtROeuf0Kxm9Z5fa6amXiHN-fKH0ZPLIbZrQWVCwJlFFKBoJ4f3l8W2&s=10",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkwTPYTK-ZVnavYDglBSa3zZO9YFDlxnnOheRql8WAU3zoSqPc-hSwFVA&s=10",
       "alt": "Red Hot Chili Peppers",
       "bio": {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfFtROeuf0Kxm9Z5fa6amXiHN-fKH0ZPLIbZrQWVCwJlFFKBoJ4f3l8W2&s=10",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRov0lNQhEWQLfJTNytsd2F_OIqknpj8wwHcxcG2N8eq1pLYTD-9vw7zwTR&s=10",
         "alt": "Red Hot Chili Peppers",
         "badges": ["FUNK ROCK", "1983–PRESENTE", "LOS ÁNGELES, CA"],
         "history": [
@@ -21,7 +21,7 @@
           "year": 1991,
           "format": "2LP",
           "price": 34.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0glR1kJYzgc1XiLbYreEVU3uB_goKVL4_ME2NWnpMOQ&s",
           "alt": "Blood Sugar Sex Magik - 2LP"
         },
         {
@@ -30,7 +30,7 @@
           "format": "2LP",
           "price": 42.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThmTAAbDlR4og6CgTFvo_ohDpGRkPc8SCvdZiXcDhEA8-MohTvEuc94Eo&s=10",
           "alt": "Californication - 2LP"
         },
         {
@@ -38,8 +38,16 @@
           "year": 2002,
           "format": "2LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAfUBviCzE0LbqU8UAKlLbYJwXiEhcg7ELfjxF_f7kGQ&s=10",
           "alt": "By the Way - 2LP"
+        },
+        {
+          "title": "Stadium Arcadium",
+          "year": 2006,
+          "format": "LP",
+          "price": 39.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZhivwdqlMwQ33ssqNCNHeCHnFTvbxwKZ4bXCwY_31J2m_lbdyKy0Erc&s=10",
+          "alt": "Stadium Arcadium - LP"
         }
       ]
     },
@@ -68,7 +76,7 @@
           "format": "LP",
           "price": 50.99,
           "featured": true,
-          "image": "https://maskguyrecords.com/cdn/shop/files/nevermindnirvana.png?v=1751340703&width=840",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwCgxfO-RFK5ExpStUdW3cbc4tL3VWdUx482uQA8YyalkL36ZkwVGgqw&s=10",
           "alt": "Nevermind - LP"
         },
         {
@@ -76,7 +84,7 @@
           "year": 1989,
           "format": "LP",
           "price": 14.99,
-          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-bleach_d7dbcaf7-fb3b-481f-96c7-c6dbbcd83142.png?v=1728275810&width=840",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjv8gVymp4ATJRXsVBMm5W82yowixoBKPzvBx6Ys2lH5hElO9D_DkWL60&s=10",
           "alt": "Bleach - LP"
         },
         {
@@ -84,7 +92,7 @@
           "year": 1993,
           "format": "LP",
           "price": 25.99,
-          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-in_utero_abd5b7e4-c265-4b60-90a5-819aede04bd0.png?v=1728275840&width=840",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYe967vFzQ9ydRjKZxc9kQe1DvCbGPDSwclDyXfNM2ZWWLoM1zXMZnK6s&s=10",
           "alt": "In Utero - LP"
         },
         {
@@ -92,52 +100,60 @@
           "year": 1994,
           "format": "LP",
           "price": 29.99,
-          "image": "https://maskguyrecords.com/cdn/shop/files/nirvana-mtv_unplugged_in_new_york.png?v=1727051969&width=840",
+          "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Nirvana_mtv_unplugged_in_new_york.png",
           "alt": "MTV Unplugged in New York - LP"
         }
       ]
     },
     {
-      "id": "Arctic Monkeys",
-      "name": "ARTIC MONKEYS",
+      "id": "Foster the people",
+      "name": "FOSTER THE PEOPLE",
       "city": "SHEFFIELD, ENGLAND",
       "records": 5,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRsBgrR0jSpDyByrZ3bFdAh-UcUVA2ZHrEnF28JOKJFLHNw1LgUpCW2VI&s=10",
-      "alt": "Artic Monkeys",
+      "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
+      "alt": "Foster the People",
       "bio": {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKgvSk5tnx-6DnEgIW-Mvi9Rv3dPMNekChCnyq5GTEPVbpppbsu4FSNWg&s=10",
-        "alt": "Artic Monkeys",
-        "badges": ["INDIE ROCK", "1990–PRESENTE", "SHEFFIELD, ENGLAND"],
+        "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
+        "alt": "Foster the People",
+        "badges": ["INDIE ROCK", "2009–PRESENTE", "LOS ANGELES,CA"],
         "history": [
-          "Formados en Sheffiled, Inglaterra, en 1990, Artic Monkeys se convirtieron en una de las bandas más influyentes del rock alternativo de los 2000.",
-          "Su álbum debut, Whatever People Say I Am, That's What I'm Not, se convirtió en el álbum más vendido de Reino Unido en 2006."
+          "Formados en los angeles california en 2009, Foster the People se convirtió en un fenómeno global con su mezcla de indie pop y rock alternativo.",
+          "Su sencillo Pumped Up Kicks (2010) los catapultó a la fama, y su álbum debut Torches (2011) consolidó su lugar en la escena musical internacional."
         ]
       },
       "albums": [
         {
-          "title": "TEN",
-          "year": 1991,
+          "title": "Torches",
+          "year": 2011,
           "format": "LP",
           "price": 45.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Ten - LP"
+          "image": "https://upload.wikimedia.org/wikipedia/en/d/d3/Torches_foster_the_people.jpg",
+          "alt": "Torches - LP"
         },
         {
-          "title": "VS.",
-          "year": 1993,
+          "title": "Supermodel",
+          "year": 2014,
           "format": "LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Vs. - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWh2fccFaAy2fqoq7NnpzF7ox4xOXnio-LqCOc4vbKNNpV0Fxls9Oio8&s=10",
+          "alt": "Supermodel - LP"
         },
         {
-          "title": "VITALOGY",
-          "year": 1994,
+          "title": "Paradise State of Mind",
+          "year": 2024,
           "format": "LP",
           "price": 25.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Vitalogy - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2EXWU4zkkDtO_tcFGEWrQ5SG3hvYUhrNxyOB_3MbWhBTZIaGKrbAmQU&s=10",
+          "alt": "Paradise State of Mind - LP"
+        },
+        {
+          "title": "Sacred Hearts Club",
+          "year": 2017,
+          "format": "LP",
+          "price": 25.99,
+          "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Sacredheartsclub.jpg",
+          "alt": "Sacred Hearts Club - LP"
         }
       ]
     },
@@ -153,7 +169,7 @@
         "alt": "Linkin Park",
         "badges": ["NU METAL", "1996–PRESENTE", "AGOURA HILLS, CA"],
         "history": [
-          "Formados en Agoura Hills, California, en 1996, Linkin Park mezcló rock alternativo, rap y electrónica. Su debut, Hybrid Theory (2000), fue el álbum más vendido del nuevo milenio.",
+          "Formados en Agoura Hills, California, en 1996, Linkin Park mezcló metal alternativo, rap y electrónica. Su debut, Hybrid Theory (2000), fue el álbum más vendido del nuevo milenio.",
           "Con Chester Bennington y Mike Shinoda al frente redefinieron el rock de los 2000. Tras la muerte de Bennington en 2017, la banda regresó en 2024 con nueva vocalista y un disco número uno."
         ]
       },
@@ -164,7 +180,7 @@
           "format": "LP",
           "price": 39.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0l82FMFIrMQlpzCXVEmgNOfkFmMMrMdQBHnyCVKud9Q&s",
           "alt": "Hybrid Theory - LP"
         },
         {
@@ -172,7 +188,7 @@
           "year": 2003,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKyyWQ9a4qKRZZF6ZpD42YC6Vl-sdA4kOmjzKO9wP9A&s=10",
           "alt": "Meteora - LP"
         },
         {
@@ -180,8 +196,16 @@
           "year": 2007,
           "format": "LP",
           "price": 24.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg",
           "alt": "Minutes to Midnight - LP"
+        },
+        {
+          "title": "A THOUSAND SUNS",
+          "year": 2010,
+          "format": "LP",
+          "price": 27.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvaiIaqqwV7AUsQ1wluArZQJiBVJAsJW7_wTjIzghSDyoKT2AQEA_Tf8n&s=10",
+          "alt": "A Thousand Suns - LP"
         }
       ]
     },
@@ -190,10 +214,10 @@
       "name": "SOUNDGARDEN",
       "city": "SEATTLE, WA",
       "records": 6,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlsRIHv8KHPh_TblcXqeRjgKEkqX5ljjDnU61Cy5-j7_n2JkpRyfTQJ5x&s=10",
+      "image": "https://images.seattletimes.com/wp-content/uploads/2023/01/01312023_soundgarden_150818.jpg?d=2040x1389",
       "alt": "Soundgarden",
       "bio": {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxlsRIHv8KHPh_TblcXqeRjgKEkqX5ljjDnU61Cy5-j7_n2JkpRyfTQJ5x&s=10",
+        "image": "https://images.seattletimes.com/wp-content/uploads/2023/01/01312023_soundgarden_150818.jpg?d=2040x1389",
         "alt": "Soundgarden",
         "badges": ["GRUNGE", "1984–2017", "SEATTLE, WA"],
         "history": [
@@ -207,7 +231,7 @@
           "year": 1991,
           "format": "LP",
           "price": 26.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4hpBNjcO9KdxdDt4HPymy_GJwZWPOpf8XZ7JUb1Geh6s8Lq9IvqZSbJ4&s=10",
           "alt": "Badmotorfinger - LP"
         },
         {
@@ -216,7 +240,7 @@
           "format": "2LP",
           "price": 44.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdseIV20ZWKT2hrneefH6XGSWvdchgcz1w7J4KGzIMRmEnZ7kG4uOFujh&s=10",
           "alt": "Superunknown - 2LP"
         },
         {
@@ -224,8 +248,16 @@
           "year": 1996,
           "format": "2LP",
           "price": 28.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq8mDDdmLyyWKPpSRk76KRKFvgUy3NnIjNHXz4Y_JMYlzYW-A2scP-L5A&s=10",
           "alt": "Down on the Upside - 2LP"
+        },
+        {
+          "title": "KING ANIMAL",
+          "year": 2012,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzyC94iU1sAbKLroDcUgSMloS5XNGOVsGOPCzoRhLcaQ&s=10",
+          "alt": "King Animal - 2LP"
         }
       ]
     },
@@ -250,7 +282,7 @@
           "year": 1991,
           "format": "LP",
           "price": 23.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIFcbySlNqrtdSdYS1UnxGmnMN8EbaBnIUUsr74jqfoUvoeXQxwZmRQE&s=10",
           "alt": "Gish - LP"
         },
         {
@@ -258,8 +290,7 @@
           "year": 1993,
           "format": "2LP",
           "price": 41.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoixFAS1FQ9Jc_XgvKuh9rkA3MPHBkb8bj-rMgAQl7eWO8il2WgPfKX7D&s=10",
           "alt": "Siamese Dream - 2LP"
         },
         {
@@ -267,8 +298,17 @@
           "year": 1995,
           "format": "2LP",
           "price": 49.99,
-          "image": "../img/placeholder-album.svg",
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcgpWtZLPwDWxsbrtw09ZWuZ05kwJHzmUlUIZ5NXT2wwUd-xobZa6mFcw&s=10",
           "alt": "Mellon Collie and the Infinite Sadness - 2LP"
+        },
+        {
+          "title": "ADOR",
+          "year": 1998,
+          "format": "2LP",
+          "price": 39.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFhFHjdCyX1Aoj3pH_rsCX6IWp5uQXJ3pewz5L85LJd6zyUvxK3HnzzQU&s=10",
+          "alt": "Adore - 2LP"
         }
       ]
     }
@@ -297,7 +337,7 @@
           "year": 1997,
           "format": "LP",
           "price": 22.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYy84Mv6q7iK716SUd1pKl5TsxgMerAP9C41laDmcoOMsWl8J5pRpjmk&s=10",
           "alt": "Dude Ranch - LP"
         },
         {
@@ -306,7 +346,7 @@
           "format": "LP",
           "price": 46.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGh6-geAkmH7TidFJGgmKLOR_dIS9tzczJG_2Q_ivNly9ubvvM7m7orvnP&s=10",
           "alt": "Enema of the State - LP"
         },
         {
@@ -314,8 +354,16 @@
           "year": 2001,
           "format": "LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3wo7_LFouuLEsrrdo-OpoLM2SvVHt57p0yQyFk7nXd-6N-xpyvl9snB8&s=10",
           "alt": "Take Off Your Pants and Jacket - LP"
+        },
+        {
+          "title": "BLINK-182",
+          "year": 2003,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJeWgepP26Srqy7oIpnCCq4GTBRI3gjOJkMmSxgqsBA&s=10",
+          "alt": "Blink-182 - LP"
         }
       ]
     },
@@ -341,24 +389,32 @@
           "year": 1994,
           "format": "LP",
           "price": 43.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjv_7s_f34rJ4mcWm2EBD6jm1FPiMzGyR5AEUD3mxfmOG-9T5NNFse9Q&s=10",
           "alt": "Dookie - LP"
         },
         {
-          "title": "INSOMNIAC",
-          "year": 1995,
+          "title": "21st Century Breakdown",
+          "year": 2009,
           "format": "LP",
           "price": 24.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Insomniac - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTskzMtwPwB3Fcic8_UJFSDCo4ltOKopzVPi8OXQ4k4UdjirzXuN4Yi19&s=10",
+          "alt": "21st Century Breakdown- LP"
+        },
+        {
+          "title": "NIMROD",
+          "year": 1997,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlqfpB-dVCnfIItbVyy6Cs3-8RkLG8bUPnYeCqZ-zEPK0uANFWI4l5eEQ&s=10",
+          "alt": "Nimrod - 2LP"
         },
         {
           "title": "AMERICAN IDIOT",
           "year": 2004,
           "format": "2LP",
           "price": 38.99,
-          "image": "../img/placeholder-album.svg",
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6-pTTz-K8YibyegVGWBtup8lgJsLEHXZPWLmabI7JP8zzsX6MdLRIrY&s=10",
           "alt": "American Idiot - 2LP"
         }
       ]
@@ -386,7 +442,7 @@
           "format": "LP",
           "price": 39.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpa2xxnHKEqW9u42H5oDsu4psSd8yBEbvEzxUJ2efaGRnmqSpdzaRoaqgi&s=10",
           "alt": "Smash - LP"
         },
         {
@@ -394,7 +450,7 @@
           "year": 1997,
           "format": "LP",
           "price": 21.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ600gMCfDjeXtHhQ14lD-UfyXXslrcKkuf7MamZYogFFiDJUm-7FdnDcxg&s=10",
           "alt": "Ixnay on the Hombre - LP"
         },
         {
@@ -402,8 +458,16 @@
           "year": 1998,
           "format": "LP",
           "price": 26.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFWxSWZRkajfBpWBpZ74HDfg8ZETt4n54FFbtdTguA_FQtT-cRZ7mn9k&s=10",
           "alt": "Americana - LP"
+        },
+        {
+          "title": "CONSPIRACY OF ONE",
+          "year": 2000,
+          "format": "LP",
+          "price": 25.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WSc_yJGdxZ73-9TFnsgEABQgnSM9W2uiR-eq8ETrFw&s=10",
+          "alt": "Conspiracy of One - LP"
         }
       ]
     },
@@ -430,7 +494,7 @@
           "format": "LP",
           "price": 33.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5f0zkf7BnaTiOqXg4ejOC1glFWSv-AAuUzHP9bwbalfSYOJ42WdeFWEH_&s=10",
           "alt": "All Killer No Filler - LP"
         },
         {
@@ -438,7 +502,7 @@
           "year": 2002,
           "format": "LP",
           "price": 23.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDrAdmYDAsZbqPjvtBoWKvQXXjWip1U3tu7MyPXfmro3azLaC-Xp1qHk&s=10",
           "alt": "Does This Look Infected? - LP"
         },
         {
@@ -446,8 +510,16 @@
           "year": 2004,
           "format": "LP",
           "price": 22.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6wdEsag8li8d56n3jDCYg5kZ7Rk1FamI1kLdcFnCsc6lvwuP50NImYzE&s=10",
           "alt": "Chuck - LP"
+        },
+        {
+          "title": "UNDERCLASS HERO",
+          "year": 2007,
+          "format": "2LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjqGziGKMiPMC2n5PMGBtXvGO5Uni797CPaIVW6hXJxUSpjqIVf3FxtRM&s=10",
+          "alt": "Underclass Hero - 2LP"
         }
       ]
     },
@@ -469,29 +541,37 @@
       },
       "albums": [
         {
-          "title": "ALL KILLER NO FILLER",
-          "year": 2001,
+          "title": "TAKE THIS TO YOUR GRAVE",
+          "year": 2003,
           "format": "LP",
-          "price": 33.99,
+          "price": 24.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEIZIFGqolEaIncqp5Fb7MbjnbkVhGwckoQO03fcZom5TDlOBnxCIorMQj&s=10",
+          "alt": "Take This to Your Grave - LP"
+        },
+        {
+          "title": "FROM UNDER THE CORK TREE",
+          "year": 2005,
+          "format": "2LP",
+          "price": 35.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "All Killer No Filler - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuM9s91R0T7rRY04iThLW490j46k50pdf_RoOza4cMDyGVOuMfQnj1HrgQ&s=10",
+          "alt": "From Under the Cork Tree - 2LP"
         },
         {
-          "title": "DOES THIS LOOK INFECTED?",
-          "year": 2002,
+          "title": "INFINITY ON HIGH",
+          "year": 2007,
           "format": "LP",
-          "price": 23.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Does This Look Infected? - LP"
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgsG2lXM5tmJgMKl20OXFRMUZ8cjUtmKpp-2P41_gI-tbSStnGCrwyNw&s=10",
+          "alt": "Infinity on High - LP"
         },
         {
-          "title": "CHUCK",
-          "year": 2004,
-          "format": "LP",
-          "price": 22.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Chuck - LP"
+          "title": "FOLIE À DEUX",
+          "year": 2008,
+          "format": "2LP",
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxgq5ucqxtPYwLamwTW3KCMHZyxfpyikc9hgXvEjbbI6Us0OJO-dprwE&s=10",
+          "alt": "Folie à Deux - 2LP"
         }
       ]
     },
@@ -513,29 +593,37 @@
       },
       "albums": [
         {
-          "title": "ALL KILLER NO FILLER",
-          "year": 2001,
-          "format": "LP",
-          "price": 33.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "All Killer No Filler - LP"
-        },
-        {
-          "title": "DOES THIS LOOK INFECTED?",
+          "title": "NO PADS, NO HELMETS...JUST BALLS",
           "year": 2002,
           "format": "LP",
-          "price": 23.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Does This Look Infected? - LP"
+          "price": 34.99,
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWO-ADktSWXirQacaPeD-ON1z3h2OxhvjtCpEKmvHYo1e1m7Jn-T-B9FbU&s=10",
+          "alt": "No Pads, No Helmets...Just Balls - LP"
         },
         {
-          "title": "CHUCK",
+          "title": "STILL NOT GETTING ANY...",
           "year": 2004,
           "format": "LP",
-          "price": 22.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Chuck - LP"
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMfMx6VnwVAF3kCOAhHgEEtP2goFlvZyB5Oper9QGofOrAjU_HWoMU-CR8&s=10",
+          "alt": "Still Not Getting Any... - LP"
+        },
+        {
+          "title": "SIMPLE PLAN",
+          "year": 2008,
+          "format": "LP",
+          "price": 24.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLf7AUkGv8hR7bkOoB3WdJhVsUvvYTgHzDKSuR0m8Zwf3xK1ikHbJ_5_g&s=10",
+          "alt": "Simple Plan - LP"
+        },
+        {
+          "title": "GET YOUR HEART ON!",
+          "year": 2011,
+          "format": "LP",
+          "price": 26.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9tnWwJKvktf0pRhQTcGXSKxodpKKwFl47AlD75lEjOCJY6y_btb-BFHW&s=10",
+          "alt": "Get Your Heart On! - LP"
         }
       ]
     }
@@ -564,7 +652,7 @@
           "year": 1986,
           "format": "LP",
           "price": 28.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveRn80GxPTpWV6_0Qs-sunKCdVvGuc88DXTx8OSknUv2rmx9mV3uD6QHu&s=10",
           "alt": "Signos - LP"
         },
         {
@@ -573,15 +661,23 @@
           "format": "LP",
           "price": 47.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NXb7D_x1tY61U0_nzwC5VCRTS4MifBkn-zmubt716CxhYv9TVBHVKUU&s=10",
           "alt": "Canción Animal - LP"
+        },
+        {
+          "title": "DYNAMO",
+          "year": 1992,
+          "format": "2LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReANS4_aHc_ds_Knl8_7Yi4B4yFlZQnDXRb_pO0o4eJg&s=10",
+          "alt": "Dynamo - 2LP"
         },
         {
           "title": "SUEÑO STEREO",
           "year": 1995,
           "format": "2LP",
           "price": 36.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiYRse_kY-1BVPpF0bRnX9MGSXZVLBw4V4PMHZFjFBfZ-SGhi6k9fJHg&s=10",
           "alt": "Sueño Stereo - 2LP"
         }
       ]
@@ -608,7 +704,7 @@
           "year": 1992,
           "format": "LP",
           "price": 25.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxVdXIBVi8nSQ2YYBwAUsCajYbqlru7pQNszfQ2mT6-0EB7rAJRaUfG8&s=10",
           "alt": "Café Tacvba - LP"
         },
         {
@@ -617,7 +713,7 @@
           "format": "2LP",
           "price": 45.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW29uPpA9GO-sOEQjpHC5p_o_aNGUhqz-UEQJA64SnpFEJOCBIx-yX3k&s=10",
           "alt": "Re - 2LP"
         },
         {
@@ -625,8 +721,16 @@
           "year": 1999,
           "format": "2LP",
           "price": 32.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjcpw5VbqcqtltZVKgrrKitcGHnWWqnIUyEcIjMbfPju-d8t3Jc-bJBx4&s=10",
           "alt": "Revés/Yo Soy - 2LP"
+        },
+        {
+          "title": "CUATRO CAMINOS",
+          "year": 2003,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFqJSA1tI5tZfhDlQ3wT_Rz2AlnImRp5bZJ-Jndu1XuB8V3YgWaYTxQuY&s=10",
+          "alt": "Cuatro Caminos - 2LP"
         }
       ]
     },
@@ -652,7 +756,7 @@
           "year": 1992,
           "format": "LP",
           "price": 24.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOCS6ywvzl1mbBhLCpNHXRcKAXb4R4zAwnD8i5I2BlvVwXzCCxohWx5ps&s=10",
           "alt": "El León - LP"
         },
         {
@@ -661,15 +765,23 @@
           "format": "2LP",
           "price": 41.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSYA3l5M5YX9LLOH67pyKLuU5XJ-nW4w_HZFGjoZWqoklzTwLaGGbGTP4&s=10",
           "alt": "Vasos Vacíos - 2LP"
+        },
+        {
+          "title": "REY AZÚCAR",
+          "year": 1995,
+          "format": "LP",
+          "price": 31.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEb9VaKaFGrUgTm3LLUYl6RLKf7QWWZF1XBqJGFnMnlFMWD2pPUL3HBtJJ&s=10",
+          "alt": "Rey Azúcar - LP"
         },
         {
           "title": "FABULOSOS CALAVERA",
           "year": 1997,
           "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRmkKvUeGMSeBXIWwSpeRaECc6J5Cg0CAdg6WS71I3rF_R1POrAf3OMSaK&s=10",
           "alt": "Fabulosos Calavera - LP"
         }
       ]
@@ -697,7 +809,7 @@
           "format": "LP",
           "price": 40.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyU8uPK2saWFd1kaH9ymScaCDtaOeZOtDc9GkoCMI02TyWxsAT_PDFVQ4&s=10",
           "alt": "¿Dónde Jugarán los Niños? - LP"
         },
         {
@@ -705,7 +817,7 @@
           "year": 1995,
           "format": "LP",
           "price": 26.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaqvhO-qa9BNidLcIguXZCsbsBWcoeCdlx9j2pjXfkGDZYaZMNVEmYZ4a&s=10",
           "alt": "Cuando los Ángeles Lloran - LP"
         },
         {
@@ -713,8 +825,16 @@
           "year": 1997,
           "format": "LP",
           "price": 25.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_s4IQezXNApT5cud9pU1CpQ93C9GZveMx2JBxcWAshH_MJMYceHJy1ps&s=10",
           "alt": "Sueños Líquidos - LP"
+        },
+        {
+          "title": "AMAR ES COMBATIR",
+          "year": 2006,
+          "format": "2LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0KxDRHWcjZvkK9UA3jMpL4g7fBg5s0vijF7AMH_Pw9E1il7rbBZtoOhJc&s=10",
+          "alt": "Amar es Combatir - 2LP"
         }
       ]
     },
@@ -736,29 +856,37 @@
       },
       "albums": [
         {
-          "title": "¿DÓNDE JUGARÁN LOS NIÑOS?",
+          "title": "CAIFANES",
+          "year": 1988,
+          "format": "LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKoLaVXGKmZVqcb4wo571U9jFBr25kmVrfPB5eANncxvW_8OIQ95rLBU&s=10",
+          "alt": "Caifanes - LP"
+        },
+        {
+          "title": "EL DIABLITO (VOL. II)",
+          "year": 1990,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8aakz6fmQqPCIz5Ne3rq-Qu4A5MJxonGUAn6XAR2KtEnKodZz6iEvWdQn&s=10",
+          "alt": "El Diablito - LP"
+        },
+        {
+          "title": "EL SILENCIO",
           "year": 1992,
-          "format": "LP",
-          "price": 40.99,
+          "format": "2LP",
+          "price": 42.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "¿Dónde Jugarán los Niños? - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDyt814MMM6fECjtxDDwM_4Ch9IsN5xW_J5biFaABY3wmDhdyGr1Ynqw4a&s=10",
+          "alt": "El Silencio - 2LP"
         },
         {
-          "title": "CUANDO LOS ÁNGELES LLORAN",
-          "year": 1995,
+          "title": "EL NERVIO DEL VOLCÁN",
+          "year": 1994,
           "format": "LP",
-          "price": 26.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Cuando los Ángeles Lloran - LP"
-        },
-        {
-          "title": "SUEÑOS LÍQUIDOS",
-          "year": 1997,
-          "format": "LP",
-          "price": 25.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Sueños Líquidos - LP"
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOuoiZZ5KerIfyXVpHocR3sw2amlx7MUcZv4-OTWmAdDDkfOx8JFVBiD0&s=10",
+          "alt": "El Nervio del Volcán - LP"
         }
       ]
     },
@@ -780,29 +908,37 @@
       },
       "albums": [
         {
-          "title": "¿DÓNDE JUGARÁN LOS NIÑOS?",
-          "year": 1992,
+          "title": "LA VOZ DE LOS '80",
+          "year": 1984,
           "format": "LP",
-          "price": 40.99,
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrjPGmHwQbUb39bM-VDSj0u3zXFDkbcRdszq3EwlgswM6IXy3s3cJKeLJ&s=10",
+          "alt": "La Voz de los '80 - LP"
+        },
+        {
+          "title": "PATEANDO PIEDRAS",
+          "year": 1986,
+          "format": "LP",
+          "price": 32.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "¿Dónde Jugarán los Niños? - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNmgR3MfpxHKOdeqxLBzeI1Roja2ze-ZSeGvei2oe7VVqZdTE5qQu8es&s=10",
+          "alt": "Pateando Piedras - LP"
         },
         {
-          "title": "CUANDO LOS ÁNGELES LLORAN",
-          "year": 1995,
+          "title": "LA CULTURA DE LA BASURA",
+          "year": 1987,
           "format": "LP",
-          "price": 26.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Cuando los Ángeles Lloran - LP"
+          "price": 27.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_VT4oTheZU5TH3qhwqxgzfqGFdE_7c5WyeTC5GbDeZgAbrWlz7qmshRB&s=10",
+          "alt": "La Cultura de la Basura - LP"
         },
         {
-          "title": "SUEÑOS LÍQUIDOS",
-          "year": 1997,
+          "title": "CORAZONES",
+          "year": 1990,
           "format": "LP",
-          "price": 25.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Sueños Líquidos - LP"
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvRqZG1NlVpaapToxLKUsXBEDXSSmbND92uQJWzc-6E6A0LYDA7kNliIa&s=10",
+          "alt": "Corazones - LP"
         }
       ]
     }
@@ -831,7 +967,7 @@
           "year": 1999,
           "format": "2LP",
           "price": 32.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM68kThyO2X4MovODU6JUHTk9GfYD9_nNj5z1lX1UUXE9Ttz97nOWNcPwm&s=10",
           "alt": "The Slim Shady LP - 2LP"
         },
         {
@@ -839,8 +975,7 @@
           "year": 2000,
           "format": "2LP",
           "price": 48.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6yzMHGV7Sy-dNyWXjSdVDxOktvrzCLo_rAuj3OmZSRsFHFG97QZNFWxGL&s=10",
           "alt": "The Marshall Mathers LP - 2LP"
         },
         {
@@ -848,8 +983,17 @@
           "year": 2002,
           "format": "2LP",
           "price": 36.99,
-          "image": "../img/placeholder-album.svg",
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeF2eEZEzzkedwIOJx6ZPH8T3z_VqKGpDCE8EFi0bEuIRsbcPxSm5sqVo&s=10",
           "alt": "The Eminem Show - 2LP"
+        },
+        {
+          "title": "RECOVERY",
+          "year": 2010,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvzqAs7Owz95gHodUtuj-gTKYHyOXyvcGYXMMy34MTF9lQxRXpzQtPKda&s=10",
+          "alt": "Recovery - 2LP"
         }
       ]
     },
@@ -876,7 +1020,7 @@
           "format": "2LP",
           "price": 44.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2beQ_QjCaWP8enVB2M2al4J5V4nZ5vXe2JXrzbOAS1ZqrdMQACrDBxz4&s=10",
           "alt": "Ready to Die - 2LP"
         },
         {
@@ -884,8 +1028,16 @@
           "year": 1997,
           "format": "3LP",
           "price": 54.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn8cnQn5fmyjUlBpPJFeGpoLUZoVMyL--pShumFJcy7GXrd-bD3wsoG90&s=10",
           "alt": "Life After Death - 3LP"
+        },
+        {
+          "title": "BORN AGAIN",
+          "year": 1999,
+          "format": "2LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-GeEch3WFp-bC-tyXs_J0YIGlWC81LyEYS_kvtsE6Hih49Fg9JlSbINXf&s=10",
+          "alt": "Born Again - 2LP"
         }
       ]
     },
@@ -907,29 +1059,37 @@
       },
       "albums": [
         {
-          "title": "GOOD KID, M.A.A.D CITY",
-          "year": 2012,
-          "format": "2LP",
-          "price": 34.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "good kid, m.A.A.d city - 2LP"
-        },
-        {
-          "title": "TO PIMP A BUTTERFLY",
-          "year": 2015,
-          "format": "2LP",
-          "price": 46.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "To Pimp a Butterfly - 2LP"
-        },
-        {
-          "title": "DAMN.",
+          "title": "17",
           "year": 2017,
           "format": "LP",
+          "price": 27.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIB0ddPomSIXYpNjwkwXYex2S4eNQlhJO-bw2bkC4AwPHFRjlpqidlsT-X&s=10",
+          "alt": "17 - LP"
+        },
+        {
+          "title": "?",
+          "year": 2018,
+          "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "DAMN. - LP"
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SLVtJiUM0WGikHug6foXvo4lidSW_YCbPZDo-P3Az79PlUzkl3XQgfM&s=10",
+          "alt": "? - LP"
+        },
+        {
+          "title": "SKINS",
+          "year": 2018,
+          "format": "LP",
+          "price": 25.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNjZqDpTcF52fXOCpOsf9osQ5xNiyx3LZ2abDQXfsUwhJkXzgQ_rIxrk&s=10",
+          "alt": "Skins - LP"
+        },
+        {
+          "title": "BAD VIBES FOREVER",
+          "year": 2019,
+          "format": "2LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG7dkZxTNJMhTj2YfI_9lwX02RnbgGQD-bd4Kj7ZBtCn7rm5ZlwNsrFzqB&s=10",
+          "alt": "Bad Vibes Forever - 2LP"
         }
       ]
     },
@@ -956,7 +1116,7 @@
           "format": "2LP",
           "price": 42.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_PwXW4AE5AZyD4ZfKA1xbaXfalKH8jGJdvpP2lwy6Bw2KIG1ie8Z7yYf&s=10",
           "alt": "Doggystyle - 2LP"
         },
         {
@@ -964,15 +1124,23 @@
           "year": 1996,
           "format": "2LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR37my0FrIBEhZhOfPAwaMCPVedWZgZAbGITpsv4jOEp7Y3hAPfURkUaq79&s=10",
           "alt": "Tha Doggfather - 2LP"
+        },
+        {
+          "title": "NO LIMIT TOP DOGG",
+          "year": 1999,
+          "format": "2LP",
+          "price": 31.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKOOx9YTn-FFUrJ8Jq9DoeDqpD-H6DyXS7zAFRHVq-jfCU6X51uBJ03TI&s=10",
+          "alt": "No Limit Top Dogg - 2LP"
         },
         {
           "title": "R&G: THE MASTERPIECE",
           "year": 2004,
           "format": "2LP",
           "price": 25.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVo5Hrje2sRSHgatbnWY3LdCptblTctA3Uy12sHXYy0BPNeQhCGRJrhFo&s=10",
           "alt": "R&G: The Masterpiece - 2LP"
         }
       ]
@@ -987,7 +1155,7 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfzDNButlhXbtsbvf3LkKU2D3GqFEQOGYxENcrFXeDpC8NFRtMVeIetrn&s=10",
         "alt": "Ice Cube",
-        "badges": ["WEST COAST", "2011–PRESENTE", "COMPTON, CA"],
+        "badges": ["RAP", "1986–PRESENTE", "LOS ANGELES, CA"],
         "history": [
           "Desde Compton, California, Kendrick Lamar elevó el rap a literatura: good kid, m.A.A.d city (2012) narra su adolescencia como una película.",
           "To Pimp a Butterfly (2015) fusionó jazz, funk y política, y en 2018 se convirtió en el primer artista de hip-hop en ganar el Premio Pulitzer de música, por DAMN."
@@ -995,29 +1163,37 @@
       },
       "albums": [
         {
-          "title": "GOOD KID, M.A.A.D CITY",
-          "year": 2012,
+          "title": "AMERIKKKA'S MOST WANTED",
+          "year": 1990,
+          "format": "LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5e5h-WHXrk7rXFIZK5FrY2Ss6OowKz7EA8UiJy_JGqHc-QwcI73SWRTo&s=10",
+          "alt": "AmeriKKKa's Most Wanted - LP"
+        },
+        {
+          "title": "DEATH CERTIFICATE",
+          "year": 1991,
           "format": "2LP",
           "price": 34.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "good kid, m.A.A.d city - 2LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-cbGfc6HbX4MG68mcUZMY_kDI4M_E6ZZZ9YgjfnnF742PaiUxbZRj0U&s=10",
+          "alt": "Death Certificate - 2LP"
         },
         {
-          "title": "TO PIMP A BUTTERFLY",
-          "year": 2015,
-          "format": "2LP",
-          "price": 46.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "To Pimp a Butterfly - 2LP"
-        },
-        {
-          "title": "DAMN.",
-          "year": 2017,
+          "title": "THE PREDATOR",
+          "year": 1992,
           "format": "LP",
-          "price": 29.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "DAMN. - LP"
+          "price": 31.99,
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1FyOlehLpZJbkqwg_bp23GIo_SkVayeVVXU9V2RK-2CyG53nY_gr_eNc&s=10",
+          "alt": "The Predator - LP"
+        },
+        {
+          "title": "LETHAL INJECTION",
+          "year": 1993,
+          "format": "2LP",
+          "price": 36.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXZyqLUULv1ZMAqlHIubYSBi2O3bfQE56omSxtGlI8fQ&s=10",
+          "alt": "Lethal Injection - 2LP"
         }
       ]
     },
@@ -1031,7 +1207,7 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGQuKq8Jb008Mw41pWmrDaCpCuAnJg4JoVATwPDPsC-RqNJVhnWeXbRDg&s=10",
         "alt": "2Pac",
-        "badges": ["G-FUNK", "1992–PRESENTE", "LONG BEACH, CA"],
+        "badges": ["Hip Hop/Rap", "1991–1997", "LONG BEACH, CA"],
         "history": [
           "Calvin Broadus debutó en The Chronic de Dr. Dre, y su primer disco, Doggystyle (1993), hizo historia con el flow más relajado y reconocible del g-funk de la costa oeste.",
           "Tres décadas después sigue siendo un icono cultural que trasciende el hip-hop."
@@ -1039,29 +1215,37 @@
       },
       "albums": [
         {
-          "title": "DOGGYSTYLE",
+          "title": "2PACALYPSE NOW",
+          "year": 1991,
+          "format": "LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhDQMEo8tBzIiNhnUvDgIyTpXpBSxvmUlBYX08Ex5a1f2ie-dRhHJnCeE&s=10",
+          "alt": "2Pacalypse Now - LP"
+        },
+        {
+          "title": "STRICTLY 4 MY N.I.G.G.A.Z...",
           "year": 1993,
           "format": "2LP",
-          "price": 42.99,
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt7BqvKYc7ShU4Qeq2nNpLAHisDhMbLqhwY1oA7bForw&s",
+          "alt": "Strictly 4 My N.I.G.G.A.Z... - 2LP"
+        },
+        {
+          "title": "ME AGAINST THE WORLD",
+          "year": 1995,
+          "format": "2LP",
+          "price": 35.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Doggystyle - 2LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdGP70Kx5NvaFFM1itnU-HMjfPDt4L5g1EW9R17_TFyVEHSn6lsphK0HF&s=10",
+          "alt": "Me Against the World - 2LP"
         },
         {
-          "title": "THA DOGGFATHER",
+          "title": "ALL EYEZ ON ME",
           "year": 1996,
-          "format": "2LP",
-          "price": 27.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Tha Doggfather - 2LP"
-        },
-        {
-          "title": "R&G: THE MASTERPIECE",
-          "year": 2004,
-          "format": "2LP",
-          "price": 25.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "R&G: The Masterpiece - 2LP"
+          "format": "4LP",
+          "price": 59.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutORUlxFTb62UeS-bMCpU5GLB2YR3BOorcHCr5BhWQA&s=10",
+          "alt": "All Eyez on Me - 4LP"
         }
       ]
     }
@@ -1090,7 +1274,7 @@
           "year": 1979,
           "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYSbfOnsPbqkw7_OtVnYi753o_ZUNcrsZoJ_bs1eQ7Y_9wI2JAXlVfq40&s=10",
           "alt": "Off the Wall - LP"
         },
         {
@@ -1099,7 +1283,7 @@
           "format": "LP",
           "price": 52.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXGjqQZ60k5paLRcBBzUb0ZdeFhLa80qIO0FtQTBDOQ&s=10",
           "alt": "Thriller - LP"
         },
         {
@@ -1107,7 +1291,7 @@
           "year": 1987,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCbaqzDygwaW57VcA9UweiGU3J2rUANhr-LTUotUKJiNS7Ig6IdnZ7TJev&s=10",
           "alt": "Bad - LP"
         },
         {
@@ -1115,7 +1299,7 @@
           "year": 1991,
           "format": "2LP",
           "price": 33.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpR0Tu7l57LWEf9tmoR3UDCG5ksJyQOdtbyITEhrTjOK7c9_tlVFj67gzh&s=10",
           "alt": "Dangerous - 2LP"
         }
       ]
@@ -1186,7 +1370,7 @@
           "year": 1982,
           "format": "2LP",
           "price": 35.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6AfujiIPS5d1xFlMpG57Auf80o7zRk5iU2YqT-tiQtg&s",
           "alt": "1999 - 2LP"
         },
         {
@@ -1195,7 +1379,7 @@
           "format": "LP",
           "price": 49.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EKUvKKMTN3Zs6cKafwcwZqCG7lziZmP352KKpOBrltVo4fMOZ5sH5j1I&s=10",
           "alt": "Purple Rain - LP"
         },
         {
@@ -1203,7 +1387,7 @@
           "year": 1987,
           "format": "2LP",
           "price": 39.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSwEFyPU3ejkmtSznG_broSzxXibFQaaRHhpYYAqgwjhmaL_5kGfAnyHl&s=10",
           "alt": "Sign o' the Times - 2LP"
         }
       ]
@@ -1231,7 +1415,7 @@
           "format": "LP",
           "price": 38.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YuZRov3WBhKL4WVEu9N5Qd_pDEls_OREkbu-sA2DTQ&s=10",
           "alt": "Whitney Houston - LP"
         },
         {
@@ -1239,7 +1423,7 @@
           "year": 1987,
           "format": "LP",
           "price": 26.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNVouPf6bb6bIZ7-AUuBlxRSt3MUjViowP1HwaqnjG6DG2GJu_0bLLOol&s=10",
           "alt": "Whitney - LP"
         },
         {
@@ -1247,8 +1431,16 @@
           "year": 1992,
           "format": "LP",
           "price": 32.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSraHp7DvY8R_WZNi36LqKmgBWSp_tKNxfBr9L2xZzVXA&s",
           "alt": "The Bodyguard (banda sonora) - LP"
+        },
+        {
+          "title": "MY LOVE IS YOUR LOVE",
+          "year": 1998,
+          "format": "2LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtMTRE_Ng9MwXtdRmsLiaWzjTbjHJzYm9ExcTyC9cd-P_TZVjBHimaMSV&s=10",
+          "alt": "My Love Is Your Love - 2LP"
         }
       ]
     },
@@ -1270,29 +1462,37 @@
       },
       "albums": [
         {
-          "title": "1999",
-          "year": 1982,
+          "title": "THE FAME",
+          "year": 2008,
           "format": "2LP",
-          "price": 35.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "1999 - 2LP"
-        },
-        {
-          "title": "PURPLE RAIN",
-          "year": 1984,
-          "format": "LP",
-          "price": 49.99,
+          "price": 34.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Purple Rain - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq-z4zuMbSCmHUQIgiULRnvsNLJwWqtPcEvshkTBrnTg&s",
+          "alt": "The Fame - 2LP"
         },
         {
-          "title": "SIGN O' THE TIMES",
-          "year": 1987,
+          "title": "THE FAME MONSTER",
+          "year": 2009,
+          "format": "LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48Bfo6kzuxnL2E11BXcGn3FOjTMBcfuzVu8BwNTpt4Jnv1FxR_i66Zjo&s=10",
+          "alt": "The Fame Monster - LP"
+        },
+        {
+          "title": "BORN THIS WAY",
+          "year": 2011,
           "format": "2LP",
-          "price": 39.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Sign o' the Times - 2LP"
+          "price": 36.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr0eiiD7rGOCsmpll5ImSuSMj6NxtYOif-242LHyiaUEgWVqAoompGE6AT&s=10",
+          "alt": "Born This Way - 2LP"
+        },
+        {
+          "title": "CHROMATICA",
+          "year": 2020,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSduOX-JJZav5yhPMnHpdB_vidLgEQqSYuUGyI8AmzQ&s=10",
+          "alt": "Chromatica - LP"
         }
       ]
     },
@@ -1314,29 +1514,37 @@
       },
       "albums": [
         {
-          "title": "WHITNEY HOUSTON",
-          "year": 1985,
+          "title": "DOO-WOPS & HOOLIGANS",
+          "year": 2010,
           "format": "LP",
-          "price": 38.99,
+          "price": 29.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Whitney Houston - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStha2FVE0Hlpos5_YpMmfucCvLEEGPBT4LXW-mBY8qyV9Ar0pqM8wxH_E&s=10",
+          "alt": "Doo-Wops & Hooligans - LP"
         },
         {
-          "title": "WHITNEY",
-          "year": 1987,
+          "title": "UNORTHODOX JUKEBOX",
+          "year": 2012,
           "format": "LP",
-          "price": 26.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Whitney - LP"
+          "price": 27.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCzJFQfA_rh375P1KeWdD0S3bmGqmbW1JXwoDqj3SOLlqqdHBkPlXZTU&s=10",
+          "alt": "Unorthodox Jukebox - LP"
         },
         {
-          "title": "THE BODYGUARD (BSO)",
-          "year": 1992,
+          "title": "24K MAGIC",
+          "year": 2016,
           "format": "LP",
-          "price": 32.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "The Bodyguard (banda sonora) - LP"
+          "price": 31.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FMUqzcZwfsT6aoHoOTm8n9J5vtzlWpXUhho6Lf2ncxNQ2GQYGgdkZZoZ&s=10",
+          "alt": "24K Magic - LP"
+        },
+        {
+          "title": "AN EVENING WITH SILK SONIC",
+          "year": 2021,
+          "format": "LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqgL0sJeyIkSDGBfvX5upaUL-6tY_WNeEi4daYj5WWzK5Zc-rhFo6LeJo&s=10",
+          "alt": "An Evening with Silk Sonic - LP"
         }
       ]
     }
@@ -1365,7 +1573,7 @@
           "year": 1966,
           "format": "LP",
           "price": 36.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3-dmU-3WQAIjwF8ZW2Kc2JUvux1Ra3hdPzakMmKowAHBZ7qP-sJr9WLo&s=10",
           "alt": "Revolver - LP"
         },
         {
@@ -1373,7 +1581,7 @@
           "year": 1967,
           "format": "LP",
           "price": 44.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIqhPPs6G9j2EY5hCVgkn0ur9dMMP6T-duCq2JL82Z_vUz6-uPqmUasAz&s=10",
           "alt": "Sgt. Pepper's Lonely Hearts Club Band - LP"
         },
         {
@@ -1381,7 +1589,7 @@
           "year": 1968,
           "format": "2LP",
           "price": 49.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGdLm1GZxrHtFapCimzkhZTgQwlb-WTnuCpslde7e4Gg&s",
           "alt": "The Beatles (White Album) - 2LP"
         },
         {
@@ -1390,7 +1598,7 @@
           "format": "LP",
           "price": 54.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq20FoH6NkjtKENAOfb5xUOh4zj4u7k3PUBh9SXMARkv2b-m-ijhMp-OHb&s=10",
           "alt": "Abbey Road - LP"
         }
       ]
@@ -1418,7 +1626,7 @@
           "format": "LP",
           "price": 47.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNE0n8eLmK4WeAyPD48RToQumqLiJdtXpgu6YgXgpNf2PGp2jqA5Qm6CwV&s=10",
           "alt": "A Night at the Opera - LP"
         },
         {
@@ -1426,7 +1634,7 @@
           "year": 1977,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJwZe4B1MLFMY-WITW21WnYuNZWR1De2MLTRYQ4KfDRiAzLvOlhccMFY&s=10",
           "alt": "News of the World - LP"
         },
         {
@@ -1434,8 +1642,16 @@
           "year": 1980,
           "format": "LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt30swga9y_6oIJ6nEXJuOtgmpEpm-WY1ux-Nndk84k0CY9swNpzfCaQ&s=10",
           "alt": "The Game - LP"
+        },
+        {
+          "title": "JAZZ",
+          "year": 1978,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVw44oURqxrsKJ2RA6K91nsqFXH5w03aFlny22rzmvL8gCmpntg3gx7oQY&s=10",
+          "alt": "Jazz - LP"
         }
       ]
     },
@@ -1461,7 +1677,7 @@
           "year": 1969,
           "format": "LP",
           "price": 34.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIDd-nrGrxkogsZZ_DJFJN_0gcWjhmYAqpmyIWVWoCX3aTm7TeXLnaxA&s=10",
           "alt": "Let It Bleed - LP"
         },
         {
@@ -1470,7 +1686,7 @@
           "format": "LP",
           "price": 42.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKnVnFI3Gl_5_kwdXttB2bjmkvHdjpj5p5FPLrNfasYibwbqXql-lZZ_k&s=10",
           "alt": "Sticky Fingers - LP"
         },
         {
@@ -1478,8 +1694,16 @@
           "year": 1972,
           "format": "2LP",
           "price": 46.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPApjdZuNtJgRf43Uj11dMGwwFkaHa4qwasdpQvIlNr7iTjEBbJGjy1Ck&s=10",
           "alt": "Exile on Main St. - 2LP"
+        },
+        {
+          "title": "BEGGARS BANQUET",
+          "year": 1968,
+          "format": "LP",
+          "price": 39.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgCKq7Lve1tMS-6kFAz0SZzm2__vKOBfo-GfiXcSz6s0QcGpMGDDzBmFs&s=10",
+          "alt": "Beggars Banquet - LP"
         }
       ]
     },
@@ -1505,7 +1729,7 @@
           "year": 1969,
           "format": "LP",
           "price": 33.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLMSs9_Az-mqcmgVivn6CDVUo0YBikapHs2a2dqq79WJH9d7wwtiW7o5d&s=10",
           "alt": "Led Zeppelin II - LP"
         },
         {
@@ -1514,7 +1738,7 @@
           "format": "LP",
           "price": 48.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEezbfQCzAWbJUyEiP7tCtr2EYmyy3U5YWIUUWgw2TZw&s=10",
           "alt": "Led Zeppelin IV - LP"
         },
         {
@@ -1522,8 +1746,16 @@
           "year": 1975,
           "format": "2LP",
           "price": 45.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxafFa4nXrCNDOzkYE_qIL-CTjNKbYYQVx1s5ti8re7e8yKFKZTppFUzBh&s=10",
           "alt": "Physical Graffiti - 2LP"
+        },
+        {
+          "title": "HOUSES OF THE HOLY",
+          "year": 1973,
+          "format": "LP",
+          "price": 38.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb-YOn5FAzC5OopxcXOH5Pklusk_tnQU9O5Bwm3tDnjaw2paIaWXkjBdk&s=10",
+          "alt": "Houses of the Holy - LP"
         }
       ]
     },
@@ -1545,29 +1777,37 @@
       },
       "albums": [
         {
-          "title": "LET IT BLEED",
-          "year": 1969,
+          "title": "DESTROYER",
+          "year": 1976,
           "format": "LP",
-          "price": 34.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Let It Bleed - LP"
-        },
-        {
-          "title": "STICKY FINGERS",
-          "year": 1971,
-          "format": "LP",
-          "price": 42.99,
+          "price": 39.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Sticky Fingers - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltW1HDGMPtKSw8Fo-yDbxW2lzwJHnSa4L0EapYl4IIPgvB38aURaWEIk&s=10",
+          "alt": "Destroyer - LP"
         },
         {
-          "title": "EXILE ON MAIN ST.",
-          "year": 1972,
+          "title": "ALIVE!",
+          "year": 1975,
           "format": "2LP",
-          "price": 46.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Exile on Main St. - 2LP"
+          "price": 49.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOoVCKQusLMdbeMGP92v3FTFbbxcGBlAJBzXVcnFm13MJEyFlg3bu-z1Y&s=10",
+          "alt": "Alive! - 2LP"
+        },
+        {
+          "title": "LOVE GUN",
+          "year": 1977,
+          "format": "LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJBTbEUecp8KnUb7eEuM0-55hz6s9m5TXTBLOjXJhEpV8lSB7AvkkUugYQ&s=10",
+          "alt": "Love Gun - LP"
+        },
+        {
+          "title": "KISS",
+          "year": 1974,
+          "format": "LP",
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJIA8UbAL4H1AJuSz_02gEwtvUo4mwih2kytTVE-C0F3qWP2d8sn58vqsi&s=10",
+          "alt": "KISS - LP"
         }
       ]
     },
@@ -1589,29 +1829,37 @@
       },
       "albums": [
         {
-          "title": "LED ZEPPELIN II",
-          "year": 1969,
-          "format": "LP",
-          "price": 33.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Led Zeppelin II - LP"
-        },
-        {
-          "title": "LED ZEPPELIN IV",
-          "year": 1971,
-          "format": "LP",
-          "price": 48.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Led Zeppelin IV - LP"
-        },
-        {
-          "title": "PHYSICAL GRAFFITI",
+          "title": "TOYS IN THE ATTIC",
           "year": 1975,
-          "format": "2LP",
-          "price": 45.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Physical Graffiti - 2LP"
+          "format": "LP",
+          "price": 39.99,
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Pv8gSSuwFX-qkKcilggxO5s2_OpZlvjk0npNHcp9myLT9-q0F6VfCIkU&s=10",
+          "alt": "Toys in the Attic - LP"
+        },
+        {
+          "title": "ROCKS",
+          "year": 1976,
+          "format": "LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyn2gla0h2xD_4mxsWNolg_v-e7c5kOp8-WDFslhKaJecvdfg0t8sIZnl0&s=10",
+          "alt": "Rocks - LP"
+        },
+        {
+          "title": "AEROSMITH",
+          "year": 1973,
+          "format": "LP",
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALWEuD2xfABP_Qc4nHsXgSS9pUCcoKwOcyfGUOMWZ2HM5HeqZd1o3l9bt&s=10",
+          "alt": "Aerosmith - LP"
+        },
+        {
+          "title": "PERMANENT VACATION",
+          "year": 1987,
+          "format": "LP",
+          "price": 38.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6acdN17aeNg3JRTc_8FmKXj4LwkR5kOZY-aSvAqR2A&s=10",
+          "alt": "Permanent Vacation - LP"
         }
       ]
     }
@@ -1641,7 +1889,7 @@
           "format": "LP",
           "price": 51.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvKEdphZIubmQAQYhtFNt77G13d7XoezkJUz4lu6Nb6fd9T3_aNyAmOyP&s=10",
           "alt": "Kind of Blue - LP"
         },
         {
@@ -1649,7 +1897,7 @@
           "year": 1960,
           "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAL3JXC70bYJm79sIOGyEQc9Wj_4jWDIblpSPb7ljBk5UsQIjkjCIfQoU&s=10",
           "alt": "Sketches of Spain - LP"
         },
         {
@@ -1657,8 +1905,16 @@
           "year": 1970,
           "format": "2LP",
           "price": 44.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXX3Nw7ifieOGxkiBUYg5XXu_zEMqBedwBRddCsxtCnJmDJDeD_08wX7Cj&s=10",
           "alt": "Bitches Brew - 2LP"
+        },
+        {
+          "title": "IN A SILENT WAY",
+          "year": 1969,
+          "format": "LP",
+          "price": 38.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRA0LkPfA6hg3T5ktBPsvwcD3T1fMKV3GVF6722CcXD0rY15Uf4Tit7Ks&s=10",
+          "alt": "In a Silent Way - LP"
         }
       ]
     },
@@ -1684,7 +1940,7 @@
           "year": 1958,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273611ea3fb281f7956ffd33b77",
           "alt": "Blue Train - LP"
         },
         {
@@ -1692,8 +1948,16 @@
           "year": 1960,
           "format": "LP",
           "price": 33.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzZn6qga6AY07BOEOSUougYW_3NiRXfii-wEBWyDUPju0W7gXUWnbDCU&s=10",
           "alt": "Giant Steps - LP"
+        },
+        {
+          "title": "MY FAVORITE THINGS",
+          "year": 1961,
+          "format": "LP",
+          "price": 32.99,
+          "image": "https://i.scdn.co/image/ab67616d0000b273c00913832628c23c7952ae7bg",
+          "alt": "My Favorite Things - LP"
         },
         {
           "title": "A LOVE SUPREME",
@@ -1701,7 +1965,7 @@
           "format": "LP",
           "price": 49.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ea42191f549dce4d9c8ecd1a",
           "alt": "A Love Supreme - LP"
         }
       ]
@@ -1729,7 +1993,7 @@
           "format": "2LP",
           "price": 42.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2ivFita_CY9Jrf1TLqIi_p6MdMUKVEVWDSS_-6X2P4VTGg1Gj0Z7r_8K&s=10",
           "alt": "Ella Fitzgerald Sings the Cole Porter Song Book - 2LP"
         },
         {
@@ -1737,7 +2001,7 @@
           "year": 1956,
           "format": "LP",
           "price": 35.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvPfETNXSNvnkx9P-xESHo0WWTDHys68AArW6j9Y12cTbJVWXUJ7AdR8&s=10",
           "alt": "Ella and Louis - LP"
         },
         {
@@ -1745,8 +2009,16 @@
           "year": 1960,
           "format": "LP",
           "price": 28.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2PmdpwD7j_QuWQfaolCcrBFz9HsmnyulKsqyvkML3gW-_M1dGHyAMzWb7&s=10",
           "alt": "Ella in Berlin - LP"
+        },
+        {
+          "title": "SINGS THE DUKE ELLINGTON SONG BOOK",
+          "year": 1957,
+          "format": "2LP",
+          "price": 45.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchfAvnHzSmSlRy8MsZdrhkSL7sSnT3PjogYEXusIvgKsMfDjcZfsTORNE&s=10",
+          "alt": "Ella Fitzgerald Sings the Duke Ellington Song Book - 2LP"
         }
       ]
     },
@@ -1773,7 +2045,7 @@
           "format": "LP",
           "price": 39.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY2dkglqYYTM3IMONj2AU2_Tcr6s3N7z-BkYVgl9ZJaIZRT1jadHpmqv8&s=10",
           "alt": "Brilliant Corners - LP"
         },
         {
@@ -1781,7 +2053,7 @@
           "year": 1963,
           "format": "LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvFY4JIJ5dPXcfe6hiUV4oBe9dynCMKVBJLJ678bAngOWClMiATr8UH87t&s=10",
           "alt": "Monk's Dream - LP"
         },
         {
@@ -1789,8 +2061,16 @@
           "year": 1968,
           "format": "LP",
           "price": 26.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-teCh3KY-pBrWJgXzOpuAnYrxBLUO7a4TG-YqOqxcZo4jjnmE4kK-oZpG&s=10",
           "alt": "Underground - LP"
+        },
+        {
+          "title": "STRAIGHT, NO CHASER",
+          "year": 1967,
+          "format": "LP",
+          "price": 31.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJEVaojWVLMJiZmN329bhuW6hrU4DI-VNWJyP35d3luOt2R1Xhs3mgNS7Y&s=10",
+          "alt": "Straight, No Chaser - LP"
         }
       ]
     },
@@ -1812,29 +2092,37 @@
       },
       "albums": [
         {
-          "title": "ELLA SINGS THE COLE PORTER SONG BOOK",
-          "year": 1956,
-          "format": "2LP",
-          "price": 42.99,
+          "title": "BIRD AND DIZ",
+          "year": 1952,
+          "format": "LP",
+          "price": 34.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Ella Fitzgerald Sings the Cole Porter Song Book - 2LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWjtg-0eUq2MM9e96oHqy54Q22wQmwNG-7MzyePhbaLk2htWTjO_3CIM&s=10",
+          "alt": "Bird and Diz - LP"
         },
         {
-          "title": "ELLA AND LOUIS",
-          "year": 1956,
+          "title": "CHARLIE PARKER WITH STRINGS",
+          "year": 1950,
           "format": "LP",
-          "price": 35.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Ella and Louis - LP"
+          "price": 31.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKAmXlFotKIakNK4Ab076UADU87wuN-4-kjmm0IQ2EGw&s=10",
+          "alt": "Charlie Parker with Strings - LP"
         },
         {
-          "title": "ELLA IN BERLIN",
-          "year": 1960,
+          "title": "JAZZ AT MASSEY HALL",
+          "year": 1953,
           "format": "LP",
-          "price": 28.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Ella in Berlin - LP"
+          "price": 38.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-DcXha6c-epg6yciWQQ0ziN4Myf-YHEbOY-c4tjs-G9LOz7NVne6vlnMY&s=10",
+          "alt": "Jazz at Massey Hall - LP"
+        },
+        {
+          "title": "NOW'S THE TIME",
+          "year": 1957,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLF4AWqkp-9DN14mm1mQm5wXuAsdr5OrsF11Hs636fFOEDW0EeU3GYJA&s=10",
+          "alt": "Now's the Time - LP"
         }
       ]
     },
@@ -1857,29 +2145,37 @@
       },
       "albums": [
         {
-          "title": "BRILLIANT CORNERS",
-          "year": 1957,
+          "title": "LOUIS ARMSTRONG PLAYS W.C. HANDY",
+          "year": 1954,
           "format": "LP",
-          "price": 39.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Brilliant Corners - LP"
+          "price": 36.99,
+          "image": "https://upload.wikimedia.org/wikipedia/en/7/7a/LouisArmstrongPlaysWCHandy.jpg",
+          "alt": "Louis Armstrong Plays W.C. Handy - LP"
         },
         {
-          "title": "MONK'S DREAM",
-          "year": 1963,
+          "title": "ELLA AND LOUIS",
+          "year": 1956,
           "format": "LP",
-          "price": 27.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Monk's Dream - LP"
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvPfETNXSNvnkx9P-xESHo0WWTDHys68AArW6j9Y12cTbJVWXUJ7AdR8&s=10",
+          "alt": "Ella and Louis - LP"
         },
         {
-          "title": "UNDERGROUND",
+          "title": "SATCHMO AT SYMPHONY HALL",
+          "year": 1947,
+          "format": "2LP",
+          "price": 41.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-c8oFgUMee5aGLFE-kWAYO-k3vSA01TLtaOgIJUTzl3dfX9_iwBjHMPA&s=10",
+          "alt": "Satchmo at Symphony Hall - 2LP"
+        },
+        {
+          "title": "What a Wonderful World",
           "year": 1968,
           "format": "LP",
-          "price": 26.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Underground - LP"
+          "price": 29.99,
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzfLmvqpbVk2IJeTH_AJNaDEhrNEhgDUWDx9gxgdBw_ZKJ7SpBXiLdBWU&s=10",
+          "alt": "What a Wonderful World - LP"
         }
       ]
     }
@@ -1908,7 +2204,7 @@
           "year": 1984,
           "format": "LP",
           "price": 32.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6e8e7dIhk1V9K3xLzdptI-SonAWhOigV00I6fLxGJ82o2xldZr13PrGhu&s=10",
           "alt": "Ride the Lightning - LP"
         },
         {
@@ -1916,8 +2212,7 @@
           "year": 1986,
           "format": "LP",
           "price": 49.99,
-          "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxh9HScxmD1_xGJAi85vS6uEEmHX-60ZsatCrJAogklPXSWJPR1kc7JM&s=10",
           "alt": "Master of Puppets - LP"
         },
         {
@@ -1925,7 +2220,7 @@
           "year": 1988,
           "format": "2LP",
           "price": 37.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgi8QG_YYFS3lrWeAGCC2GuXdfaD0cxLFydQTH4UBqL5VRB89bVugUiyU&s=10",
           "alt": "...And Justice for All - 2LP"
         },
         {
@@ -1933,7 +2228,8 @@
           "year": 1991,
           "format": "2LP",
           "price": 44.99,
-          "image": "../img/placeholder-album.svg",
+          "featured": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKb-AJhpN1Lg8PYVj9fTHgsxD_KENiLu73lf6VP4Q1pw&s=10",
           "alt": "Metallica (Black Album) - 2LP"
         }
       ]
@@ -1961,7 +2257,7 @@
           "format": "LP",
           "price": 45.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdMWN5188YqBVtWv22TlLlz1XE2GfVlaaYZxj4sqHfMlQ8ZhASuHnXHU&s=10",
           "alt": "The Number of the Beast - LP"
         },
         {
@@ -1969,7 +2265,7 @@
           "year": 1983,
           "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8jYBca0bHP4VdrEwN9gQyp3NMqwVhRZicP0YhFGnxEDlYdTyPROt1XwGr&s=10",
           "alt": "Piece of Mind - LP"
         },
         {
@@ -1977,8 +2273,16 @@
           "year": 1984,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMStNvpz1rTq8WQ3rBwg_YKXC4q0UBZUSncLO1UI2-g&s=10",
           "alt": "Powerslave - LP"
+        },
+        {
+          "title": "SEVENTH SON OF A SEVENTH SON",
+          "year": 1988,
+          "format": "LP",
+          "price": 34.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMLSofyTl621kdLCKvFesAWaSmakbw9a2nGXRa5Cs1w&s=10",
+          "alt": "Seventh Son of a Seventh Son - LP"
         }
       ]
     },
@@ -2004,7 +2308,7 @@
           "year": 1970,
           "format": "LP",
           "price": 34.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyBuFYJRU1c3iiHjVdJdrhln8ka4ZG3jMhfZqGFr-5RjmdMrHOtdO_-tc&s=10",
           "alt": "Black Sabbath - LP"
         },
         {
@@ -2013,7 +2317,7 @@
           "format": "LP",
           "price": 47.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KoUh--bncLtHEk1JvxitZ0xwBIu0kCXpl0ckgov23w&s=10",
           "alt": "Paranoid - LP"
         },
         {
@@ -2021,8 +2325,16 @@
           "year": 1971,
           "format": "LP",
           "price": 30.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTNewoRZvACqCLzwV8qmUh4Fr2LQ58So-cNqI70SzY0vbogO0pcJrFTvQ&s=10",
           "alt": "Master of Reality - LP"
+        },
+        {
+          "title": "SABBATH BLOODY SABBATH",
+          "year": 1973,
+          "format": "LP",
+          "price": 32.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKkGfzGaI9Xl-JXyBWFPPluoTqvd9DW6K2CB9FB2q-EYvu9Wj8jKgA5s&s=10",
+          "alt": "Sabbath Bloody Sabbath - LP"
         }
       ]
     },
@@ -2048,7 +2360,7 @@
           "year": 1986,
           "format": "LP",
           "price": 33.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT818k_zmy_f4d9Jfn4h1UaLBghVU2BsRasJ7qNEWSTiovLD1uzX3b6QFwD&s=10",
           "alt": "Peace Sells... but Who's Buying? - LP"
         },
         {
@@ -2057,7 +2369,7 @@
           "format": "LP",
           "price": 46.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq45TdpJeXEAKN0y-hPVj27ijnHzmYk3mX4ocPBrGvP3SEa0YNtUeZzWvh&s=10",
           "alt": "Rust in Peace - LP"
         },
         {
@@ -2065,8 +2377,16 @@
           "year": 1992,
           "format": "LP",
           "price": 28.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK1ha_IfXmqIvc6iApL-U3I_fZETf9nEQBopAKzZ0j6g&s=10",
           "alt": "Countdown to Extinction - LP"
+        },
+        {
+          "title": "YOUTHANASIA",
+          "year": 1994,
+          "format": "LP",
+          "price": 35.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK3IBJzvscFvtSah3gQHjYmimKAE2QyyN5VpEdxAX-pw&s=10",
+          "alt": "Youthanasia - LP"
         }
       ]
     },
@@ -2088,37 +2408,37 @@
       },
       "albums": [
         {
-          "title": "RIDE THE LIGHTNING",
-          "year": 1984,
+          "title": "COWBOYS FROM HELL",
+          "year": 1990,
           "format": "LP",
           "price": 32.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Ride the Lightning - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8xoeVoPcP6nei0n2BMmNCSlsz5xdSHU3_XhU5xJvr3LtuPsnYkMUH5_r&s=10",
+          "alt": "Cowboys from Hell - LP"
         },
         {
-          "title": "MASTER OF PUPPETS",
-          "year": 1986,
+          "title": "VULGAR DISPLAY OF POWER",
+          "year": 1992,
           "format": "LP",
           "price": 49.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Master of Puppets - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGPXsO9pUMsTnMaaLyG2ko7-vZCEN9IC3hBhVv9O-SX3VLeZVPgtc2Y01u&s=10",
+          "alt": "Vulgar Display of Power - LP"
         },
         {
-          "title": "...AND JUSTICE FOR ALL",
-          "year": 1988,
-          "format": "2LP",
+          "title": "FAR BEYOND DRIVEN",
+          "year": 1994,
+          "format": "LP",
           "price": 37.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "...And Justice for All - 2LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4KwX1uDEeqQQZAdRX3PviLeQJbJt7Xjl1L7CheFtJaRh_pR_lQMmszBv&s=10",
+          "alt": "Far Beyond Driven - LP"
         },
         {
-          "title": "METALLICA (BLACK ALBUM)",
-          "year": 1991,
-          "format": "2LP",
+          "title": "THE GREAT SOUTHERN TRENDKILL",
+          "year": 1996,
+          "format": "LP",
           "price": 44.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Metallica (Black Album) - 2LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKjIlaVj2Aoyg3TAXGMBVqoosdXv33DIag1aCLtX_GqP4vWKAqfzrzeoB&s=10",
+          "alt": "The Great Southern Trendkill - LP"
         }
       ]
     },
@@ -2144,29 +2464,37 @@
       },
       "albums": [
         {
-          "title": "THE NUMBER OF THE BEAST",
-          "year": 1982,
+          "title": "RAGE AGAINST THE MACHINE",
+          "year": 1992,
           "format": "LP",
-          "price": 45.99,
+          "price": 34.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
-          "alt": "The Number of the Beast - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTftB3caqGu9vEyP7e7zRVcj7etgfovCYWP8kQU6hhQtQ&s=10",
+          "alt": "Rage Against the Machine - LP"
         },
         {
-          "title": "PIECE OF MIND",
-          "year": 1983,
+          "title": "EVIL EMPIRE",
+          "year": 1996,
           "format": "LP",
           "price": 29.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Piece of Mind - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewPyyuJTK8oLLcNlMbDgf8ovjTIdqXXPDlSkR3ZsYXA&s=10",
+          "alt": "Evil Empire - LP"
         },
         {
-          "title": "POWERSLAVE",
-          "year": 1984,
+          "title": "THE BATTLE OF LOS ANGELES",
+          "year": 1999,
           "format": "LP",
           "price": 31.99,
-          "image": "../img/placeholder-album.svg",
-          "alt": "Powerslave - LP"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8nICJBNSn0lPvDTcoOD7VvJfX2v8X0oDLoGI9ERYOGQ&s=10",
+          "alt": "The Battle of Los Angeles - LP"
+        },
+        {
+          "title": "RENEGADES",
+          "year": 2000,
+          "format": "LP",
+          "price": 28.99,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRdDBUxHMegS9rBJkexqK4oxdywiCJRw4fkY8nc6oGNIuaVcylBCYiyA&s=10",
+          "alt": "Renegades - LP"
         }
       ]
     }
