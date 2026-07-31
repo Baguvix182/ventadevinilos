@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Noticias</title>
+    <link rel="icon" href="data:," />
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Iconos Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/noticias.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ENCABEZADO (INTACTO) -->
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text">
+            <i class="ri-disc-line" style="color: #E23B1E"></i> GROOVE<span style="color: #E23B1E">STORE</span>
+          </span>
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">GÉNEROS</a>
+          <a href="noticias.html" class="nav-link active">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" placeholder="Buscar bandas, álbumes..." />
+        </div>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="btn-cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: NOTICIAS -->
+    <main class="news-container">
+
+      <!-- Tarjeta 1: Maná -->
+      <article class="news-card red-card">
+        <div class="news-content">
+          <span class="news-category">NEWS &#9733;</span>
+          <h2 class="news-title">MANÁ EN EL MUNDIAL</h2>
+          <p class="news-description">
+            Mundial 2026: Maná protagonizará el medio tiempo del partido de México vs. Inglaterra; hora en la que tocarán.<br><br>
+            La banda mexicana volverá al Estadio Ciudad de México tras su participación en la inauguración del Mundial 2026.
+          </p>
+        </div>
+        <div class="news-image-wrapper">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxcPtrpFlCAtKecz6ViPpCWA4v-tvmizMtjinGqWyxtUYlSusy" alt="Trofeo de la Copa Mundial en el estadio" class="news-image" />
+        </div>
+      </article>
+
+      <!-- Tarjeta 2: Michael Jackson -->
+      <article class="news-card dark-card">
+        <div class="news-content">
+          <span class="news-category">NEWS &#9733;</span>
+          <h2 class="news-title">MICHAEL VIVO ?</h2>
+          <p class="news-subheading">Shakira y Jennifer López</p>
+          <p class="news-description">
+            Pero sin duda, uno de los espectáculos del medio tiempo de Super Bowl más vistos fue el de 
+            <span class="text-link">Shakira y JLo</span>, quienes impactaron con tremendos movimientos durante su presentación, poniéndole un toque latino, al lado de 
+            <span class="text-link">J Balvin y Bad Bunny</span> al espectáculo deportivo más importante. Tanto así que se especula que el fantasma de Michael Jackson se hizo presente en esta presentación debido a la energía que emitían Jlo y Shakira.
+          </p>
+        </div>
+        <div class="news-image-wrapper">
+          <img src="https://www.lasestrellas.tv/_next/image?url=https://st1.uvnimg.com/80/21/cbed1ca824ae2cb49a9c14c4046e/famosos-que-hicieron-historia-en-el-super-bowl-de-michael-jackson-a-jlo.jpg&w=1280&q=75" alt="Escenario de concierto con luces de neón" class="news-image" />
+        </div>
+      </article>
+
+      <!-- Tarjeta 3: Los Picapiedra -->
+      <article class="news-card red-card">
+        <div class="news-content">
+          <span class="news-category">NEWS &#9733;</span>
+          <h2 class="news-title">PARODIA A LOS BEATLES</h2>
+          <p class="news-description">
+            En el episodio "The Hatrocks and The Gruesomes" que se emitió por primera vez el 22 de enero de 1965, los amigos montañeses de los Picapiedra, "The Hatrocks" se quedaron más tiempo del esperado en casa de los Picapiedras y Pedro no ve la manera de sacarlos para siempre. Pedro descubre que a los Hatrocks no les gusta la música "BUG" ("insecto", en referencia a que "Beatles" se traduce como "escarabajo") así que, disfrazando a su familia y vecinos y tocando insistentemente la "bug music" logra que sus insoportables inquilinos se vayan muy lejos de ahí.
+          </p>
+        </div>
+        <div class="news-image-wrapper">
+          <img src="https://i.pinimg.com/736x/29/1a/6c/291a6c33c4b34ce16b11bac37bb409c5.jpg" alt="Disco de vinilo, ambientación retro" class="news-image" />
+        </div>
+      </article>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+        <div class="payment-methods">
+          <i class="ri-bank-card-line"></i>
+          <i class="ri-mastercard-line"></i>
+          <i class="ri-visa-line"></i>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

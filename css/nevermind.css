@@ -2,7 +2,7 @@
    VARIABLES CSS (:root)
    ========================================================================== */
 :root {
-  /* Colors mapped to site palette (keep fonts as original to avoid changing typography) */
+  /* Colors mapped to site palette */
   --primary-red: var(--accent-red);
   --bg-page: var(--bg-main);
   --bg-card: var(--bg-white);
@@ -10,7 +10,6 @@
   --text-muted: var(--text-light-gray);
   --border-light: var(--border-color);
   --border-dark: #333333;
-  /* Do not redefine fonts here — inherit them from index.css */
 }
 
 /* ==========================================================================
@@ -45,9 +44,6 @@ img {
   max-width: 100%;
   display: block;
 }
-
-/* Header and footer styles are provided by css/index.css to keep
-   consistent site-wide visuals. Removed local header/footer rules. */
 
 /* ==========================================================================
    MAIN PRODUCT SECTION
@@ -245,8 +241,6 @@ img {
   margin-left: 8px;
 }
 
-/* Footer styles moved to css/index.css for consistent layout */
-
 /* ==========================================================================
    RESPONSIVE
    ========================================================================== */
@@ -261,34 +255,18 @@ img {
     flex-direction: column;
     align-items: center;
   }
-
   .product-gallery {
     width: 100%;
     max-width: 480px;
   }
-
   .product-details {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header-center {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
   .tracklist-grid {
     grid-template-columns: 1fr;
     gap: 12px;
   }
-}
-
-@media (max-width: 480px) {
-  /* footer layout controlled by css/index.css */
 }
