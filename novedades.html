@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Novedades</title>
+    <link rel="icon" href="data:," />
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Iconos Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="./css/novedades.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text">
+            <i class="ri-disc-line" style="color: #E23B1E"></i> GROOVE<span style="color: #E23B1E">STORE</span>
+          </span>
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">GÉNEROS</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link active">NOVEDADES</a>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" placeholder="Buscar bandas, álbumes..." />
+        </div>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="btn-cart">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: NOVEDADES -->
+    <main class="releases-container">
+      
+      <!-- ENCABEZADO Y FILTROS -->
+      <div class="section-header">
+        <h1 class="section-title">NUEVAS ENTRADAS</h1>
+        <div class="filter-buttons">
+          <button class="filter-btn active">TODOS</button>
+        </div>
+      </div>
+
+      <!-- LANZAMIENTO DESTACADO (HERO) -->
+      <section class="hero-release">
+        <div class="hero-content">
+          <div>
+            <span class="hero-badge">&#9733; DESTACADO DEL MES</span>
+            <h2 class="hero-artist">THE STROKES</h2>
+            <div class="hero-album">THE NEW ABNORMAL (180G VINYL)</div>
+            <p class="hero-desc">
+              Prensado especial exclusivo en vinilo transparente. Incluye póster de edición limitada y tarjeta de descarga digital.
+            </p>
+          </div>
+          <div class="hero-action">
+            <span class="hero-price">$38.00</span>
+            <button class="btn-buy-hero">COMPRAR AHORA</button>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="album-cover-wrapper">
+            <div class="vinyl-record">
+              <div class="vinyl-label"></div>
+            </div>
+            <div class="album-cover">
+              <img src="https://i.scdn.co/image/ab67616d0000b273e3f1ba3de4659708c25d0f39" alt="The Strokes - The New Abnormal" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARRILLA DE PRODUCTOS -->
+      <section class="releases-grid">
+        
+        <article class="card-item">
+          <span class="card-sticker">NUEVO</span>
+          <div class="card-img-placeholder">
+            <img src="https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937" alt="Daft Punk - Random Access Memories" />
+          </div>
+          <span class="card-artist">DAFT PUNK</span>
+          <h3 class="card-title">RANDOM ACCESS...</h3>
+          <p class="card-details">Edición 10° Aniversario • 2LP</p>
+          <div class="card-footer">
+            <span class="card-price">$45.00</span>
+            <button class="btn-add">AÑADIR</button>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <span class="card-sticker red-sticker">PREVENTA</span>
+          <div class="card-img-placeholder">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Arctic_Monkeys_-_AM.png" alt="Arctic Monkeys - AM" />
+          </div>
+          <span class="card-artist">ARCTIC MONKEYS</span>
+          <h3 class="card-title">AM (SPECIAL PRESS)</h3>
+          <p class="card-details">Vinilo Rojo Transparente</p>
+          <div class="card-footer">
+            <span class="card-price">$32.00</span>
+            <button class="btn-add">AÑADIR</button>
+          </div>
+        </article>
+
+        <article class="card-item">
+          <span class="card-sticker">LIMITADO</span>
+          <div class="card-img-placeholder">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOcXc37dQLY0X4xpxVVm67ErHt9ixYHBuQpHIT-jwdw&s=10" alt="Rosalía - Motomami" />
+          </div>
+          <span class="card-artist">EL CUARTETO DE NOS</span>
+          <h3 class="card-title">RARO</h3>
+          <p class="card-details">Edición Deluxe • Vinilo Blanco</p>
+          <div class="card-footer">
+            <span class="card-price">$29.00</span>
+            <button class="btn-add">AÑADIR</button>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+        <div class="payment-methods">
+          <i class="ri-bank-card-line"></i>
+          <i class="ri-mastercard-line"></i>
+          <i class="ri-visa-line"></i>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
