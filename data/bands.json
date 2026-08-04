@@ -108,17 +108,17 @@
     {
       "id": "Foster the people",
       "name": "FOSTER THE PEOPLE",
-      "city": "SHEFFIELD, ENGLAND",
+      "city": "LOS ANGELES, CA",
       "records": 5,
       "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
       "alt": "Foster the People",
       "bio": {
         "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
         "alt": "Foster the People",
-        "badges": ["INDIE ROCK", "2009–PRESENTE", "LOS ANGELES,CA"],
+        "badges": ["INDIE POP", "2009–PRESENTE", "LOS ANGELES, CA"],
         "history": [
-          "Formados en los angeles california en 2009, Foster the People se convirtió en un fenómeno global con su mezcla de indie pop y rock alternativo.",
-          "Su sencillo Pumped Up Kicks (2010) los catapultó a la fama, y su álbum debut Torches (2011) consolidó su lugar en la escena musical internacional."
+          "Formados en Los Ángeles en 2009, Foster the People nació de la colaboración entre Mark Foster, Jacob Fink y Cubbie Fink, mezclando indie pop con atmósferas psicodélicas.",
+          "Con Pumped Up Kicks y Torches, la banda pasó de una propuesta independiente a un fenómeno internacional, consolidando su sonido en la escena alternativa."
         ]
       },
       "albums": [
@@ -526,17 +526,17 @@
     {
       "id": "Fall Out Boy",
       "name": "Fall Out Boy",
-      "city": "AJAX, ON",
+      "city": "WILMETTE, IL",
       "records": 3,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkH6C63XSEvnqFnLDVD3UYclSwK512C2z7H4HzGX3x2SeNJDHANcRZ_bc&s=10",
       "alt": "Fall Out Boy",
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkH6C63XSEvnqFnLDVD3UYclSwK512C2z7H4HzGX3x2SeNJDHANcRZ_bc&s=10",
         "alt": "Fall Out Boy",
-        "badges": ["POP-PUNK", "1996–2025", "AJAX, ON"],
+        "badges": ["POP-PUNK", "2001–PRESENTE", "WILMETTE, IL"],
         "history": [
-          "Desde Ajax, Canadá, Sum 41 irrumpió en 2001 con All Killer No Filler y el himno Fat Lip, mezclando pop-punk con guiños al metal.",
-          "La banda se despidió de los escenarios en 2025 tras casi tres décadas de carrera."
+          "Formados en Chicago en 2001, Fall Out Boy combinaron pop-punk, emo y energía teatral para convertirse en una de las bandas más influyentes del rock alternativo de los 2000.",
+          "Con From Under the Cork Tree y Infinity on High, la banda logró unir melodías enormes con letras muy personales, consolidando un estilo propio y duradero."
         ]
       },
       "albums": [
@@ -578,17 +578,17 @@
     {
       "id": "Simple Plan",
       "name": "Simple Plan",
-      "city": "AJAX, ON",
+      "city": "MONTREAL, QC",
       "records": 3,
       "image": "https://i.scdn.co/image/ab6761610000e5ebf8a6c76b696c37d752a6797e",
       "alt": "Simple Plan",
       "bio": {
         "image": "https://i.scdn.co/image/ab6761610000e5ebf8a6c76b696c37d752a6797e",
         "alt": "Simple Plan",
-        "badges": ["POP-PUNK", "1996–2025", "AJAX, ON"],
+        "badges": ["POP-PUNK", "1999–PRESENTE", "MONTREAL, QC"],
         "history": [
-          "Desde Ajax, Canadá, Sum 41 irrumpió en 2001 con All Killer No Filler y el himno Fat Lip, mezclando pop-punk con guiños al metal.",
-          "La banda se despidió de los escenarios en 2025 tras casi tres décadas de carrera."
+          "Originarios de Montreal, Canadá, Simple Plan surgió en 1999 como una banda de pop-punk con un enfoque muy directo, juvenil y cercano a sus seguidores.",
+          "Con No Pads, No Helmets...Just Balls y Still Not Getting Any, la banda encontró un gran eco entre el público joven y se convirtió en un referente del pop-punk de los 2000."
         ]
       },
       "albums": [
@@ -850,8 +850,8 @@
         "alt": "Caifanes",
         "badges": ["POP ROCK", "1986–PRESENTE", "GUADALAJARA, MX"],
         "history": [
-          "Formados en Guadalajara, México, Maná llevó el pop-rock en español a estadios de todo el mundo.",
-          "¿Dónde Jugarán los Niños? (1992) es uno de los discos en español más vendidos de la historia, con himnos como Oye Mi Amor y Vivir Sin Aire."
+          "Formados en Guadalajara, México, en 1986, Caifanes se consolidó como una de las bandas más importantes del rock en español, con un sonido que mezclaba rock, psicodelia, funk y raíces mexicanas.",
+          "Álbumes como Caifanes (1988), El diablito (1990), El silencio (1992) y El nervio del volcán (1994) dejaron algunos de los discos más emblemáticos del rock latinoamericano."
         ]
       },
       "albums": [
@@ -902,8 +902,8 @@
         "alt": "Los Prisioneros",
         "badges": ["POP ROCK", "1986–PRESENTE", "SANTIAGO, CL"],
         "history": [
-          "Formados en SANTIAGO, CHILE, Los Prisioneros llevó el pop-rock en español a estadios de todo el mundo.",
-          "¿Dónde Jugarán los Niños? (1992) es uno de los discos en español más vendidos de la historia, con himnos como Oye Mi Amor y Vivir Sin Aire."
+          "Formados en Santiago de Chile en 1979, Los Prisioneros se convirtieron en una de las bandas más innovadoras y provocadoras del rock en español, con una mezcla de post-punk, new wave y crítica social.",
+          "Obras como La voz de los '80 (1984), Pateando piedras (1986) y La cultura de la basura (1987) marcaron un antes y un después en la escena latinoamericana."
         ]
       },
       "albums": [
@@ -1155,10 +1155,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfzDNButlhXbtsbvf3LkKU2D3GqFEQOGYxENcrFXeDpC8NFRtMVeIetrn&s=10",
         "alt": "Ice Cube",
-        "badges": ["RAP", "1986–PRESENTE", "LOS ANGELES, CA"],
+        "badges": ["RAP", "1986–PRESENTE", "COMPTON, CA"],
         "history": [
-          "Desde Compton, California, Kendrick Lamar elevó el rap a literatura: good kid, m.A.A.d city (2012) narra su adolescencia como una película.",
-          "To Pimp a Butterfly (2015) fusionó jazz, funk y política, y en 2018 se convirtió en el primer artista de hip-hop en ganar el Premio Pulitzer de música, por DAMN."
+          "Nacido en Compton, Ice Cube pasó de ser una voz clave de N.W.A. a convertirse en uno de los pilares del rap West Coast, con un estilo directo y una crítica social muy marcada.",
+          "Álbumes como AmeriKKKa's Most Wanted (1990), Death Certificate (1991) y The Predator (1992) consolidaron su carrera como solista y su enorme influencia en el rap."
         ]
       },
       "albums": [
@@ -1207,10 +1207,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGQuKq8Jb008Mw41pWmrDaCpCuAnJg4JoVATwPDPsC-RqNJVhnWeXbRDg&s=10",
         "alt": "2Pac",
-        "badges": ["Hip Hop/Rap", "1991–1997", "LONG BEACH, CA"],
+        "badges": ["HIP HOP/RAP", "1991–1997", "LONG BEACH, CA"],
         "history": [
-          "Calvin Broadus debutó en The Chronic de Dr. Dre, y su primer disco, Doggystyle (1993), hizo historia con el flow más relajado y reconocible del g-funk de la costa oeste.",
-          "Tres décadas después sigue siendo un icono cultural que trasciende el hip-hop."
+          "Tupac Shakur, nacido en East Harlem y criado en Baltimore y Oakland, fue uno de los artistas más complejos y poderosos del rap, con un talento poético y una intensidad emocional únicas.",
+          "Con discos como 2Pacalypse Now (1991), Me Against the World (1995) y All Eyez on Me (1996), dejó una huella permanente en la cultura hip-hop y en la música popular."
         ]
       },
       "albums": [
@@ -1454,10 +1454,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC60_uVhHiXO2N-ZTpPMM0n8OTetzwD2e34Os4cIUDQgUY6d690MxDs4ZQ&s=10",
         "alt": "Lady Gaga",
-        "badges": ["POP / FUNK", "2005–presente", "NEW YORK, NY"],
+        "badges": ["POP / FUNK", "2005–PRESENTE", "NEW YORK, NY"],
         "history": [
-          "Genio de Minneapolis que tocaba prácticamente todos los instrumentos de sus discos, Prince fusionó funk, rock, pop y R&B como nadie.",
-          "Purple Rain (1984) vendió más de 25 millones de copias y su catálogo, tan vasto como legendario, siguió creciendo hasta su muerte en 2016."
+          "Stefani Germanotta nació en Nueva York y, bajo el nombre de Lady Gaga, desarrolló un lenguaje pop que combinó glamour, performance y electrónica con una identidad visual muy propia.",
+          "Con The Fame (2008), The Fame Monster (2009) y Born This Way (2011) se convirtió en una de las artistas más influyentes del pop contemporáneo."
         ]
       },
       "albums": [
@@ -1506,10 +1506,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvY5hnQh5AK-tJsFyBiWymnA2MCrLEClE626eh0oF_xI2GPkulmTBs6fU&s=10",
         "alt": "Bruno Mars",
-        "badges": ["POP / R&B", "1985–2012", "KINGMAN, AZ"],
+        "badges": ["POP / R&B", "1985–PRESENTE", "HONOLULU, HI"],
         "history": [
-          "Nacida en Kingman en una familia de voces legendarias, Britney Spears poseía una de las voces más extraordinarias de la música popular.",
-          "Su debut de 1985 y la banda sonora de The Bodyguard (1992), con I Will Always Love You, rompieron todos los récords para una artista femenina."
+          "Peter Gene Hernandez nació en Honolulu, Hawaii, y creció rodeado de música, pasando de los escenarios de su familia a convertirse en uno de los artistas más sólidos del pop y el R&B contemporáneo.",
+          "Con Doo-Wops & Hooligans (2010), Unorthodox Jukebox (2012) y 24K Magic (2016) conquistó el mundo con canciones como Just the Way You Are, Uptown Funk y That's What I Like."
         ]
       },
       "albums": [
@@ -1769,10 +1769,10 @@
       "bio": {
         "image": "https://media.gq.com.mx/photos/60a917e8ee4372271f0b93f3/1:1/w_2250,h_2250,c_limit/KISS%20(1).jpg",
         "alt": "Kiss",
-        "badges": ["ROCK & ROLL", "1962–1980", "NUEVA YORK, EE.UU."],
+        "badges": ["ROCK & ROLL", "1973–PRESENTE", "NUEVA YORK, EE.UU."],
         "history": [
-          "La banda de rock más longeva del mundo: desde 1962, Mick Jagger y Keith Richards destilan blues, rock y actitud.",
-          "Su racha de 1968 a 1972 —de Beggars Banquet a Exile on Main St.— es posiblemente la mejor secuencia de discos del rock."
+          "Formada en Nueva York en 1973, KISS se convirtió en una de las bandas de rock más teatrales y comerciales de la historia, con su maquillaje, su energía escénica y sus riffs de alto impacto.",
+          "Álbumes como Destroyer (1976), Alive! (1975) y Love Gun (1977) consolidaron su leyenda y dejaron una huella enorme en la cultura del rock."
         ]
       },
       "albums": [
@@ -1821,10 +1821,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYcbsOh8Sg58dDoO9H_WDz6388iO4Ph26c_0qULxjtMJbl1qE6V8XghpRA&s=10",
         "alt": "Aerosmith",
-        "badges": ["HARD ROCK", "1970–present", "NUEVA YORK, EE.UU."],
+        "badges": ["HARD ROCK", "1970–PRESENTE", "BOSTON, MA"],
         "history": [
-          "Jimmy Page reclutó a Robert Plant, John Paul Jones y John Bonham en 1968, y juntos inventaron buena parte del hard rock y el heavy metal.",
-          "Led Zeppelin IV (1971), con Stairway to Heaven, los convirtió en la banda más grande de los 70; se separaron en 1980 tras la muerte de Bonham."
+          "Formada en Boston en 1970, Aerosmith se convirtió en una de las bandas de hard rock más influyentes de Estados Unidos, mezclando blues, rock y una actitud feroz.",
+          "Toys in the Attic (1975), Rocks (1976) y Permanent Vacation (1987) les dieron himnos como Dream On y Dude (Looks Like a Lady)."
         ]
       },
       "albums": [
@@ -2084,10 +2084,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_eiznOQTVIIUPuk6ZdEWzsoSNaPya4vYwJpxnRGI-A&s",
         "alt": "Charlie Parker",
-        "badges": ["BEBOP", "1934–1993", "NUEVA YORK, NY"],
+        "badges": ["BEBOP", "1934–1955", "KANSAS CITY, MO"],
         "history": [
-          "Percusionista y compositor único, Charlie Parker construyó un lenguaje propio de silencios, ángulos y disonancias desde el Minton's de Nueva York.",
-          "Composiciones como Ornithology y Confirmation son estándares eternos; su excentricidad solo era comparable a su genio."
+          "Saxofonista y compositor estadounidense, Charlie Parker revolucionó el jazz con un lenguaje virtuoso y veloz que transformó el bebop.",
+          "Álbumes como Bird and Diz (1952) y Jazz at Massey Hall (1953) consolidaron su legado como uno de los grandes innovadores del jazz."
         ]
       },
       "albums": [
@@ -2400,10 +2400,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSXw_o1j9wkwkenXZzWNEELg6NFSpicUgQ1m6NyJxHY_-YBDwUINCEbWw&s=10",
         "alt": "Pantera",
-        "badges": ["GROOVE METAL", "1989–PRESENTE", "LOS ÁNGELES, CA"],
+        "badges": ["GROOVE METAL", "1981–PRESENTE", "ARLINGTON, TX"],
         "history": [
-          "Formados en Los Ángeles en 1981 y consolidados en San Francisco, Pantera llevó el groove metal al mainstream.",
-          "Far Beyond Driven (1992) es considerado por muchos el mejor disco de groove metal de la historia."
+          "Formada en Arlington, Texas, en 1981, Pantera pasó de ser una banda de metal agresivo a convertirse en una referencia del groove metal con un sonido más pesado y técnico.",
+          "Álbumes como Vulgar Display of Power (1992) y Far Beyond Driven (1994) los convirtieron en una de las bandas de metal más influyentes de los años 90."
         ]
       },
       "albums": [
@@ -2452,14 +2452,10 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3BRWAvCzwQMmkUgAIEHv-ii-_GCXLmV4tuCGldAEu6xdBAAgkfKCZr4&s=10",
         "alt": "Rage Against the Machine",
-        "badges": [
-          "RAP METAL",
-          "1991–PARCIALMENTE RETIRADO",
-          "LOS ÁNGELES, CA"
-        ],
+        "badges": ["RAP METAL", "1991–PRESENTE", "LOS ÁNGELES, CA"],
         "history": [
-          "Nacidos en el este de Londres en 1975, Iron Maiden definió el heavy metal británico con galopes de bajo, guitarras gemelas y la voz operística de Bruce Dickinson.",
-          "The Number of the Beast (1982) y su mascota Eddie los convirtieron en la banda de metal más querida del planeta."
+          "Formada en Los Ángeles en 1991, Rage Against the Machine unió hardcore, rap, metal y política en una propuesta única y muy poderosa.",
+          "Con su debut homónimo (1992) y Evil Empire (1996) se convirtieron en una de las bandas más revolucionarias del rock alternativo de los años 90."
         ]
       },
       "albums": [

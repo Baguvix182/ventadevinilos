@@ -20,6 +20,179 @@ async function loadJSON(file) {
   return response.json();
 }
 
+function slugify(text) {
+  return String(text)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getAlbumHref(band, album) {
+  const albumSlug = slugify(album.title);
+  return `album.html?band=${encodeURIComponent(band.id)}&album=${encodeURIComponent(albumSlug)}`;
+}
+
+function getAlbumTracklist(albumDataByBand, band, album) {
+  const bandTracks = albumDataByBand?.[band.id];
+  const albumKey = slugify(album.title);
+  if (bandTracks && Array.isArray(bandTracks[albumKey])) {
+    return bandTracks[albumKey];
+  }
+
+  return null;
+}
+
+function normalizeText(value) {
+  return String(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+let searchCatalogCache = null;
+
+async function getSearchCatalog() {
+  if (searchCatalogCache) return searchCatalogCache;
+
+  const bandsByGenre = await loadJSON("bands.json");
+  const bands = Object.values(bandsByGenre).flat();
+
+  searchCatalogCache = bands.flatMap((band) => [
+    {
+      type: "band",
+      title: band.name,
+      subtitle: band.city || "Banda",
+      href: `band.html?band=${encodeURIComponent(band.id)}`,
+    },
+    ...(band.albums || []).map((album) => ({
+      type: "album",
+      title: album.title,
+      subtitle: band.name,
+      href: `album.html?band=${encodeURIComponent(band.id)}&album=${encodeURIComponent(slugify(album.title))}`,
+    })),
+  ]);
+
+  return searchCatalogCache;
+}
+
+function createSearchPanel() {
+  const panel = document.createElement("div");
+  panel.id = "gsearch-panel";
+  panel.setAttribute("role", "listbox");
+  panel.style.cssText = [
+    "display: none",
+    "position: fixed",
+    "z-index: 2000",
+    "top: 0",
+    "left: 0",
+    "width: min(360px, calc(100vw - 2rem))",
+    "max-height: 320px",
+    "overflow: auto",
+    "background: #fff",
+    "border: 1px solid #e0e0e0",
+    "border-radius: 12px",
+    "box-shadow: 0 16px 40px rgba(0,0,0,0.16)",
+    "padding: 0.5rem",
+  ].join(";");
+  document.body.appendChild(panel);
+  return panel;
+}
+
+function positionSearchPanel(panel, input) {
+  const rect = input.getBoundingClientRect();
+  panel.style.top = `${Math.min(rect.bottom + 8, window.innerHeight - 220)}px`;
+  panel.style.left = `${Math.max(12, rect.left)}px`;
+  panel.style.width = `${Math.max(280, rect.width)}px`;
+}
+
+function hideSearchPanel(panel) {
+  panel.style.display = "none";
+  panel.innerHTML = "";
+}
+
+async function handleSearchInput(panel, input) {
+  const query = input.value.trim();
+
+  if (!query) {
+    hideSearchPanel(panel);
+    return;
+  }
+
+  const catalog = await getSearchCatalog();
+  const normalizedQuery = normalizeText(query);
+  const results = catalog.filter((item) => {
+    const haystack = `${item.title} ${item.subtitle}`;
+    return normalizeText(haystack).includes(normalizedQuery);
+  });
+
+  if (!results.length) {
+    panel.innerHTML = `
+      <div style="padding: 0.75rem 0.85rem; color: #666; font-size: 0.95rem;">
+        No se encontraron resultados para “${query}”.
+      </div>`;
+    positionSearchPanel(panel, input);
+    panel.style.display = "block";
+    return;
+  }
+
+  const markup = results
+    .slice(0, 8)
+    .map(
+      (item) => `
+        <a href="${item.href}" style="display:block; text-decoration:none; color:inherit; padding:0.75rem 0.85rem; border-radius:10px; margin-bottom:0.35rem; background:#fafafa;" data-search-result>
+          <div style="font-size:0.92rem; font-weight:700; text-transform:uppercase; color:#111;">${item.title}</div>
+          <div style="font-size:0.8rem; color:#777; margin-top:0.2rem;">${item.type === "band" ? "BANDA" : "ÁLBUM"} · ${item.subtitle}</div>
+        </a>`,
+    )
+    .join("");
+
+  panel.innerHTML = markup;
+  positionSearchPanel(panel, input);
+  panel.style.display = "block";
+}
+
+function attachSearchBehavior() {
+  const searchInputs = Array.from(
+    document.querySelectorAll(".search-bar input"),
+  );
+  if (!searchInputs.length) return;
+
+  const panel = createSearchPanel();
+
+  const closePanel = () => hideSearchPanel(panel);
+
+  searchInputs.forEach((input) => {
+    input.addEventListener("input", () => {
+      handleSearchInput(panel, input);
+    });
+
+    input.addEventListener("focus", () => {
+      if (input.value.trim()) {
+        handleSearchInput(panel, input);
+      }
+    });
+
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closePanel();
+      }
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideSearch = Array.from(searchInputs).some((input) =>
+      input.contains(event.target),
+    );
+    const clickedInsideResults = panel.contains(event.target);
+
+    if (!clickedInsideSearch && !clickedInsideResults) {
+      closePanel();
+    }
+  });
+}
+
 /* ===== TEMPLATES ===== */
 
 const genreCard = (genre) => `
@@ -67,17 +240,21 @@ const bandCard = (band, index) => `
     </div>
   </a>`;
 
-const albumCard = (album, index) => `
-  <article class="album-card ${album.featured ? "active-card " : ""}${index % 2 === 0 ? "tilt-right" : "tilt-left"}">
-    <div class="album-image-wrapper">
-      <img src="${album.image}" alt="${album.alt}" />
-    </div>
-    <div class="album-info">
-      <h3 class="album-title">${album.title}</h3>
-      <span class="album-meta">${album.year} &middot; ${album.format}</span>
-      <p class="album-price">$${album.price.toFixed(2)}</p>
-    </div>
-  </article>`;
+const albumCard = (band, album, index) => {
+  const card = `
+    <article class="album-card ${album.featured ? "active-card " : ""}${index % 2 === 0 ? "tilt-right" : "tilt-left"}">
+      <div class="album-image-wrapper">
+        <img src="${album.image}" alt="${album.alt}" />
+      </div>
+      <div class="album-info">
+        <h3 class="album-title">${album.title}</h3>
+        <span class="album-meta">${album.year} &middot; ${album.format}</span>
+        <p class="album-price">$${album.price.toFixed(2)}</p>
+      </div>
+    </article>`;
+
+  return `<a href="${getAlbumHref(band, album)}" style="text-decoration: none; color: inherit; display: block">${card}</a>`;
+};
 
 const bandBio = (band) => `
   <div class="bio-grid">
@@ -103,6 +280,83 @@ const bandBio = (band) => `
       </div>
     </div>
   </div>`;
+
+const albumDetail = (band, album, tracklist = null) => {
+  const songs =
+    Array.isArray(tracklist) && tracklist.length > 0
+      ? tracklist
+      : [
+          `${album.title} - Track 1`,
+          `${album.title} - Track 2`,
+          `${album.title} - Track 3`,
+          `${album.title} - Track 4`,
+        ];
+
+  const half = Math.ceil(songs.length / 2);
+  const sideA = songs.slice(0, half);
+  const sideB = songs.slice(half);
+
+  const renderTrackColumn = (tracks, sideLabel) =>
+    `<div class="track-col">${tracks
+      .map((track, index) => {
+        const number = `${sideLabel}${index + 1}`;
+        const title = typeof track === "string" ? track : track.title;
+        const duration =
+          typeof track === "string" ? "--:--" : (track.duration ?? "--:--");
+        return `
+          <div class="track-item">
+            <span class="track-number">${number}</span>
+            <span class="track-name">${title}</span>
+            <span class="track-duration">${duration}</span>
+          </div>`;
+      })
+      .join("")}</div>`;
+
+  return `
+    <main class="product-main">
+      <div class="product-container">
+        <div class="product-gallery">
+          <div class="main-image-wrapper">
+            <img src="${album.image}" alt="${album.alt}" class="main-image" />
+            <div class="pressing-badge">${album.format}</div>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="artist-name">${band.name}</div>
+          <h1 class="album-title">${album.title}</h1>
+
+          <div class="tags-row">
+            <span class="tag-box">${album.year}</span>
+            <span class="tag-box">${album.format}</span>
+            <span class="tag-box">VINILO</span>
+          </div>
+
+          <div class="price-row">
+            <span class="price-amount">$${album.price.toFixed(2)}</span>
+            <span class="availability-text">DISPONIBLE — ENVÍO EN 24H</span>
+          </div>
+
+          <div class="actions-row">
+            <button class="add-to-cart-btn">AÑADIR AL CARRITO</button>
+            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="#000" stroke-width="2" fill="none" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="tracklist-section">
+            <h2 class="tracklist-title">TRACKLIST – SIDE A / SIDE B</h2>
+            <div class="tracklist-grid">
+              ${renderTrackColumn(sideA, "A")}
+              ${renderTrackColumn(sideB, "B")}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>`;
+};
 
 const notFound = (mensaje) => `
   <p style="padding: 2rem 0; font-weight: 600">
@@ -150,7 +404,43 @@ async function renderBandPage(bioEl, albumsEl) {
 
   document.title = `GROOVESTORE - ${band.name}`;
   if (bioEl) bioEl.innerHTML = bandBio(band);
-  if (albumsEl) albumsEl.innerHTML = band.albums.map(albumCard).join("");
+  if (albumsEl)
+    albumsEl.innerHTML = band.albums
+      .map((album, index) => albumCard(band, album, index))
+      .join("");
+}
+
+async function renderAlbumPage(detailEl) {
+  const [bandsByGenre, albumTracks] = await Promise.all([
+    loadJSON("bands.json"),
+    loadJSON("album-tracks.json"),
+  ]);
+
+  const band = Object.values(bandsByGenre)
+    .flat()
+    .find((b) => b.id === params.get("band"));
+
+  if (!band) {
+    detailEl.innerHTML = notFound("Álbum no encontrado.");
+    return;
+  }
+
+  const requestedAlbum = params.get("album") || "";
+  const album = band.albums.find(
+    (item) =>
+      slugify(item.title) === slugify(requestedAlbum) ||
+      item.title.toUpperCase() === requestedAlbum.toUpperCase(),
+  );
+
+  if (!album) {
+    detailEl.innerHTML = notFound("Álbum no encontrado.");
+    return;
+  }
+
+  const tracklist = getAlbumTracklist(albumTracks, band, album);
+
+  document.title = `GROOVESTORE - ${band.name} - ${album.title}`;
+  if (detailEl) detailEl.innerHTML = albumDetail(band, album, tracklist);
 }
 
 /* ===== INIT ===== */
@@ -172,6 +462,7 @@ async function init() {
   const genreBandsEl = document.querySelector("[data-genre-bands]");
   const bandBioEl = document.querySelector("[data-band-bio]");
   const bandAlbumsEl = document.querySelector("[data-band-albums]");
+  const albumDetailEl = document.querySelector("[data-album-detail]");
 
   const containers = [
     genresGrid,
@@ -179,6 +470,7 @@ async function init() {
     genreBandsEl,
     bandBioEl,
     bandAlbumsEl,
+    albumDetailEl,
   ].filter(Boolean);
   if (containers.length === 0) return;
 
@@ -188,6 +480,8 @@ async function init() {
       await renderGenrePage(genreHeroEl, genreBandsEl);
     if (bandBioEl || bandAlbumsEl)
       await renderBandPage(bandBioEl, bandAlbumsEl);
+    if (albumDetailEl) await renderAlbumPage(albumDetailEl);
+    attachSearchBehavior();
   } catch (error) {
     console.error("GROOVE STORE: no se pudieron cargar los datos", error);
     renderError(containers);

@@ -1,0 +1,1648 @@
+{
+  "nirvana": {
+    "nevermind": [
+      { "title": "Smells Like Teen Spirit", "duration": "5:01" },
+      { "title": "In Bloom", "duration": "4:14" },
+      { "title": "Come as You Are", "duration": "3:39" },
+      { "title": "Breed", "duration": "3:03" },
+      { "title": "Lithium", "duration": "4:17" },
+      { "title": "Polly", "duration": "2:57" },
+      { "title": "Territorial Pissings", "duration": "2:22" },
+      { "title": "Drain You", "duration": "3:43" },
+      { "title": "Lounge Act", "duration": "2:36" },
+      { "title": "Stay Away", "duration": "3:32" },
+      { "title": "On a Plain", "duration": "3:16" },
+      { "title": "Something in the Way", "duration": "3:52" }
+    ],
+    "bleach": [
+      { "title": "Blew", "duration": "4:54" },
+      { "title": "Floyd the Barber", "duration": "3:10" },
+      { "title": "About a Girl", "duration": "2:48" },
+      { "title": "School", "duration": "3:42" },
+      { "title": "Love Buzz", "duration": "3:35" },
+      { "title": "Paper Cuts", "duration": "4:06" },
+      { "title": "Negative Creep", "duration": "2:56" },
+      { "title": "Scoff", "duration": "4:16" },
+      { "title": "D-7", "duration": "3:44" },
+      { "title": "Mr. Moustache", "duration": "3:26" },
+      { "title": "Sifting", "duration": "3:58" },
+      { "title": "Big Cheese", "duration": "3:38" },
+      { "title": "Downer", "duration": "1:43" }
+    ],
+    "in-utero": [
+      { "title": "Serve the Servants", "duration": "3:20" },
+      { "title": "Scentless Apprentice", "duration": "3:48" },
+      { "title": "Heart-Shaped Box", "duration": "4:41" },
+      { "title": "Rape Me", "duration": "2:50" },
+      {
+        "title": "Frances Farmer Will Have Her Revenge on Seattle",
+        "duration": "4:28"
+      },
+      { "title": "Dumb", "duration": "2:32" },
+      { "title": "Very Ape", "duration": "1:56" },
+      { "title": "Milk", "duration": "3:54" },
+      { "title": "Pennyroyal Tea", "duration": "3:37" },
+      { "title": "Radio Friendly Unit Shifter", "duration": "4:51" },
+      { "title": "Touhy", "duration": "3:27" },
+      { "title": "All Apologies", "duration": "4:23" }
+    ],
+    "mtv-unplugged-in-new-york": [
+      { "title": "About a Girl", "duration": "3:35" },
+      { "title": "Come as You Are", "duration": "4:13" },
+      { "title": "Jesus Doesn’t Want Me for a Sunbeam", "duration": "4:23" },
+      { "title": "The Man Who Sold the World", "duration": "4:24" },
+      { "title": "Pennyroyal Tea", "duration": "3:40" },
+      { "title": "Dumb", "duration": "2:52" },
+      { "title": "Polly", "duration": "3:16" },
+      { "title": "On a Plain", "duration": "4:10" },
+      { "title": "All Apologies", "duration": "4:57" },
+      { "title": "Where Did You Sleep Last Night", "duration": "5:08" }
+    ]
+  },
+  "red-hot-chili-peppers": {
+    "blood-sugar-sex-magik": [
+      { "title": "Blood Sugar Sex Magik", "duration": "4:43" },
+      { "title": "Give It Away", "duration": "4:43" },
+      { "title": "Under the Bridge", "duration": "4:24" },
+      { "title": "Naked in the Rain", "duration": "4:26" },
+      { "title": "Apache Rose Peacock", "duration": "3:43" },
+      { "title": "The Greeting Song", "duration": "3:43" },
+      { "title": "My Lovely Man", "duration": "4:32" },
+      { "title": "Suck My Kiss", "duration": "3:37" },
+      { "title": "If You Have to Ask", "duration": "3:52" },
+      { "title": "Breaking the Girl", "duration": "4:55" },
+      { "title": "Funky Crime", "duration": "5:09" },
+      { "title": "Sir Psycho Sexy", "duration": "8:28" },
+      { "title": "They’re Red Hot", "duration": "3:20" }
+    ],
+    "californication": [
+      { "title": "Around the World", "duration": "3:58" },
+      { "title": "Parallel Universe", "duration": "4:29" },
+      { "title": "Scar Tissue", "duration": "3:37" },
+      { "title": "Otherside", "duration": "4:15" },
+      { "title": "Get on Top", "duration": "3:20" },
+      { "title": "Californication", "duration": "5:21" },
+      { "title": "Easily", "duration": "3:51" },
+      { "title": "Porcelain", "duration": "2:43" },
+      { "title": "This Velvet Glove", "duration": "3:45" },
+      { "title": "I Could Have Lied", "duration": "4:11" },
+      { "title": "Road Trippin", "duration": "3:25" }
+    ],
+    "by-the-way": [
+      { "title": "By the Way", "duration": "3:37" },
+      { "title": "The Zephyr Song", "duration": "3:52" },
+      { "title": "Can’t Stop", "duration": "3:52" },
+      { "title": "Dosed", "duration": "5:11" },
+      { "title": "Universally Speaking", "duration": "4:19" },
+      { "title": "This Is the Place", "duration": "4:18" },
+      { "title": "Midlife Crisis", "duration": "4:23" },
+      { "title": "Throw Away Your Television", "duration": "3:44" },
+      { "title": "I Could Die for You", "duration": "4:24" },
+      { "title": "Minor Thing", "duration": "3:37" },
+      { "title": "Warm Tape", "duration": "5:11" },
+      { "title": "Venice Queen", "duration": "4:44" }
+    ],
+    "stadium-arcadium": [
+      { "title": "Dani California", "duration": "4:42" },
+      { "title": "Snow (Hey Oh)", "duration": "5:35" },
+      { "title": "Charlie", "duration": "4:24" },
+      { "title": "Stadium Arcadium", "duration": "5:15" },
+      { "title": "Hump de Bump", "duration": "3:32" },
+      { "title": "She’s Only 18", "duration": "3:24" },
+      { "title": "Slow Cheetah", "duration": "5:21" },
+      { "title": "Torture Me", "duration": "3:44" },
+      { "title": "Strip My Mind", "duration": "4:23" },
+      { "title": "Especially in Michigan", "duration": "4:00" },
+      { "title": "Warlocks", "duration": "3:24" },
+      { "title": "C’mon Girl", "duration": "3:36" },
+      { "title": "Wet Sand", "duration": "5:09" }
+    ]
+  },
+  "linkin-park": {
+    "hybrid-theory": [
+      { "title": "Papercut", "duration": "3:04" },
+      { "title": "One Step Closer", "duration": "2:37" },
+      { "title": "With You", "duration": "3:23" },
+      { "title": "Points of Authority", "duration": "3:20" },
+      { "title": "Crawling", "duration": "3:28" },
+      { "title": "Runaway", "duration": "3:04" },
+      { "title": "By Myself", "duration": "3:10" },
+      { "title": "In the End", "duration": "3:36" },
+      { "title": "A Place for My Head", "duration": "3:44" },
+      { "title": "Forgotten", "duration": "3:20" },
+      { "title": "Cure for the Itch", "duration": "2:37" },
+      { "title": "Pushing Me Away", "duration": "3:11" }
+    ],
+    "meteora": [
+      { "title": "Foreword", "duration": "0:13" },
+      { "title": "Don’t Stay", "duration": "3:44" },
+      { "title": "Somewhere I Belong", "duration": "3:34" },
+      { "title": "Lying from You", "duration": "3:23" },
+      { "title": "Hit the Floor", "duration": "3:14" },
+      { "title": "Easier to Run", "duration": "3:24" },
+      { "title": "Faint", "duration": "2:42" },
+      { "title": "Figure.09", "duration": "3:17" },
+      { "title": "Breaking the Habit", "duration": "3:16" },
+      { "title": "From the Inside", "duration": "2:53" },
+      { "title": "Nobody’s Listening", "duration": "2:58" },
+      { "title": "Session", "duration": "2:24" }
+    ],
+    "minutes-to-midnight": [
+      { "title": "Wake", "duration": "1:40" },
+      { "title": "Given Up", "duration": "3:09" },
+      { "title": "Leave Out All the Rest", "duration": "3:29" },
+      { "title": "Bleed It Out", "duration": "2:44" },
+      { "title": "Shadow of the Day", "duration": "4:49" },
+      { "title": "What I’ve Done", "duration": "3:25" },
+      { "title": "Hands Held High", "duration": "3:53" },
+      { "title": "No More Sorrow", "duration": "3:41" },
+      { "title": "Valentine’s Day", "duration": "3:16" },
+      { "title": "In Between", "duration": "3:20" },
+      { "title": "In Pieces", "duration": "3:38" },
+      { "title": "The Little Things Give You Away", "duration": "3:43" }
+    ],
+    "a-thousand-suns": [
+      { "title": "The Requiem", "duration": "1:52" },
+      { "title": "The Radiance", "duration": "4:10" },
+      { "title": "Jornada del Muerto", "duration": "1:34" },
+      { "title": "Waiting for the End", "duration": "3:51" },
+      { "title": "Blackout", "duration": "4:40" },
+      { "title": "Wretches and Kings", "duration": "4:55" },
+      { "title": "Wisdom, Justice, and Love", "duration": "4:40" },
+      { "title": "Iridescent", "duration": "4:56" },
+      { "title": "Burning in the Skies", "duration": "4:12" },
+      { "title": "Empty Spaces", "duration": "0:18" },
+      { "title": "When They Come for Me", "duration": "4:55" },
+      { "title": "Robot Boy", "duration": "4:51" },
+      { "title": "The Catalyst", "duration": "3:35" },
+      { "title": "The Messenger", "duration": "3:24" }
+    ]
+  },
+  "metallica": {
+    "ride-the-lightning": [
+      { "title": "Fight Fire with Fire", "duration": "4:44" },
+      { "title": "Ride the Lightning", "duration": "6:36" },
+      { "title": "For Whom the Bell Tolls", "duration": "5:10" },
+      { "title": "Fade to Black", "duration": "6:57" },
+      { "title": "Trapped Under Ice", "duration": "4:04" },
+      { "title": "Escape", "duration": "4:24" },
+      { "title": "Creeping Death", "duration": "6:36" },
+      { "title": "The Call of Ktulu", "duration": "8:53" }
+    ],
+    "master-of-puppets": [
+      { "title": "Battery", "duration": "5:13" },
+      { "title": "Master of Puppets", "duration": "8:36" },
+      { "title": "The Thing That Should Not Be", "duration": "6:36" },
+      { "title": "Welcome Home (Sanitarium)", "duration": "6:27" },
+      { "title": "Disposable Heroes", "duration": "8:17" },
+      { "title": "Leper Messiah", "duration": "5:40" },
+      { "title": "Damage, Inc.", "duration": "5:29" }
+    ],
+    "and-justice-for-all": [
+      { "title": "Blackened", "duration": "6:41" },
+      { "title": "...And Justice for All", "duration": "9:47" },
+      { "title": "Eye of the Beholder", "duration": "6:50" },
+      { "title": "One", "duration": "7:27" },
+      { "title": "The Shortest Straw", "duration": "6:35" },
+      { "title": "Harvester of Sorrow", "duration": "5:45" },
+      { "title": "The Frayed Ends of Sanity", "duration": "7:43" },
+      { "title": "To Live Is to Die", "duration": "7:48" },
+      { "title": "Dyers Eve", "duration": "5:13" }
+    ],
+    "metallica-black-album": [
+      { "title": "Enter Sandman", "duration": "5:31" },
+      { "title": "Sad but True", "duration": "5:24" },
+      { "title": "Holier Than Thou", "duration": "3:48" },
+      { "title": "The Unforgiven", "duration": "6:28" },
+      { "title": "Wherever I May Roam", "duration": "6:44" },
+      { "title": "Don’t Tread on Me", "duration": "4:00" },
+      { "title": "Through the Never", "duration": "4:00" },
+      { "title": "Nothing Else Matters", "duration": "6:28" },
+      { "title": "Of Wolf and Man", "duration": "4:17" },
+      { "title": "The God That Failed", "duration": "5:08" },
+      { "title": "My Friend of Misery", "duration": "6:49" },
+      { "title": "The Struggle Within", "duration": "3:53" }
+    ]
+  },
+  "the-beatles": {
+    "revolver": [
+      { "title": "Taxman", "duration": "2:39" },
+      { "title": "Eleanor Rigby", "duration": "2:06" },
+      { "title": "I’m Only Sleeping", "duration": "3:00" },
+      { "title": "Love You To", "duration": "2:58" },
+      { "title": "Here, There and Everywhere", "duration": "2:25" },
+      { "title": "Yellow Submarine", "duration": "2:40" },
+      { "title": "Good Day Sunshine", "duration": "2:09" },
+      { "title": "And I Love Her", "duration": "2:29" },
+      { "title": "If I Needed Someone", "duration": "2:44" },
+      { "title": "Tomorrow Never Knows", "duration": "2:56" }
+    ],
+    "sgt-peppers-lonely-hearts-club-band": [
+      { "title": "Sgt. Pepper’s Lonely Hearts Club Band", "duration": "2:02" },
+      { "title": "With a Little Help from My Friends", "duration": "2:44" },
+      { "title": "Lucy in the Sky with Diamonds", "duration": "3:28" },
+      { "title": "Getting Better", "duration": "2:48" },
+      { "title": "Fixing a Hole", "duration": "2:36" },
+      { "title": "She’s Leaving Home", "duration": "3:25" },
+      { "title": "Being for the Benefit of Mr. Kite!", "duration": "2:37" },
+      { "title": "Within You Without You", "duration": "5:05" },
+      { "title": "When I’m Sixty-Four", "duration": "2:44" },
+      { "title": "Lovely Rita", "duration": "2:42" },
+      { "title": "Good Morning Good Morning", "duration": "2:41" },
+      {
+        "title": "Sgt. Pepper’s Lonely Hearts Club Band (Reprise)",
+        "duration": "1:18"
+      },
+      { "title": "A Day in the Life", "duration": "5:33" }
+    ],
+    "the-beatles-white-album": [
+      { "title": "Back in the U.S.S.R.", "duration": "2:43" },
+      { "title": "Dear Prudence", "duration": "3:56" },
+      { "title": "Glass Onion", "duration": "2:17" },
+      { "title": "Ob-La-Di, Ob-La-Da", "duration": "3:08" },
+      { "title": "Wild Honey Pie", "duration": "0:52" },
+      { "title": "The Continuing Story of Bungalow Bill", "duration": "3:13" },
+      { "title": "While My Guitar Gently Weeps", "duration": "4:45" },
+      { "title": "Happiness Is a Warm Gun", "duration": "2:45" },
+      { "title": "Martha My Dear", "duration": "2:28" },
+      { "title": "I’m So Tired", "duration": "2:03" },
+      { "title": "Blackbird", "duration": "2:18" },
+      { "title": "Piggies", "duration": "2:03" },
+      { "title": "Rocky Raccoon", "duration": "3:33" },
+      { "title": "Don’t Pass Me By", "duration": "3:50" },
+      { "title": "Why Don’t We Do It in the Road?", "duration": "1:43" },
+      { "title": "I Will", "duration": "1:46" },
+      { "title": "Julia", "duration": "2:54" },
+      { "title": "Birthday", "duration": "2:42" },
+      { "title": "Yer Blues", "duration": "4:01" },
+      { "title": "Mother Nature’s Son", "duration": "2:48" },
+      {
+        "title": "Everybody’s Got Something to Hide Except Me and Me",
+        "duration": "2:45"
+      },
+      { "title": "Sexy Sadie", "duration": "3:15" },
+      { "title": "Helter Skelter", "duration": "4:30" },
+      { "title": "Long, Long, Long", "duration": "3:06" }
+    ],
+    "abbey-road": [
+      { "title": "Come Together", "duration": "4:19" },
+      { "title": "Something", "duration": "3:02" },
+      { "title": "Maxwell’s Silver Hammer", "duration": "3:27" },
+      { "title": "Oh! Darling", "duration": "3:27" },
+      { "title": "Octopus’s Garden", "duration": "2:51" },
+      { "title": "I Want to Tell You", "duration": "2:29" },
+      { "title": "Here Comes the Sun", "duration": "3:05" },
+      { "title": "Because", "duration": "2:46" },
+      { "title": "You Never Give Me Your Money", "duration": "4:02" },
+      { "title": "Sun King", "duration": "2:26" },
+      { "title": "Mean Mr. Mustard", "duration": "1:06" },
+      { "title": "Polythene Pam", "duration": "1:12" },
+      {
+        "title": "She Came in Through the Bathroom Window",
+        "duration": "1:57"
+      },
+      { "title": "Golden Slumbers", "duration": "1:31" },
+      { "title": "Carry That Weight", "duration": "3:57" },
+      { "title": "The End", "duration": "2:23" },
+      { "title": "Her Majesty", "duration": "0:23" }
+    ]
+  },
+  "Foster the people": {
+    "torches": [
+      { "title": "Pumped Up Kicks", "duration": "3:40" },
+      { "title": "Helena Beat", "duration": "3:39" },
+      { "title": "Call It What You Want", "duration": "3:18" },
+      { "title": "Don’t Stop", "duration": "3:24" },
+      { "title": "Waste", "duration": "3:20" },
+      { "title": "Push It", "duration": "3:18" },
+      { "title": "I Would Do Anything for You", "duration": "3:15" },
+      { "title": "Life on the Nickel", "duration": "3:10" },
+      { "title": "Miss You", "duration": "3:24" },
+      { "title": "Pumped Up Kicks (Reprise)", "duration": "3:37" },
+      { "title": "The Things We Do", "duration": "3:18" }
+    ],
+    "supermodel": [
+      { "title": "Supermodel", "duration": "3:36" },
+      { "title": "Ask Yourself", "duration": "3:16" },
+      { "title": "Coming of Age", "duration": "3:12" },
+      { "title": "Fire Escape", "duration": "3:36" },
+      { "title": "Best Friend", "duration": "3:27" },
+      { "title": "Pseudofriend", "duration": "3:31" },
+      { "title": "The Truth", "duration": "3:16" },
+      { "title": "Are You What You Want to Be?", "duration": "3:51" },
+      { "title": "Goats in Trees", "duration": "3:37" },
+      { "title": "Never Really Loved Me", "duration": "3:58" }
+    ],
+    "paradise-state-of-mind": [
+      { "title": "Take It Back", "duration": "3:16" },
+      { "title": "Anything Could Happen", "duration": "3:17" },
+      { "title": "Paradise State of Mind", "duration": "4:09" },
+      { "title": "The Things We Do", "duration": "3:18" },
+      { "title": "The New Sound", "duration": "3:24" },
+      { "title": "Lonesome", "duration": "3:32" },
+      { "title": "Soul", "duration": "3:45" },
+      { "title": "Wish I Had a House", "duration": "3:06" },
+      { "title": "The Weight of the World", "duration": "3:22" },
+      { "title": "Dark Side of Paradise", "duration": "3:35" }
+    ],
+    "sacred-hearts-club": [
+      { "title": "Wish I Had a House", "duration": "3:06" },
+      { "title": "Lonesome", "duration": "3:32" },
+      { "title": "Chai", "duration": "3:11" },
+      { "title": "Soul", "duration": "3:45" },
+      { "title": "The Things We Do", "duration": "3:18" },
+      { "title": "Sunlight", "duration": "3:21" },
+      { "title": "New Sound", "duration": "3:29" },
+      { "title": "The Heart", "duration": "3:14" },
+      { "title": "The New World", "duration": "3:24" },
+      { "title": "Dancing with Myself", "duration": "3:26" }
+    ]
+  },
+  "soundgarden": {
+    "badmotorfinger": [
+      { "title": "Rusty Cage", "duration": "4:25" },
+      { "title": "Outshined", "duration": "5:11" },
+      { "title": "Slaves & Bulldozers", "duration": "6:56" },
+      { "title": "Jesus Christ Pose", "duration": "5:51" },
+      { "title": "Faceplate", "duration": "3:29" },
+      { "title": "Somewhere", "duration": "4:24" },
+      { "title": "Searching with My Good Eye Closed", "duration": "5:14" },
+      { "title": "Room a Thousand Years Wide", "duration": "4:20" }
+    ],
+    "superunknown": [
+      { "title": "Spoonman", "duration": "4:06" },
+      { "title": "Black Hole Sun", "duration": "5:18" },
+      { "title": "Fell on Black Days", "duration": "4:42" },
+      { "title": "My Wave", "duration": "5:12" },
+      { "title": "Limo Wreck", "duration": "5:47" },
+      { "title": "Fresh Tendrils", "duration": "4:16" },
+      { "title": "Head Down", "duration": "6:08" },
+      { "title": "Like Suicide", "duration": "6:31" }
+    ],
+    "down-on-the-upside": [
+      { "title": "Burden in My Hand", "duration": "4:57" },
+      { "title": "Blow Up the Outside World", "duration": "5:49" },
+      { "title": "Ty Cobb", "duration": "3:33" },
+      { "title": "Pretty Noose", "duration": "4:50" },
+      { "title": "Zero Chance", "duration": "5:10" },
+      { "title": "Dusty", "duration": "5:38" },
+      { "title": "The Day I Tried to Live", "duration": "5:14" },
+      { "title": "Boot Camp", "duration": "4:22" }
+    ],
+    "king-animal": [
+      { "title": "Been Away Too Long", "duration": "4:18" },
+      { "title": "By Crooked Steps", "duration": "3:30" },
+      { "title": "Halfway There", "duration": "3:54" },
+      { "title": "Blood on the Valley Floor", "duration": "4:52" },
+      { "title": "Worse Comes to Worst", "duration": "4:18" },
+      { "title": "A Thousand Days", "duration": "4:46" },
+      { "title": "Bones of Birds", "duration": "3:02" },
+      { "title": "Taree", "duration": "4:19" }
+    ]
+  },
+  "the-smashing-pumpkins": {
+    "gish": [
+      { "title": "I Am One", "duration": "4:13" },
+      { "title": "Rhinoceros", "duration": "4:32" },
+      { "title": "Daydream", "duration": "4:16" },
+      { "title": "Siva", "duration": "4:53" },
+      { "title": "Bespell Emerald", "duration": "4:20" },
+      { "title": "Luna", "duration": "4:15" },
+      { "title": "Drown", "duration": "4:26" },
+      { "title": "Suffer", "duration": "4:45" }
+    ],
+    "siamese-dream": [
+      { "title": "Cherub Rock", "duration": "4:58" },
+      { "title": "Today", "duration": "3:21" },
+      { "title": "Disarm", "duration": "4:34" },
+      { "title": "Rocket", "duration": "4:04" },
+      { "title": "Hummer", "duration": "3:55" },
+      { "title": "Soma", "duration": "4:18" },
+      { "title": "Geek U.S.A.", "duration": "5:13" },
+      { "title": "Mayonaise", "duration": "4:49" }
+    ],
+    "mellon-collie-and-the-infinite-sadness": [
+      { "title": "Tonight, Tonight", "duration": "4:11" },
+      { "title": "Bullet with Butterfly Wings", "duration": "4:00" },
+      { "title": "Thirty-Three", "duration": "4:12" },
+      { "title": "Lily", "duration": "4:07" },
+      { "title": "To Forgive", "duration": "4:17" },
+      { "title": "Galapogos", "duration": "4:46" },
+      { "title": "1979", "duration": "3:31" },
+      { "title": "Cupid de Locke", "duration": "4:50" }
+    ],
+    "ador": [
+      { "title": "Ava Adore", "duration": "4:20" },
+      { "title": "For Martha", "duration": "3:35" },
+      { "title": "To Sheila", "duration": "4:40" },
+      { "title": "Perfect", "duration": "3:21" },
+      { "title": "Tear", "duration": "4:20" },
+      { "title": "The Boy with the Arab Strap", "duration": "4:13" },
+      { "title": "The Bells", "duration": "4:07" },
+      { "title": "Summer", "duration": "4:27" }
+    ]
+  },
+  "blink-182": {
+    "dude-ranch": [
+      { "title": "Pathetic", "duration": "2:29" },
+      { "title": "Dammit", "duration": "2:44" },
+      { "title": "Bored to Death", "duration": "2:43" },
+      { "title": "Apple Shampoo", "duration": "3:13" },
+      { "title": "Dick Lips", "duration": "2:58" },
+      { "title": "The Christman Song", "duration": "2:24" },
+      { "title": "Enthused", "duration": "2:51" },
+      { "title": "Freaky Styley", "duration": "3:00" }
+    ],
+    "enema-of-the-state": [
+      { "title": "All the Small Things", "duration": "2:48" },
+      { "title": "What’s My Age Again?", "duration": "2:28" },
+      { "title": "Adam’s Song", "duration": "4:09" },
+      { "title": "The Family Mascot", "duration": "3:04" },
+      { "title": "The Casualty of the Cool", "duration": "3:18" },
+      { "title": "Anthem", "duration": "2:59" },
+      { "title": "Guitars vs. Stereos", "duration": "2:30" },
+      { "title": "Wheatus", "duration": "2:35" }
+    ],
+    "take-off-your-pants-and-jacket": [
+      { "title": "The Rock Show", "duration": "2:51" },
+      { "title": "First Date", "duration": "2:51" },
+      { "title": "Stay Together for the Kids", "duration": "3:16" },
+      { "title": "A New Hope", "duration": "3:15" },
+      { "title": "Roller Coaster", "duration": "3:15" },
+      { "title": "The Best Around", "duration": "2:41" },
+      { "title": "Please Take Me Home", "duration": "3:08" },
+      { "title": "Shut Up", "duration": "2:16" }
+    ],
+    "blink-182": [
+      { "title": "Feeling This", "duration": "2:34" },
+      { "title": "I Miss You", "duration": "3:46" },
+      { "title": "Always", "duration": "4:00" },
+      { "title": "Down", "duration": "3:05" },
+      { "title": "Obvious", "duration": "2:43" },
+      { "title": "Not Now", "duration": "3:10" },
+      { "title": "The Fallen Interlude", "duration": "2:10" },
+      { "title": "Shut Up", "duration": "2:15" }
+    ]
+  },
+  "green-day": {
+    "dookie": [
+      { "title": "Burnout", "duration": "2:07" },
+      { "title": "Longview", "duration": "3:58" },
+      { "title": "Basket Case", "duration": "1:43" },
+      { "title": "When I Come Around", "duration": "2:44" },
+      { "title": "She", "duration": "2:14" },
+      { "title": "Sassafras Roots", "duration": "3:37" },
+      { "title": "Coming Clean", "duration": "2:17" },
+      { "title": "In the End", "duration": "2:44" }
+    ],
+    "21st-century-breakdown": [
+      { "title": "21st Century Breakdown", "duration": "5:09" },
+      { "title": "Know Your Enemy", "duration": "3:11" },
+      { "title": "East Jesus Nowhere", "duration": "4:35" },
+      { "title": "Wake Me Up When September Ends", "duration": "4:45" },
+      { "title": "Christian’s Inferno", "duration": "3:07" },
+      { "title": "Last of the Real Ones", "duration": "3:46" },
+      { "title": "Murder City", "duration": "2:44" },
+      { "title": "Restless Heart Syndrome", "duration": "4:21" }
+    ],
+    "nimrod": [
+      { "title": "Nice Guys Finish Last", "duration": "2:49" },
+      { "title": "Hitchin’ a Ride", "duration": "2:51" },
+      { "title": "Good Riddance (Time of Your Life)", "duration": "2:34" },
+      { "title": "Redundant", "duration": "3:17" },
+      { "title": "Scattered", "duration": "3:02" },
+      { "title": "Uptown", "duration": "3:07" },
+      { "title": "Last Ride In", "duration": "3:48" },
+      { "title": "Worry Rock", "duration": "2:27" }
+    ],
+    "american-idiot": [
+      { "title": "American Idiot", "duration": "2:54" },
+      { "title": "Boulevard of Broken Dreams", "duration": "4:20" },
+      { "title": "Holiday", "duration": "3:52" },
+      { "title": "Wake Me Up When September Ends", "duration": "4:45" },
+      { "title": "Are We the Waiting", "duration": "2:42" },
+      { "title": "St. Jimmy", "duration": "2:56" },
+      { "title": "Give Me Novacaine", "duration": "3:25" },
+      { "title": "She’s a Rebel", "duration": "2:00" }
+    ]
+  },
+  "the-offspring": {
+    "smash": [
+      { "title": "Twelve", "duration": "2:22" },
+      { "title": "Smash", "duration": "3:44" },
+      { "title": "Bad Habit", "duration": "3:43" },
+      { "title": "Self Esteem", "duration": "4:17" },
+      { "title": "Nitro (Youth Energy)", "duration": "3:26" },
+      { "title": "The Meaning of Life", "duration": "3:25" },
+      { "title": "It’ll Be a Long Night", "duration": "2:39" },
+      { "title": "Gotta Get Away", "duration": "3:48" }
+    ],
+    "ixnay-on-the-hombre": [
+      { "title": "Ixnay on the Hombre", "duration": "4:20" },
+      { "title": "The Meaning of Life", "duration": "3:25" },
+      { "title": "Mota", "duration": "3:42" },
+      { "title": "All I Want", "duration": "3:36" },
+      { "title": "Change the World", "duration": "3:18" },
+      { "title": "Cool to Hate", "duration": "3:32" },
+      { "title": "Leave It Behind", "duration": "3:41" },
+      { "title": "Intermission", "duration": "2:50" }
+    ],
+    "americana": [
+      { "title": "Pretty Fly (for a White Guy)", "duration": "3:08" },
+      { "title": "The Kids Aren’t Alright", "duration": "3:00" },
+      { "title": "Why Don’t You Get a Job?", "duration": "2:49" },
+      { "title": "She’s Got Issues", "duration": "3:50" },
+      { "title": "Staring at the Sun", "duration": "3:18" },
+      { "title": "Feelings", "duration": "3:03" },
+      { "title": "No Brains", "duration": "2:43" },
+      { "title": "The End of the Line", "duration": "3:53" }
+    ],
+    "conspiracy-of-one": [
+      { "title": "Come Out and Play", "duration": "3:17" },
+      { "title": "Original Prankster", "duration": "3:43" },
+      { "title": "Want One", "duration": "2:57" },
+      { "title": "Defy You", "duration": "3:16" },
+      { "title": "Living in Chaos", "duration": "3:04" },
+      { "title": "Huck It", "duration": "3:18" },
+      { "title": "One Fine Day", "duration": "3:30" },
+      { "title": "Conspiracy of One", "duration": "3:08" }
+    ]
+  },
+  "sum-41": {
+    "all-killer-no-filler": [
+      { "title": "Fat Lip", "duration": "3:02" },
+      { "title": "In Too Deep", "duration": "3:27" },
+      { "title": "Motivation", "duration": "2:21" },
+      { "title": "Handle This", "duration": "2:11" },
+      { "title": "Never Wake Up", "duration": "3:38" },
+      { "title": "Pain for Pleasure", "duration": "2:33" },
+      { "title": "Makes No Difference", "duration": "2:52" },
+      { "title": "What I’m Made Of...", "duration": "3:00" }
+    ],
+    "does-this-look-infected": [
+      { "title": "The Hell Song", "duration": "3:18" },
+      { "title": "Still Waiting", "duration": "2:42" },
+      { "title": "Mr. Amsterdam", "duration": "2:42" },
+      { "title": "Over My Head", "duration": "2:50" },
+      { "title": "Thanks for Nothing", "duration": "3:03" },
+      { "title": "Hyper-Insomnia-Para-Lysis", "duration": "2:49" },
+      { "title": "Summer", "duration": "3:01" },
+      { "title": "The Adventure", "duration": "2:18" }
+    ],
+    "chuck": [
+      { "title": "No Reason", "duration": "3:19" },
+      { "title": "We’re All to Blame", "duration": "3:41" },
+      { "title": "88", "duration": "2:33" },
+      { "title": "Pieces", "duration": "3:17" },
+      { "title": "Some Say", "duration": "3:33" },
+      { "title": "The Bitter End", "duration": "3:31" },
+      { "title": "There’s No Solution", "duration": "2:34" },
+      { "title": "The Hell Song", "duration": "3:18" }
+    ],
+    "underclass-hero": [
+      { "title": "Underclass Hero", "duration": "3:20" },
+      { "title": "Walking Disaster", "duration": "3:58" },
+      { "title": "Count Your Blessings", "duration": "3:16" },
+      { "title": "March of the Dogs", "duration": "2:37" },
+      { "title": "Take It to the Limit", "duration": "3:11" },
+      { "title": "The Truth Is", "duration": "3:04" },
+      { "title": "Best of Me", "duration": "3:28" },
+      { "title": "Crap", "duration": "2:52" }
+    ]
+  },
+  "Fall Out Boy": {
+    "take-this-to-your-grave": [
+      { "title": "Dead on Arrival", "duration": "3:16" },
+      { "title": "Grand Theft Autumn/Where Is Your Boy", "duration": "3:33" },
+      { "title": "Saturday", "duration": "3:38" },
+      { "title": "The New Sound", "duration": "3:16" },
+      { "title": "The Pros and Cons of Breathing", "duration": "3:24" },
+      { "title": "Patchwerk", "duration": "3:11" },
+      { "title": "The Old Gospel Choir", "duration": "4:34" },
+      { "title": "Cameras and Camcorders", "duration": "3:02" }
+    ],
+    "from-under-the-cork-tree": [
+      { "title": "Sugar, We’re Goin Down", "duration": "3:49" },
+      { "title": "Dance, Dance", "duration": "3:01" },
+      {
+        "title": "A Little Less Sixteen Candles, a Little More Touch Me",
+        "duration": "3:26"
+      },
+      { "title": "XO", "duration": "3:18" },
+      { "title": "Get Me", "duration": "3:44" },
+      {
+        "title": "You’re Crashing, But You’re No Window Shopper",
+        "duration": "3:19"
+      },
+      { "title": "The New Sound", "duration": "3:16" },
+      {
+        "title": "I’ve Got All This Ringing in My Ears and None on My Fingers",
+        "duration": "3:18"
+      }
+    ],
+    "infinity-on-high": [
+      { "title": "Thrash Particle", "duration": "3:45" },
+      { "title": "This Ain’t a Scene, It’s an Arms Race", "duration": "3:31" },
+      { "title": "The Take Over, the Breaks Over", "duration": "3:31" },
+      { "title": "Golden", "duration": "3:36" },
+      { "title": "Just One Kiss", "duration": "3:09" },
+      { "title": "The (Shipped) Gold Standard", "duration": "3:25" },
+      {
+        "title": "It’s Hard to Say I’d Rather Be Your Man",
+        "duration": "3:48"
+      },
+      { "title": "Famous Last Words", "duration": "4:25" }
+    ],
+    "folie-a-deux": [
+      { "title": "Disloyal Order of Water Buffaloes", "duration": "3:36" },
+      { "title": "I Don’t Care", "duration": "3:38" },
+      { "title": "What a Catch, Donnie", "duration": "4:34" },
+      { "title": "Tiffany Procedure", "duration": "3:39" },
+      { "title": "She’s My Best Friend", "duration": "3:02" },
+      { "title": "Beat It", "duration": "3:41" },
+      { "title": "7 Minutes in Heaven (Atavan Halen)", "duration": "3:14" },
+      { "title": "W.A.M.S.", "duration": "3:15" }
+    ]
+  },
+  "Simple Plan": {
+    "no-pads-no-helmets-just-balls": [
+      { "title": "I’d Do Anything", "duration": "3:14" },
+      { "title": "The Worst Day Ever", "duration": "3:16" },
+      { "title": "I’m Just a Kid", "duration": "3:17" },
+      { "title": "Perfect", "duration": "3:38" },
+      { "title": "God Knows", "duration": "3:24" },
+      { "title": "One Day", "duration": "3:41" },
+      { "title": "The End", "duration": "3:42" },
+      { "title": "You Don’t Mean Anything", "duration": "3:35" }
+    ],
+    "still-not-getting-any": [
+      { "title": "Welcome to My Life", "duration": "3:22" },
+      { "title": "Crazy", "duration": "3:15" },
+      { "title": "Promise", "duration": "3:40" },
+      { "title": "Perfect World", "duration": "3:18" },
+      { "title": "I Can Wait Forever", "duration": "3:37" },
+      { "title": "Everyday", "duration": "3:29" },
+      { "title": "A Mistake", "duration": "3:31" },
+      { "title": "One of Us", "duration": "3:50" }
+    ],
+    "simple-plan": [
+      { "title": "Jump", "duration": "3:14" },
+      { "title": "Your Love Is a Lie", "duration": "3:15" },
+      { "title": "Untitled", "duration": "3:45" },
+      { "title": "Astronaut", "duration": "3:41" },
+      { "title": "Still Not Getting Any", "duration": "3:19" },
+      { "title": "Kiss Me Like That", "duration": "3:17" },
+      { "title": "The Truth", "duration": "3:42" },
+      { "title": "What If", "duration": "3:23" }
+    ],
+    "get-your-heart-on": [
+      { "title": "This Can’t Be Real", "duration": "3:26" },
+      { "title": "You Suck at Love", "duration": "3:18" },
+      { "title": "Happy Together", "duration": "3:11" },
+      { "title": "The End", "duration": "3:42" },
+      { "title": "Fire", "duration": "3:24" },
+      { "title": "The Last Song", "duration": "3:47" },
+      { "title": "I Don’t Wanna Be Sad", "duration": "3:19" },
+      { "title": "A Little Bit of Everything", "duration": "3:54" }
+    ]
+  },
+  "soda-stereo": {
+    "signos": [
+      { "title": "Signos", "duration": "3:02" },
+      { "title": "Persiana Americana", "duration": "4:03" },
+      { "title": "Final Caja Negra", "duration": "4:07" },
+      { "title": "Primavera 0", "duration": "3:19" },
+      { "title": "Préndete", "duration": "3:28" },
+      { "title": "El Reloj", "duration": "3:35" },
+      { "title": "Sueles Volver", "duration": "3:30" },
+      { "title": "La Ciudad de la Furia", "duration": "3:42" }
+    ],
+    "cancion-animal": [
+      { "title": "Canción Animal", "duration": "3:15" },
+      { "title": "De Música Ligera", "duration": "3:41" },
+      { "title": "Sueles Volver", "duration": "3:30" },
+      { "title": "En la Ciudad de la Furia", "duration": "3:24" },
+      { "title": "Un Misil para el 900", "duration": "3:25" },
+      { "title": "Dynamo", "duration": "4:09" },
+      { "title": "Té para Tres", "duration": "3:57" },
+      { "title": "Languis", "duration": "3:55" }
+    ],
+    "dynamo": [
+      { "title": "Dynamo", "duration": "4:09" },
+      { "title": "Té Para Tres", "duration": "3:57" },
+      { "title": "Un Misil Para El 900", "duration": "3:25" },
+      { "title": "Languis", "duration": "3:55" },
+      { "title": "Mundo de Cristal", "duration": "3:41" },
+      { "title": "I’m Not the Same", "duration": "3:49" },
+      { "title": "No Me Queda Más", "duration": "3:36" },
+      { "title": "El Reloj", "duration": "3:44" }
+    ],
+    "sueño-stereo": [
+      { "title": "Sueño Stereo", "duration": "4:49" },
+      { "title": "Corazón Delator", "duration": "4:10" },
+      { "title": "Ella Uso 50 Palabras", "duration": "3:55" },
+      { "title": "Supernova", "duration": "4:16" },
+      { "title": "Paseo Inmoral", "duration": "3:59" },
+      { "title": "Entre Canibales", "duration": "3:46" },
+      { "title": "Me Hacen Falta Tus Besos", "duration": "3:39" },
+      { "title": "La Furia", "duration": "4:08" }
+    ]
+  },
+  "cafe-tacvba": {
+    "cafe-tacvba": [
+      { "title": "El Aparato", "duration": "3:44" },
+      { "title": "Las Batallas", "duration": "3:05" },
+      { "title": "Noche de Paz", "duration": "3:38" },
+      { "title": "La Ingrata", "duration": "3:52" },
+      { "title": "Puntos Suspensivos", "duration": "3:21" },
+      { "title": "El Baile", "duration": "3:31" },
+      { "title": "La Chica Banda", "duration": "3:16" },
+      { "title": "Cosas", "duration": "3:18" }
+    ],
+    "re": [
+      { "title": "Re", "duration": "3:17" },
+      { "title": "La Chica Banda", "duration": "3:16" },
+      { "title": "Mujer Invisible", "duration": "3:12" },
+      { "title": "Cosas", "duration": "3:18" },
+      { "title": "El Cielo", "duration": "3:40" },
+      { "title": "El Reloj", "duration": "3:43" },
+      { "title": "Para No Verte Más", "duration": "3:27" },
+      { "title": "La Vida", "duration": "3:29" }
+    ],
+    "reves-yo-soy": [
+      { "title": "Revés/Yo Soy", "duration": "4:00" },
+      { "title": "La Ingrata", "duration": "3:30" },
+      { "title": "El Baile", "duration": "3:31" },
+      { "title": "El Fin de la Vida", "duration": "4:06" },
+      { "title": "Chilanga Banda", "duration": "3:30" },
+      { "title": "El Reloj", "duration": "3:43" },
+      { "title": "Las Flores", "duration": "3:49" },
+      { "title": "La Muerte", "duration": "3:47" }
+    ],
+    "cuatro-caminos": [
+      { "title": "Cuatro Caminos", "duration": "3:11" },
+      { "title": "Chilanga Banda", "duration": "3:30" },
+      { "title": "Las Flores", "duration": "3:49" },
+      { "title": "El Reloj", "duration": "3:43" },
+      { "title": "El Aparato", "duration": "3:44" },
+      { "title": "Noche de Paz", "duration": "3:38" },
+      { "title": "La Ingrata", "duration": "3:52" },
+      { "title": "Puntos Suspensivos", "duration": "3:21" }
+    ]
+  },
+  "los-fabulosos-cadillacs": {
+    "el-leon": [
+      { "title": "El León", "duration": "3:36" },
+      { "title": "El Matador", "duration": "3:14" },
+      { "title": "La Vida", "duration": "3:17" },
+      { "title": "La Rueda", "duration": "3:10" }
+    ],
+    "vasos-vacios": [
+      { "title": "Vasos Vacíos", "duration": "3:41" },
+      { "title": "El Genio del Dub", "duration": "4:04" },
+      { "title": "Mujer Latina", "duration": "3:28" },
+      { "title": "El Cielo", "duration": "3:30" }
+    ],
+    "rey-azucar": [
+      { "title": "Rey Azúcar", "duration": "3:34" },
+      { "title": "El Cielo", "duration": "3:30" },
+      { "title": "La Vida", "duration": "3:19" },
+      { "title": "El Matador", "duration": "3:39" }
+    ],
+    "fabulosos-calavera": [
+      { "title": "Calavera", "duration": "3:05" },
+      { "title": "El Cielo", "duration": "3:33" },
+      { "title": "El Reloj", "duration": "3:26" },
+      { "title": "La Muerte", "duration": "3:40" }
+    ]
+  },
+  "mana": {
+    "donde-jugaran-los-ninos": [
+      { "title": "Oye Mi Amor", "duration": "4:33" },
+      { "title": "Cómo Dueles", "duration": "4:33" },
+      { "title": "De Pies a Cabeza", "duration": "4:06" },
+      { "title": "Rayando el Sol", "duration": "4:47" }
+    ],
+    "cuando-los-angeles-lloran": [
+      { "title": "Angel", "duration": "4:33" },
+      { "title": "No Ha Parado de Llover", "duration": "4:36" },
+      { "title": "Si No Te Hubieras Ido", "duration": "4:08" },
+      { "title": "El Rey", "duration": "4:20" }
+    ],
+    "suenos-liquidos": [
+      { "title": "Labios Compartidos", "duration": "4:28" },
+      { "title": "Te Llevaré al Cielo", "duration": "4:03" },
+      { "title": "Como un Perro Enloquecido", "duration": "4:11" },
+      { "title": "Oye Mi Amor", "duration": "4:33" }
+    ],
+    "amar-es-combatir": [
+      { "title": "Amar es Combatir", "duration": "4:20" },
+      { "title": "Bendita Tu Luz", "duration": "4:09" },
+      { "title": "El Verdadero Amor Perdona", "duration": "4:11" },
+      { "title": "Manda Una Señal", "duration": "4:22" }
+    ]
+  },
+  "caifanes": {
+    "caifanes": [
+      { "title": "La Célula Que Explota", "duration": "4:04" },
+      { "title": "Nubes", "duration": "3:43" },
+      { "title": "La Negra Tomasa", "duration": "4:08" },
+      { "title": "La Vida", "duration": "3:41" }
+    ],
+    "el-diablito-vol-ii": [
+      { "title": "El Diablito", "duration": "4:20" },
+      { "title": "El Gato", "duration": "3:56" },
+      { "title": "El Chivo", "duration": "3:58" },
+      { "title": "Si Me Voy", "duration": "3:18" }
+    ],
+    "el-silencio": [
+      { "title": "El Silencio", "duration": "4:35" },
+      { "title": "La Rata", "duration": "4:27" },
+      { "title": "La Cadenita", "duration": "3:44" },
+      { "title": "Bohemio", "duration": "4:12" }
+    ],
+    "el-nervio-del-volcan": [
+      { "title": "El Nervio del Volcán", "duration": "4:46" },
+      { "title": "Miedo", "duration": "3:47" },
+      { "title": "Ayer", "duration": "4:19" },
+      { "title": "El Siglo", "duration": "4:00" }
+    ]
+  },
+  "Los Prisioneros": {
+    "la-voz-de-los-80": [
+      { "title": "La Voz de los 80", "duration": "3:28" },
+      { "title": "Pateando Piedras", "duration": "3:46" },
+      { "title": "La Cultura de la Basura", "duration": "3:35" },
+      { "title": "Corazones", "duration": "3:07" }
+    ],
+    "pateando-piedras": [
+      { "title": "Pateando Piedras", "duration": "4:08" },
+      { "title": "El Baile", "duration": "3:22" },
+      { "title": "La Peste", "duration": "3:23" },
+      { "title": "El Peso de la Pobreza", "duration": "3:40" }
+    ],
+    "la-cultura-de-la-basura": [
+      { "title": "La Cultura de la Basura", "duration": "3:19" },
+      { "title": "El Barrio", "duration": "3:33" },
+      { "title": "Malo", "duration": "3:17" },
+      { "title": "Mala Vida", "duration": "3:58" }
+    ],
+    "corazones": [
+      { "title": "Corazones", "duration": "3:49" },
+      { "title": "La Voz", "duration": "3:12" },
+      { "title": "Ayer", "duration": "3:28" },
+      { "title": "El Fin", "duration": "3:40" }
+    ]
+  },
+  "eminem": {
+    "the-slim-shady-lp": [
+      { "title": "My Name Is", "duration": "4:28" },
+      { "title": "Guilty Conscience", "duration": "3:34" },
+      { "title": "Role Model", "duration": "3:25" },
+      { "title": "97 Bonnie and Clyde", "duration": "5:20" }
+    ],
+    "the-marshall-mathers-lp": [
+      { "title": "Stan", "duration": "5:20" },
+      { "title": "The Real Slim Shady", "duration": "4:44" },
+      { "title": "Criminal", "duration": "3:28" },
+      { "title": "Kim", "duration": "4:11" }
+    ],
+    "the-eminem-show": [
+      { "title": "Without Me", "duration": "4:50" },
+      { "title": "Cleaning Out My Closet", "duration": "4:57" },
+      { "title": "Superman", "duration": "4:40" },
+      { "title": "Sing for the Moment", "duration": "5:39" }
+    ],
+    "recovery": [
+      { "title": "Not Afraid", "duration": "4:10" },
+      { "title": "Love the Way You Lie", "duration": "4:20" },
+      { "title": "No Love", "duration": "4:59" },
+      { "title": "Space Bound", "duration": "4:38" }
+    ]
+  },
+  "the-notorious-big": {
+    "ready-to-die": [
+      { "title": "Juicy", "duration": "5:29" },
+      { "title": "Big Poppa", "duration": "4:13" },
+      { "title": "One More Chance", "duration": "4:43" },
+      { "title": "Everyday Struggle", "duration": "5:19" }
+    ],
+    "life-after-death": [
+      { "title": "Hypnotize", "duration": "3:50" },
+      { "title": "Mo Money Mo Problems", "duration": "4:17" },
+      { "title": "Sky’s the Limit", "duration": "4:58" },
+      { "title": "Going Back to Cali", "duration": "4:33" }
+    ],
+    "born-again": [
+      { "title": "Dead Wrong", "duration": "4:54" },
+      { "title": "Notorious Thugs", "duration": "5:57" },
+      { "title": "It’s All About the Benjamins", "duration": "3:52" },
+      { "title": "The Jump Off", "duration": "4:16" }
+    ]
+  },
+  "XXXTentacion": {
+    "17": [
+      { "title": "Jocelyn Flores", "duration": "2:07" },
+      { "title": "Depression & Obsession", "duration": "3:00" },
+      { "title": "Look at Me!", "duration": "1:51" },
+      { "title": "Save Me", "duration": "2:58" }
+    ],
+    "": [
+      { "title": "SAD!", "duration": "2:46" },
+      { "title": "changes", "duration": "2:01" },
+      { "title": "Moonlight", "duration": "2:15" },
+      { "title": "infinity (888)", "duration": "2:56" }
+    ],
+    "skins": [
+      { "title": "whoa (mind in awe)", "duration": "2:20" },
+      { "title": "Train Food", "duration": "2:36" },
+      { "title": "BAD!", "duration": "1:34" },
+      { "title": "I don’t even know you", "duration": "2:09" }
+    ],
+    "bad-vibes-forever": [
+      { "title": "BAD VIBES FOREVER", "duration": "2:41" },
+      { "title": "Ex Bitch", "duration": "2:11" },
+      { "title": "Royalty", "duration": "2:03" },
+      { "title": "Hearteater", "duration": "2:23" }
+    ]
+  },
+  "snoop-dogg": {
+    "doggystyle": [
+      { "title": "Who Am I (What’s My Name)?", "duration": "4:07" },
+      { "title": "Gin and Juice", "duration": "3:42" },
+      { "title": "Lodi Dodi", "duration": "4:29" },
+      { "title": "Murder Was the Case", "duration": "3:34" }
+    ],
+    "tha-doggfather": [
+      { "title": "Doggfather", "duration": "4:58" },
+      { "title": "Snoopafella", "duration": "3:52" },
+      { "title": "Str8 Ballin’", "duration": "4:30" },
+      { "title": "Vapors", "duration": "4:36" }
+    ],
+    "no-limit-top-dogg": [
+      { "title": "No Limit Top Dogg", "duration": "3:53" },
+      { "title": "Bitch Please", "duration": "4:31" },
+      { "title": "Snoop Dogg", "duration": "4:46" },
+      { "title": "Lay Low", "duration": "4:10" }
+    ],
+    "rg-the-masterpiece": [
+      { "title": "Drop It Like It’s Hot", "duration": "4:04" },
+      { "title": "Signs", "duration": "4:20" },
+      { "title": "Beautiful", "duration": "4:04" },
+      { "title": "Vato", "duration": "4:13" }
+    ]
+  },
+  "ice-cube": {
+    "amerikkkas-most-wanted": [
+      { "title": "The Nigga You Love to Hate", "duration": "4:06" },
+      { "title": "AmeriKKKa’s Most Wanted", "duration": "4:13" },
+      { "title": "Once Upon a Time in the Projects", "duration": "4:24" },
+      { "title": "It Was a Good Day", "duration": "4:22" }
+    ],
+    "death-certificate": [
+      { "title": "The Funeral", "duration": "4:17" },
+      { "title": "Steady Mobbin’", "duration": "4:33" },
+      { "title": "True to the Game", "duration": "4:26" },
+      { "title": "A Bird in the Hand", "duration": "4:53" }
+    ],
+    "the-predator": [
+      { "title": "Wicked", "duration": "4:25" },
+      { "title": "Check Yo Self", "duration": "4:00" },
+      { "title": "We Had to Tear It Up", "duration": "4:48" },
+      { "title": "Now I Gotta Wet’cha", "duration": "4:50" }
+    ],
+    "lethal-injection": [
+      { "title": "Really Doe", "duration": "4:39" },
+      { "title": "You Know How We Do It", "duration": "4:13" },
+      { "title": "Bop Gun (One Nation)", "duration": "4:25" },
+      { "title": "Naaahh", "duration": "4:43" }
+    ]
+  },
+  "2pac": {
+    "2pacalypse-now": [
+      { "title": "Holler If Ya Hear Me", "duration": "4:59" },
+      { "title": "Brenda’s Got a Baby", "duration": "3:53" },
+      { "title": "I Don’t Give a Fuck", "duration": "4:37" },
+      { "title": "Trapped", "duration": "4:24" }
+    ],
+    "strictly-4-my-niggaz": [
+      { "title": "Keep Ya Head Up", "duration": "4:23" },
+      { "title": "I Get Around", "duration": "4:17" },
+      { "title": "Last Wordz", "duration": "4:28" },
+      { "title": "Temptations", "duration": "4:21" }
+    ],
+    "me-against-the-world": [
+      { "title": "Dear Mama", "duration": "4:39" },
+      { "title": "So Many Tears", "duration": "4:44" },
+      { "title": "Outlaw", "duration": "4:48" },
+      { "title": "Heavy in the Game", "duration": "4:20" }
+    ],
+    "all-eyez-on-me": [
+      { "title": "Ambitionz Az a Ridah", "duration": "4:39" },
+      { "title": "How Do U Want It", "duration": "4:47" },
+      { "title": "California Love", "duration": "4:45" },
+      { "title": "Life Goes On", "duration": "4:58" }
+    ]
+  },
+  "michael-jackson": {
+    "off-the-wall": [
+      { "title": "Don’t Stop ’Til You Get Enough", "duration": "6:05" },
+      { "title": "Rock with You", "duration": "3:40" },
+      { "title": "Off the Wall", "duration": "4:05" },
+      { "title": "She’s Out of My Life", "duration": "3:38" }
+    ],
+    "thriller": [
+      { "title": "Wanna Be Startin’ Somethin’", "duration": "6:03" },
+      { "title": "Beat It", "duration": "4:18" },
+      { "title": "Billie Jean", "duration": "4:54" },
+      { "title": "Thriller", "duration": "5:57" }
+    ],
+    "bad": [
+      { "title": "Bad", "duration": "4:07" },
+      { "title": "The Way You Make Me Feel", "duration": "4:58" },
+      { "title": "Man in the Mirror", "duration": "5:31" },
+      { "title": "Smooth Criminal", "duration": "4:17" }
+    ],
+    "dangerous": [
+      { "title": "Remember the Time", "duration": "4:00" },
+      { "title": "Black or White", "duration": "4:16" },
+      { "title": "Heal the World", "duration": "4:58" },
+      { "title": "Will You Be There", "duration": "7:40" }
+    ]
+  },
+  "madonna": {
+    "like-a-virgin": [
+      { "title": "Material Girl", "duration": "4:00" },
+      { "title": "Like a Virgin", "duration": "3:38" },
+      { "title": "Into the Groove", "duration": "4:44" },
+      { "title": "Angel", "duration": "3:38" }
+    ],
+    "like-a-prayer": [
+      { "title": "Like a Prayer", "duration": "5:39" },
+      { "title": "Express Yourself", "duration": "4:38" },
+      { "title": "Cherish", "duration": "4:59" },
+      { "title": "Open Your Heart", "duration": "4:13" }
+    ],
+    "ray-of-light": [
+      { "title": "Drowned World/Substitute for Love", "duration": "5:09" },
+      { "title": "Ray of Light", "duration": "5:20" },
+      { "title": "Frozen", "duration": "6:10" },
+      { "title": "Sky Fits Heaven", "duration": "4:49" }
+    ]
+  },
+  "prince": {
+    "1999": [
+      { "title": "1999", "duration": "3:37" },
+      { "title": "Little Red Corvette", "duration": "5:03" },
+      { "title": "Adore", "duration": "6:51" },
+      { "title": "The Ballad of Dorothy Parker", "duration": "4:25" }
+    ],
+    "purple-rain": [
+      { "title": "Purple Rain", "duration": "8:41" },
+      { "title": "Kiss", "duration": "3:46" },
+      { "title": "When Doves Cry", "duration": "5:52" },
+      { "title": "The Dance", "duration": "7:44" }
+    ],
+    "sign-o-the-times": [
+      { "title": "Sign o’ the Times", "duration": "5:22" },
+      { "title": "The Question of U", "duration": "4:58" },
+      { "title": "Adore", "duration": "6:51" },
+      { "title": "The Ballad of Dorothy Parker", "duration": "4:25" }
+    ]
+  },
+  "whitney-houston": {
+    "whitney-houston": [
+      { "title": "How Will I Know", "duration": "4:30" },
+      { "title": "Saving All My Love for You", "duration": "3:58" },
+      { "title": "Greatest Love of All", "duration": "4:47" },
+      { "title": "You Give Good Love", "duration": "4:07" }
+    ],
+    "whitney": [
+      { "title": "I Wanna Dance with Somebody", "duration": "4:52" },
+      { "title": "So Emotional", "duration": "4:34" },
+      { "title": "Where Do Broken Hearts Go", "duration": "4:38" },
+      { "title": "Didn’t We Almost Have It All", "duration": "4:42" }
+    ],
+    "the-bodyguard-bso": [
+      { "title": "I Will Always Love You", "duration": "4:26" },
+      { "title": "I’m Every Woman", "duration": "4:44" },
+      { "title": "Run to You", "duration": "4:51" },
+      { "title": "Queen of the Night", "duration": "3:41" }
+    ],
+    "my-love-is-your-love": [
+      { "title": "It’s Not Right but It’s Okay", "duration": "4:12" },
+      { "title": "My Love Is Your Love", "duration": "4:17" },
+      { "title": "Heartbreak Hotel", "duration": "4:52" },
+      { "title": "If I Told You That", "duration": "4:36" }
+    ]
+  },
+  "Lady Gaga": {
+    "the-fame": [
+      { "title": "Just Dance", "duration": "4:02" },
+      { "title": "Poker Face", "duration": "3:57" },
+      { "title": "LoveGame", "duration": "3:36" },
+      { "title": "Paper Gangsta", "duration": "4:28" }
+    ],
+    "the-fame-monster": [
+      { "title": "Bad Romance", "duration": "4:54" },
+      { "title": "Alejandro", "duration": "4:34" },
+      { "title": "Telephone", "duration": "3:41" },
+      { "title": "Dance in the Dark", "duration": "4:48" }
+    ],
+    "born-this-way": [
+      { "title": "Born This Way", "duration": "4:20" },
+      { "title": "Judas", "duration": "4:09" },
+      { "title": "Edge of Glory", "duration": "5:21" },
+      { "title": "You and I", "duration": "5:07" }
+    ],
+    "chromatica": [
+      { "title": "Chromatica I", "duration": "1:00" },
+      { "title": "911", "duration": "2:52" },
+      { "title": "Rain on Me", "duration": "3:02" },
+      { "title": "Free Woman", "duration": "3:56" }
+    ]
+  },
+  "Bruno Mars": {
+    "doo-wops-hooligans": [
+      { "title": "Just the Way You Are", "duration": "3:40" },
+      { "title": "Grenade", "duration": "3:42" },
+      { "title": "The Lazy Song", "duration": "3:15" },
+      { "title": "Marry You", "duration": "3:50" }
+    ],
+    "unorthodox-jukebox": [
+      { "title": "Locked Out of Heaven", "duration": "3:53" },
+      { "title": "When I Was Your Man", "duration": "3:33" },
+      { "title": "Treasure", "duration": "2:58" },
+      { "title": "Young Girls", "duration": "3:48" }
+    ],
+    "24k-magic": [
+      { "title": "24K Magic", "duration": "3:46" },
+      { "title": "That’s What I Like", "duration": "3:26" },
+      { "title": "Versace on the Floor", "duration": "4:20" },
+      { "title": "Finesse", "duration": "3:10" }
+    ],
+    "an-evening-with-silk-sonic": [
+      { "title": "Leave the Door Open", "duration": "4:02" },
+      { "title": "Smokin Out the Window", "duration": "3:53" },
+      { "title": "Put on a Smile", "duration": "3:57" },
+      { "title": "777", "duration": "4:01" }
+    ]
+  },
+  "queen": {
+    "a-night-at-the-opera": [
+      { "title": "Bohemian Rhapsody", "duration": "5:55" },
+      { "title": "You’re My Best Friend", "duration": "2:52" },
+      { "title": "Love of My Life", "duration": "3:39" },
+      { "title": "The Prophet’s Song", "duration": "8:21" }
+    ],
+    "news-of-the-world": [
+      { "title": "We Will Rock You", "duration": "2:02" },
+      { "title": "We Are the Champions", "duration": "3:00" },
+      { "title": "Somebody to Love", "duration": "4:52" },
+      { "title": "Spread Your Wings", "duration": "4:34" }
+    ],
+    "the-game": [
+      { "title": "Another One Bites the Dust", "duration": "3:36" },
+      { "title": "Crazy Little Thing Called Love", "duration": "2:43" },
+      { "title": "Save Me", "duration": "4:07" },
+      { "title": "Play the Game", "duration": "3:28" }
+    ],
+    "jazz": [
+      { "title": "Mustapha", "duration": "3:00" },
+      { "title": "Fat Bottomed Girls", "duration": "3:24" },
+      { "title": "Bicycle Race", "duration": "3:01" },
+      { "title": "Don’t Stop Me Now", "duration": "3:29" }
+    ]
+  },
+  "the-rolling-stones": {
+    "let-it-bleed": [
+      { "title": "Gimme Shelter", "duration": "4:31" },
+      { "title": "Love in Vain", "duration": "4:24" },
+      { "title": "Street Fighting Man", "duration": "3:16" },
+      { "title": "You Can’t Always Get What You Want", "duration": "7:28" }
+    ],
+    "sticky-fingers": [
+      { "title": "Brown Sugar", "duration": "3:50" },
+      { "title": "Wild Horses", "duration": "5:42" },
+      { "title": "Sway", "duration": "3:51" },
+      { "title": "Moonlight Mile", "duration": "5:56" }
+    ],
+    "exile-on-main-st": [
+      { "title": "Tumbling Dice", "duration": "4:00" },
+      { "title": "Sweet Virginia", "duration": "4:27" },
+      { "title": "Happy", "duration": "3:04" },
+      { "title": "Shine a Light", "duration": "4:16" }
+    ],
+    "beggars-banquet": [
+      { "title": "Sympathy for the Devil", "duration": "6:27" },
+      { "title": "Street Fighting Man", "duration": "3:16" },
+      { "title": "Prodigal Son", "duration": "6:16" },
+      { "title": "No Expectations", "duration": "3:56" }
+    ]
+  },
+  "led-zeppelin": {
+    "led-zeppelin-ii": [
+      { "title": "Whole Lotta Love", "duration": "5:34" },
+      { "title": "Heartbreaker", "duration": "4:14" },
+      { "title": "Ramble On", "duration": "4:34" },
+      { "title": "Moby Dick", "duration": "4:25" }
+    ],
+    "led-zeppelin-iv": [
+      { "title": "Black Dog", "duration": "4:54" },
+      { "title": "Rock and Roll", "duration": "3:41" },
+      { "title": "Stairway to Heaven", "duration": "7:55" },
+      { "title": "When the Levee Breaks", "duration": "7:08" }
+    ],
+    "physical-graffiti": [
+      { "title": "Custard Pie", "duration": "4:13" },
+      { "title": "Kashmir", "duration": "8:37" },
+      { "title": "In My Time of Dying", "duration": "11:08" },
+      { "title": "Ten Years Gone", "duration": "6:31" }
+    ],
+    "houses-of-the-holy": [
+      { "title": "The Ocean", "duration": "4:31" },
+      { "title": "Over the Hills and Far Away", "duration": "4:55" },
+      { "title": "Dancing Days", "duration": "3:44" },
+      { "title": "No Quarter", "duration": "7:00" }
+    ]
+  },
+  "kiss": {
+    "destroyer": [
+      { "title": "Detroit Rock City", "duration": "5:24" },
+      { "title": "Beth", "duration": "4:45" },
+      { "title": "Shout It Out Loud", "duration": "4:02" },
+      { "title": "King of the Night Time World", "duration": "3:47" }
+    ],
+    "alive": [
+      { "title": "Rock and Roll All Nite", "duration": "4:18" },
+      { "title": "Cold Gin", "duration": "5:26" },
+      { "title": "Strutter", "duration": "3:11" },
+      { "title": "Detroit Rock City", "duration": "5:24" }
+    ],
+    "love-gun": [
+      { "title": "Love Gun", "duration": "3:17" },
+      { "title": "Shock Me", "duration": "6:11" },
+      { "title": "Tomorrow and Tonight", "duration": "3:37" },
+      { "title": "Christine Sixteen", "duration": "4:32" }
+    ],
+    "kiss": [
+      { "title": "I Was Made for Lovin’ You", "duration": "4:30" },
+      { "title": "Hard Luck Woman", "duration": "3:34" },
+      { "title": "Calling Dr. Love", "duration": "3:44" },
+      { "title": "Rocket Ride", "duration": "4:29" }
+    ]
+  },
+  "aerosmith": {
+    "toys-in-the-attic": [
+      { "title": "Toys in the Attic", "duration": "3:06" },
+      { "title": "Sweet Emotion", "duration": "4:36" },
+      { "title": "Walk This Way", "duration": "3:40" },
+      { "title": "Uncle Salty", "duration": "4:10" }
+    ],
+    "rocks": [
+      { "title": "Back in the Saddle", "duration": "4:40" },
+      { "title": "Last Child", "duration": "3:28" },
+      { "title": "Draw the Line", "duration": "4:01" },
+      { "title": "Home Tonight", "duration": "3:33" }
+    ],
+    "aerosmith": [
+      { "title": "Let the Music Do the Talking", "duration": "3:46" },
+      { "title": "Love in an Elevator", "duration": "5:21" },
+      { "title": "Dude (Looks Like a Lady)", "duration": "4:24" },
+      { "title": "Janie’s Got a Gun", "duration": "5:28" }
+    ],
+    "permanent-vacation": [
+      { "title": "Rag Doll", "duration": "4:25" },
+      { "title": "Magic Touch", "duration": "4:15" },
+      { "title": "Dude (Looks Like a Lady)", "duration": "4:24" },
+      { "title": "The Other Side", "duration": "4:00" }
+    ]
+  },
+  "miles-davis": {
+    "kind-of-blue": [
+      { "title": "So What", "duration": "9:22" },
+      { "title": "Freddie Freeloader", "duration": "9:46" },
+      { "title": "Blue in Green", "duration": "5:37" },
+      { "title": "All Blues", "duration": "11:33" }
+    ],
+    "sketches-of-spain": [
+      { "title": "Saeta", "duration": "4:49" },
+      { "title": "Solea", "duration": "4:28" },
+      { "title": "The Duke", "duration": "7:09" },
+      { "title": "Concierto de Aranjuez", "duration": "7:52" }
+    ],
+    "bitches-brew": [
+      { "title": "Bitches Brew", "duration": "27:00" },
+      { "title": "Spanish Key", "duration": "10:18" },
+      { "title": "John McLaughlin", "duration": "6:42" },
+      { "title": "Pharaoh’s Dance", "duration": "17:20" }
+    ],
+    "in-a-silent-way": [
+      { "title": "In a Silent Way", "duration": "18:04" },
+      { "title": "It’s About That Time", "duration": "12:24" },
+      { "title": "Shhh/Peaceful", "duration": "7:03" },
+      { "title": "The Theme", "duration": "8:21" }
+    ]
+  },
+  "john-coltrane": {
+    "blue-train": [
+      { "title": "Blue Train", "duration": "10:44" },
+      { "title": "Moment’s Notice", "duration": "7:37" },
+      { "title": "Locomotion", "duration": "6:54" },
+      { "title": "Lazy Bird", "duration": "7:10" }
+    ],
+    "giant-steps": [
+      { "title": "Giant Steps", "duration": "4:48" },
+      { "title": "Naima", "duration": "4:22" },
+      { "title": "Countdown", "duration": "2:29" },
+      { "title": "Spiral", "duration": "5:37" }
+    ],
+    "my-favorite-things": [
+      { "title": "My Favorite Things", "duration": "13:44" },
+      { "title": "Everytime I Feel the Spirit", "duration": "5:00" },
+      { "title": "Summertime", "duration": "4:14" },
+      { "title": "But Not for Me", "duration": "5:28" }
+    ],
+    "a-love-supreme": [
+      { "title": "Acknowledgement", "duration": "7:42" },
+      { "title": "Resolution", "duration": "7:20" },
+      { "title": "Pursuance", "duration": "7:02" },
+      { "title": "Psalm", "duration": "6:57" }
+    ]
+  },
+  "ella-fitzgerald": {
+    "ella-sings-the-cole-porter-song-book": [
+      { "title": "I Get a Kick Out of You", "duration": "3:02" },
+      { "title": "Night and Day", "duration": "2:44" },
+      { "title": "Begin the Beguine", "duration": "3:07" },
+      { "title": "In the Still of the Night", "duration": "3:10" }
+    ],
+    "ella-and-louis": [
+      { "title": "Cheek to Cheek", "duration": "3:10" },
+      { "title": "Makin’ Whoopee", "duration": "3:17" },
+      { "title": "A Fine Romance", "duration": "3:43" },
+      { "title": "Stars Fell on Alabama", "duration": "3:11" }
+    ],
+    "ella-in-berlin": [
+      { "title": "Mack the Knife", "duration": "3:42" },
+      { "title": "How High the Moon", "duration": "3:34" },
+      { "title": "Dream a Little Dream of Me", "duration": "3:13" },
+      { "title": "Summertime", "duration": "3:27" }
+    ],
+    "sings-the-duke-ellington-song-book": [
+      { "title": "Take the A Train", "duration": "3:24" },
+      { "title": "Satin Doll", "duration": "3:29" },
+      { "title": "In a Sentimental Mood", "duration": "3:25" },
+      { "title": "I Got It Bad", "duration": "3:19" }
+    ]
+  },
+  "thelonious-monk": {
+    "brilliant-corners": [
+      { "title": "Brilliant Corners", "duration": "6:30" },
+      { "title": "Ba-Ba-Blue", "duration": "6:04" },
+      { "title": "Pannonica", "duration": "6:16" },
+      { "title": "Bemsha Swing", "duration": "5:28" }
+    ],
+    "monks-dream": [
+      { "title": "Monk’s Dream", "duration": "5:56" },
+      { "title": "Just a Gigolo", "duration": "4:38" },
+      { "title": "Bright Mississippi", "duration": "6:34" },
+      { "title": "Body and Soul", "duration": "4:35" }
+    ],
+    "underground": [
+      { "title": "Crepuscule with Nellie", "duration": "6:20" },
+      { "title": "Light Blue", "duration": "5:56" },
+      { "title": "Friday the 13th", "duration": "4:50" },
+      { "title": "Ruby My Dear", "duration": "5:55" }
+    ],
+    "straight-no-chaser": [
+      { "title": "Straight, No Chaser", "duration": "5:53" },
+      { "title": "Bemsha Swing", "duration": "5:28" },
+      { "title": "Epistrophy", "duration": "6:24" },
+      { "title": "Misterioso", "duration": "5:56" }
+    ]
+  },
+  "Charlie Parker": {
+    "bird-and-diz": [
+      { "title": "Now’s the Time", "duration": "3:11" },
+      { "title": "Hot House", "duration": "2:56" },
+      { "title": "Ornithology", "duration": "3:15" },
+      { "title": "Yardbird Suite", "duration": "3:18" }
+    ],
+    "charlie-parker-with-strings": [
+      { "title": "Just Friends", "duration": "3:43" },
+      { "title": "East of the Sun", "duration": "3:46" },
+      { "title": "I Didn’t Know What Time It Was", "duration": "2:58" },
+      { "title": "April in Paris", "duration": "3:23" }
+    ],
+    "jazz-at-massey-hall": [
+      { "title": "Now’s the Time", "duration": "3:09" },
+      { "title": "Ornithology", "duration": "4:18" },
+      { "title": "Yardbird Suite", "duration": "3:15" },
+      { "title": "Marmaduke", "duration": "5:18" }
+    ],
+    "nows-the-time": [
+      { "title": "Now’s the Time", "duration": "3:12" },
+      { "title": "Koko", "duration": "4:00" },
+      { "title": "Moose the Mooche", "duration": "3:18" },
+      { "title": "Confirmation", "duration": "4:35" }
+    ]
+  },
+  "Louis Armstrong": {
+    "louis-armstrong-plays-wc-handy": [
+      { "title": "St. Louis Blues", "duration": "3:24" },
+      { "title": "Memphis Blues", "duration": "3:14" },
+      { "title": "Beale Street Blues", "duration": "2:41" },
+      { "title": "Aunt Hagar’s Blues", "duration": "2:48" }
+    ],
+    "ella-and-louis": [
+      { "title": "Cheek to Cheek", "duration": "3:18" },
+      { "title": "Makin’ Whoopee", "duration": "3:24" },
+      { "title": "A Fine Romance", "duration": "3:33" },
+      { "title": "Stars Fell on Alabama", "duration": "3:11" }
+    ],
+    "satchmo-at-symphony-hall": [
+      { "title": "When the Saints Go Marching In", "duration": "4:25" },
+      { "title": "Mack the Knife", "duration": "3:44" },
+      { "title": "Muskrat Ramble", "duration": "4:40" },
+      { "title": "Basin Street Blues", "duration": "3:34" }
+    ],
+    "what-a-wonderful-world": [
+      { "title": "What a Wonderful World", "duration": "2:22" },
+      { "title": "When You Wish upon a Star", "duration": "2:47" },
+      { "title": "La Vie en Rose", "duration": "3:34" },
+      { "title": "Blueberry Hill", "duration": "3:26" }
+    ]
+  },
+  "iron-maiden": {
+    "the-number-of-the-beast": [
+      { "title": "Invaders", "duration": "3:22" },
+      { "title": "Children of the Damned", "duration": "4:35" },
+      { "title": "The Prisoner", "duration": "5:35" },
+      { "title": "22 Acacia Avenue", "duration": "6:37" },
+      { "title": "The Number of the Beast", "duration": "4:49" },
+      { "title": "Run to the Hills", "duration": "3:54" },
+      { "title": "Hallowed Be Thy Name", "duration": "7:12" }
+    ],
+    "piece-of-mind": [
+      { "title": "Where Eagles Dare", "duration": "6:10" },
+      { "title": "Revelations", "duration": "6:51" },
+      { "title": "The Trooper", "duration": "4:33" },
+      { "title": "Still Life", "duration": "4:43" },
+      { "title": "Die with Your Boots On", "duration": "5:22" },
+      { "title": "Flight of Icarus", "duration": "3:50" }
+    ],
+    "powerslave": [
+      { "title": "Aces High", "duration": "4:32" },
+      { "title": "2 Minutes to Midnight", "duration": "6:00" },
+      { "title": "Losfer Words (Big 'Orra)", "duration": "4:28" },
+      { "title": "Flash of the Blade", "duration": "4:03" },
+      { "title": "Powerslave", "duration": "6:56" },
+      { "title": "Rime of the Ancient Mariner", "duration": "13:36" }
+    ],
+    "seventh-son-of-a-seventh-son": [
+      { "title": "The Evil that Men Do", "duration": "4:34" },
+      { "title": "Can I Play with Madness", "duration": "3:31" },
+      { "title": "Moonchild", "duration": "5:38" },
+      { "title": "The Clairvoyant", "duration": "4:27" },
+      { "title": "Infinite Dreams", "duration": "6:09" },
+      { "title": "Seventh Son of a Seventh Son", "duration": "9:53" }
+    ]
+  },
+  "black-sabbath": {
+    "black-sabbath": [
+      { "title": "Black Sabbath", "duration": "6:20" },
+      { "title": "The Wizard", "duration": "4:24" },
+      { "title": "Wicked World", "duration": "4:47" },
+      { "title": "N.I.B.", "duration": "6:08" },
+      { "title": "Behind the Wall of Sleep", "duration": "3:38" },
+      { "title": "Sleeping Village", "duration": "3:46" }
+    ],
+    "paranoid": [
+      { "title": "War Pigs", "duration": "7:57" },
+      { "title": "Paranoid", "duration": "2:50" },
+      { "title": "Iron Man", "duration": "5:56" },
+      { "title": "Hand of Doom", "duration": "7:08" },
+      { "title": "Electric Funeral", "duration": "4:52" },
+      { "title": "Fairies Wear Boots", "duration": "6:12" }
+    ],
+    "master-of-reality": [
+      { "title": "Sweet Leaf", "duration": "5:04" },
+      { "title": "Children of the Grave", "duration": "5:14" },
+      { "title": "Embryo", "duration": "4:35" },
+      { "title": "After Forever", "duration": "5:27" },
+      { "title": "Solitude", "duration": "5:02" },
+      { "title": "Lord of This World", "duration": "5:00" }
+    ],
+    "sabbath-bloody-sabbath": [
+      { "title": "Sabbath Bloody Sabbath", "duration": "5:44" },
+      { "title": "A National Acrobat", "duration": "6:07" },
+      { "title": "Fluff", "duration": "4:11" },
+      { "title": "Spiral Architect", "duration": "5:30" },
+      { "title": "Sabbra Cadabra", "duration": "5:58" },
+      { "title": "Who Are You", "duration": "4:00" }
+    ]
+  },
+  "megadeth": {
+    "peace-sells-but-whos-buying": [
+      { "title": "Peace Sells", "duration": "4:41" },
+      { "title": "Wake Up Dead", "duration": "3:38" },
+      { "title": "The Conjuring", "duration": "5:03" },
+      { "title": "Good Mourning/Black Friday", "duration": "4:47" },
+      { "title": "My Last Words", "duration": "4:48" },
+      { "title": "Devils Island", "duration": "5:03" }
+    ],
+    "rust-in-peace": [
+      { "title": "Holy Wars... The Punishment Due", "duration": "6:32" },
+      { "title": "Hangar 18", "duration": "5:11" },
+      { "title": "Take No Prisoners", "duration": "3:28" },
+      { "title": "Five Magics", "duration": "5:42" },
+      { "title": "Tornado of Souls", "duration": "5:18" },
+      { "title": "Poison Was the Cure", "duration": "2:53" }
+    ],
+    "countdown-to-extinction": [
+      { "title": "Symphony of Destruction", "duration": "4:07" },
+      { "title": "Sweating Bullets", "duration": "4:26" },
+      { "title": "Foreclosure of a Dream", "duration": "4:19" },
+      { "title": "High Speed Dirt", "duration": "4:18" },
+      { "title": "Skin O' My Teeth", "duration": "3:38" },
+      { "title": "Architecture of Aggression", "duration": "3:35" }
+    ],
+    "youthanasia": [
+      { "title": "Youthanasia", "duration": "4:09" },
+      { "title": "A Tout le Monde", "duration": "4:29" },
+      { "title": "Reckoning Day", "duration": "4:39" },
+      { "title": "Victory", "duration": "4:28" },
+      { "title": "I Thought I Knew Tomorrow", "duration": "3:47" },
+      { "title": "Train of Consequences", "duration": "3:26" }
+    ]
+  },
+  "pantera": {
+    "cowboys-from-hell": [
+      { "title": "Cowboys from Hell", "duration": "4:06" },
+      { "title": "Primal Concrete Sledge", "duration": "5:28" },
+      { "title": "Psycho Holiday", "duration": "4:48" },
+      { "title": "Cemetery Gates", "duration": "7:03" },
+      { "title": "Domination", "duration": "5:04" },
+      { "title": "This Love", "duration": "6:30" }
+    ],
+    "vulgar-display-of-power": [
+      { "title": "Mouth for War", "duration": "3:57" },
+      { "title": "A New Level", "duration": "3:35" },
+      { "title": "Walk", "duration": "5:15" },
+      { "title": "Fucking Hostile", "duration": "2:48" },
+      { "title": "This Love", "duration": "6:30" },
+      { "title": "Regular People (Conceit)", "duration": "5:18" }
+    ],
+    "far-beyond-driven": [
+      { "title": "5 Minutes Alone", "duration": "5:00" },
+      { "title": "Becoming", "duration": "5:28" },
+      { "title": "Good Friends and a Bottle of Pills", "duration": "4:40" },
+      { "title": "I'm Broken", "duration": "4:23" },
+      { "title": "The Art of Shredding", "duration": "3:38" },
+      { "title": "Planet Caravan", "duration": "4:31" }
+    ],
+    "the-great-southern-trendkill": [
+      { "title": "The Great Southern Trendkill", "duration": "4:18" },
+      { "title": "War Nerve", "duration": "3:42" },
+      { "title": "The Underground in America", "duration": "4:39" },
+      { "title": "Drag the Waters", "duration": "4:49" },
+      { "title": "15 Steps", "duration": "5:18" },
+      { "title": "Living Through Me", "duration": "4:58" }
+    ]
+  },
+  "rage-against-the-machine": {
+    "rage-against-the-machine": [
+      { "title": "Bombtrack", "duration": "4:02" },
+      { "title": "Killing in the Name", "duration": "5:14" },
+      { "title": "Take the Power Back", "duration": "5:37" },
+      { "title": "Settle for Nothing", "duration": "5:13" },
+      { "title": "Bullet in the Head", "duration": "5:08" },
+      { "title": "Know Your Enemy", "duration": "3:43" }
+    ],
+    "evil-empire": [
+      { "title": "People of the Sun", "duration": "2:30" },
+      { "title": "Bulls on Parade", "duration": "3:51" },
+      { "title": "Down Rodeo", "duration": "5:23" },
+      { "title": "Vietnow", "duration": "4:35" },
+      { "title": "Without a Face", "duration": "3:36" },
+      { "title": "Revolver", "duration": "5:30" }
+    ],
+    "the-battle-of-los-angeles": [
+      { "title": "Guerrilla Radio", "duration": "3:26" },
+      { "title": "Sleep Now in the Fire", "duration": "3:44" },
+      { "title": "Testify", "duration": "3:50" },
+      { "title": "Calm Like a Bomb", "duration": "4:00" },
+      { "title": "Mic Check", "duration": "3:32" },
+      { "title": "New Millennium Homes", "duration": "4:56" }
+    ],
+    "renegades": [
+      { "title": "Renegades of Funk", "duration": "4:00" },
+      { "title": "How I Could Just Kill a Man", "duration": "3:40" },
+      { "title": "Maggie’s Farm", "duration": "3:26" },
+      { "title": "Microphone Fiend", "duration": "4:37" },
+      { "title": "Kick Out the Jams", "duration": "3:32" },
+      { "title": "Pistol Grip Pump", "duration": "3:35" }
+    ]
+  }
+}

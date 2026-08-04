@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROOVESTORE - Vinilos Nuevos</title>
-    <title>GROOVESTORE - Vinilos Nuevos</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>GROOVESTORE - Detalle del álbum</title>
     <link rel="icon" href="data:," />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,8 +19,11 @@
     />
 
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/nevermind.css" />
+
     <script src="./js/app.js" defer></script>
   </head>
+
   <body>
     <header class="header">
       <div class="header-left">
@@ -65,38 +66,7 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero-wrapper">
-        <div class="hero">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              VINILOS NUEVOS.<br />
-              PRECIOS INCREÍBLES
-            </h1>
-            <p class="hero-subtitle">
-              DEL GRUNGE AL METAL, TENEMOS MÚSICA PARA<br />
-              TODOS LOS GUSTOS
-            </p>
-          </div>
-          <div class="hero-box-container">
-            <div class="hero-box">
-              <p>ENVÍO GRATIS EN<br />COMPRAS<br />SUPERIORES A<br />$50</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="grid-section">
-        <div class="section-header">
-          <h2 class="section-title">Elige tu género favorito</h2>
-          <span class="section-subtitle">
-            Cada género tiene su banda líder &rarr;
-          </span>
-        </div>
-
-        <div class="cards-grid" data-genres-grid></div>
-      </section>
-    </main>
+    <main data-album-detail></main>
 
     <footer class="footer">
       <div class="footer-container">
