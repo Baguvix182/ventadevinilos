@@ -3,25 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GROOVESTORE - Vinilos Nuevos</title>
-    <title>GROOVESTORE - Vinilos Nuevos</title>
+    <title>GROOVESTORE - Tu Caja</title>
+
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="icon" href="data:," />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/caja.css" />
   </head>
   <body>
     <header class="header">
@@ -38,14 +34,12 @@
             >
           </span>
         </a>
-
         <nav class="nav-menu">
-          <a href="index.html" class="nav-link active">INICIO</a>
+          <a href="index.html" class="nav-link active">CAJA</a>
           <a href="noticias.html" class="nav-link">NOTICIAS</a>
           <a href="novedades.html" class="nav-link">NOVEDADES</a>
         </nav>
       </div>
-
       <div class="header-center">
         <div class="search-bar">
           <i class="ri-search-line search-icon" aria-hidden="true"></i>
@@ -56,50 +50,53 @@
           />
         </div>
       </div>
-
       <div class="header-right">
-        <a
-          href="caja.html"
-          class="btn-cart"
-          aria-label="Ver carrito de compras"
-        >
+        <a href="#" class="btn-cart" aria-label="Ver carrito de compras">
           <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
           <span class="cart-badge">0</span>
         </a>
       </div>
     </header>
 
-    <main>
-      <section class="hero-wrapper">
-        <div class="hero">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              VINILOS NUEVOS.<br />
-              PRECIOS INCREÍBLES
-            </h1>
-            <p class="hero-subtitle">
-              DEL GRUNGE AL METAL, TENEMOS MÚSICA PARA<br />
-              TODOS LOS GUSTOS
-            </p>
-          </div>
-          <div class="hero-box-container">
-            <div class="hero-box">
-              <p>ENVÍO GRATIS EN<br />COMPRAS<br />SUPERIORES A<br />$50</p>
+    <main class="cart-container">
+      <h1 class="cart-title">
+        TU CAJA <span class="item-count">— 0 DISCOS</span>
+      </h1>
+
+      <div class="cart-layout">
+        <section class="items-list" id="lista-carrito"></section>
+
+        <aside class="cart-summary">
+          <div class="summary-card">
+            <h2 class="summary-title">EL TOTAL</h2>
+            <div class="summary-row">
+              <span id="resumen-cantidad">Subtotal (0)</span>
+              <span class="price" id="resumen-subtotal">$0.00</span>
             </div>
+            <div class="summary-row">
+              <span>Envío</span>
+              <span class="free-badge">GRATIS ⚡</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax (est.)</span>
+              <span class="price" id="resumen-tax">$0.00</span>
+            </div>
+            <div class="total-row">
+              <span class="total-label">TOTAL</span>
+              <span class="total-price" id="resumen-total">$0.00</span>
+            </div>
+            <button class="btn-checkout">COMPRAR &rarr;</button>
+            <p class="guarantee-text">DEVOLUCIONES EN 30 DÍAS, SIN PREGUNTAS</p>
           </div>
-        </div>
-      </section>
-
-      <section class="grid-section">
-        <div class="section-header">
-          <h2 class="section-title">Elige tu género favorito</h2>
-          <span class="section-subtitle">
-            Cada género tiene su banda líder &rarr;
-          </span>
-        </div>
-
-        <div class="cards-grid" data-genres-grid></div>
-      </section>
+          <div class="promo-box">
+            <div class="promo-content">
+              <span class="tag-icon">🏷️</span>
+              <span>¿TIENES UN CÓDIGO PROMOCIONAL?</span>
+            </div>
+            <span class="chevron">&rsaquo;</span>
+          </div>
+        </aside>
+      </div>
     </main>
 
     <footer class="footer">
@@ -116,7 +113,6 @@
             <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
           </div>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-heading">TIENDA</h5>
           <ul class="footer-links">
@@ -125,7 +121,6 @@
             <li><a href="#">Discos usados</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-heading">SOPORTE</h5>
           <ul class="footer-links">
@@ -134,7 +129,6 @@
             <li><a href="#">Contacto</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h5 class="footer-heading">LEGAL</h5>
           <ul class="footer-links">
@@ -143,10 +137,11 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
       </div>
     </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

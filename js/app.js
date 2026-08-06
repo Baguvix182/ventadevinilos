@@ -488,4 +488,94 @@ async function init() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Seleccionamos el contenedor principal de los discos
+  const itemsList = document.querySelector(".items-list");
+
+  // Función maestra que recalcula todos los precios y cantidades
+  function updateTotals() {
+    const cartItems = document.querySelectorAll(".cart-item");
+    let subtotal = 0;
+    let totalItems = 0;
+
+    // Recorremos cada disco que quede en el carrito
+    cartItems.forEach((item) => {
+      // Obtenemos el precio (le quitamos el símbolo $ y lo convertimos a número)
+      const priceText = item
+        .querySelector(".item-price")
+        .innerText.replace("$", "");
+      const price = parseFloat(priceText);
+
+      // Obtenemos la cantidad
+      const quantity = parseInt(item.querySelector("input").value);
+
+      // Sumamos al total
+      subtotal += price * quantity;
+      totalItems += quantity;
+    });
+
+    // Calculamos los impuestos (8% basado en tu diseño) y el total final
+    const tax = subtotal * 0.08;
+    const total = subtotal + tax;
+
+    // Actualizamos los textos en la página
+    document.querySelector(".item-count").innerHTML = `— ${totalItems} DISCOS`;
+    document.querySelector(".cart-badge").innerText = totalItems;
+
+    // Seleccionamos las filas del resumen para actualizar los números
+    const summaryRows = document.querySelectorAll(".summary-row");
+    if (summaryRows.length >= 3) {
+      // Fila del Subtotal
+      summaryRows[0].querySelector("span:first-child").innerText =
+        `Subtotal (${totalItems})`;
+      summaryRows[0].querySelector(".price").innerText =
+        `$${subtotal.toFixed(2)}`;
+
+      // Fila del Tax
+      summaryRows[2].querySelector(".price").innerText = `$${tax.toFixed(2)}`;
+    }
+
+    // El gran total
+    document.querySelector(".total-price").innerText = `$${total.toFixed(2)}`;
+
+    // Si el carrito se queda vacío, mostramos un mensaje
+    if (totalItems === 0) {
+      itemsList.innerHTML =
+        '<p style="text-align: center; font-weight: bold; padding: 40px 0;">Tu caja está vacía. ¡Ve a buscar algo de música!</p>';
+      document.querySelector(".btn-checkout").style.opacity = "0.5";
+      document.querySelector(".btn-checkout").style.pointerEvents = "none";
+    }
+  }
+
+  // Usamos delegación de eventos: escuchamos los clics en toda la lista
+  if (itemsList) {
+    itemsList.addEventListener("click", (e) => {
+      // 1. Si hicieron clic en la 'X' (botón de eliminar)
+      if (e.target.classList.contains("remove-btn")) {
+        const item = e.target.closest(".cart-item");
+        item.remove(); // Quitamos el disco del HTML
+        updateTotals(); // Recalculamos los precios
+      }
+
+      // 2. Si hicieron clic en los botones de cantidad (+ o -)
+      if (
+        e.target.tagName === "BUTTON" &&
+        e.target.closest(".quantity-control")
+      ) {
+        const input = e.target.parentElement.querySelector("input");
+        let quantity = parseInt(input.value);
+
+        if (e.target.innerText === "+") {
+          quantity++;
+        } else if (e.target.innerText === "-" && quantity > 1) {
+          quantity--; // Evitamos que la cantidad sea 0 o negativa
+        }
+
+        input.value = quantity; // Actualizamos el input
+        updateTotals(); // Recalculamos los precios
+      }
+    });
+  }
+});
+
 init();
