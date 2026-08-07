@@ -1,18 +1,54 @@
 /* =====================================================
-   GROOVE STORE — Renderizado dinámico con template literals
-   Datos: ../data/genres.json y ../data/bands.json.
-   Cada página marca sus contenedores con un atributo data-*
-   y este script rellena los que encuentre:
-     [data-genres-grid]   index.html  → tarjetas de todos los géneros
-     [data-genre-hero]    genre.html  → hero del género de ?genre=<id>
-     [data-genre-bands]   genre.html  → tarjetas de bandas de ?genre=<id>
-     [data-band-bio]      band.html   → biografía de la banda de ?band=<id>
-     [data-band-albums]   band.html   → álbumes de la banda de ?band=<id>
+   GROOVE STORE — Renderizado dinámico & Carrito de Compras
    ===================================================== */
 
 const DATA_DIR = "../data";
-
 const params = new URLSearchParams(window.location.search);
+
+/* ===== MANEJO DE STORAGE (CARRITO) ===== */
+
+function getCart() {
+  return JSON.parse(localStorage.getItem("groove_cart")) || [];
+}
+
+function saveCart(cart) {
+  localStorage.setItem("groove_cart", JSON.stringify(cart));
+  updateGlobalBadge();
+}
+
+function updateGlobalBadge() {
+  const cart = getCart();
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const cartBadge = document.querySelector(".cart-badge");
+  if (cartBadge) {
+    cartBadge.innerText = totalItems;
+  }
+}
+
+function addToCart(album, band) {
+  const cart = getCart();
+  const existingIndex = cart.findIndex(
+    (item) => item.title === album.title && item.band === band.name,
+  );
+
+  if (existingIndex > -1) {
+    cart[existingIndex].quantity += 1;
+  } else {
+    cart.push({
+      title: album.title,
+      band: band.name,
+      price: album.price,
+      image: album.image,
+      format: album.format,
+      quantity: 1,
+    });
+  }
+
+  saveCart(cart);
+  alert(`¡"${album.title}" añadido al carrito!`);
+}
+
+/* ===== CARGA DE DATOS Y HELPERS ===== */
 
 async function loadJSON(file) {
   const response = await fetch(`${DATA_DIR}/${file}`);
@@ -40,7 +76,6 @@ function getAlbumTracklist(albumDataByBand, band, album) {
   if (bandTracks && Array.isArray(bandTracks[albumKey])) {
     return bandTracks[albumKey];
   }
-
   return null;
 }
 
@@ -50,6 +85,8 @@ function normalizeText(value) {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
 }
+
+/* ===== BÚSQUEDA EN TIEMPO REAL ===== */
 
 let searchCatalogCache = null;
 
@@ -160,40 +197,46 @@ function attachSearchBehavior() {
   if (!searchInputs.length) return;
 
   const panel = createSearchPanel();
-
   const closePanel = () => hideSearchPanel(panel);
 
   searchInputs.forEach((input) => {
-    input.addEventListener("input", () => {
-      handleSearchInput(panel, input);
-    });
-
+    input.addEventListener("input", () => handleSearchInput(panel, input));
     input.addEventListener("focus", () => {
-      if (input.value.trim()) {
-        handleSearchInput(panel, input);
-      }
+      if (input.value.trim()) handleSearchInput(panel, input);
     });
-
     input.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closePanel();
-      }
+      if (event.key === "Escape") closePanel();
     });
   });
 
   document.addEventListener("click", (event) => {
-    const clickedInsideSearch = Array.from(searchInputs).some((input) =>
+    const clickedInsideSearch = searchInputs.some((input) =>
       input.contains(event.target),
     );
     const clickedInsideResults = panel.contains(event.target);
-
-    if (!clickedInsideSearch && !clickedInsideResults) {
-      closePanel();
-    }
+    if (!clickedInsideSearch && !clickedInsideResults) closePanel();
   });
 }
 
 /* ===== TEMPLATES ===== */
+
+const novedadesCard = (band, album) => `
+  <article class="card-item">
+    <span class="card-sticker">NUEVO</span>
+    <a href="${getAlbumHref(band, album)}" style="text-decoration: none; color: inherit;">
+      <div class="card-img-placeholder">
+        <img src="${album.image}" alt="${album.alt || album.title}" />
+      </div>
+      <span class="card-artist">${band.name}</span>
+      <h3 class="card-title">${album.title}</h3>
+      <p class="card-details">${album.year} • ${album.format}</p>
+    </a>
+    <div class="card-footer">
+      <span class="card-price">$${album.price.toFixed(2)}</span>
+      <button class="btn-add">AÑADIR</button>
+    </div>
+  </article>
+`;
 
 const genreCard = (genre) => `
   <a href="genre.html?genre=${genre.id}" style="text-decoration: none; color: inherit">
@@ -223,11 +266,7 @@ const genreHero = (genre) => `
   </div>`;
 
 const bandCard = (band, index) => `
-  <a
-    href="band.html?band=${band.id}"
-    class="card-polaroid ${index % 2 === 0 ? "tilt-left" : "tilt-right"}"
-    style="text-decoration: none; color: inherit; display: block"
-  >
+  <a href="band.html?band=${band.id}" class="card-polaroid ${index % 2 === 0 ? "tilt-left" : "tilt-right"}" style="text-decoration: none; color: inherit; display: block">
     <div class="card-image-wrapper">
       <img src="${band.image}" alt="${band.alt}" />
     </div>
@@ -265,16 +304,12 @@ const bandBio = (band) => `
         </div>
       </div>
     </div>
-
     <div class="bio-text-col">
       <h1 class="artist-title">${band.name}</h1>
-
       <div class="artist-badges">
         ${band.bio.badges.map((badge) => `<span class="badge-item">${badge}</span>`).join("")}
       </div>
-
       <h2 class="history-heading">HISTORIA</h2>
-
       <div class="history-body">
         ${band.bio.history.map((parrafo) => `<p>${parrafo}</p>`).join("")}
       </div>
@@ -371,7 +406,6 @@ async function renderHome(grid) {
 }
 
 async function renderGenrePage(heroEl, bandsEl) {
-  /* bands.json agrupa las bandas por género: { "grunge": [...], "pop-punk": [...] } */
   const [genres, bandsByGenre] = await Promise.all([
     loadJSON("genres.json"),
     loadJSON("bands.json"),
@@ -440,13 +474,83 @@ async function renderAlbumPage(detailEl) {
   const tracklist = getAlbumTracklist(albumTracks, band, album);
 
   document.title = `GROOVESTORE - ${band.name} - ${album.title}`;
-  if (detailEl) detailEl.innerHTML = albumDetail(band, album, tracklist);
+  if (detailEl) {
+    detailEl.innerHTML = albumDetail(band, album, tracklist);
+
+    const addBtn = detailEl.querySelector(".add-to-cart-btn");
+    if (addBtn) {
+      addBtn.addEventListener("click", () => addToCart(album, band));
+    }
+  }
+}
+
+// === NOVEDADES PAGE (Adaptado a tus tarjetas estáticas) ===
+async function renderNovedadesPage(gridEl) {
+  // 1. Array con los datos exactos de las tres tarjetas que dejaste en el HTML
+  const hardcodedAlbums = [
+    {
+      band: { name: "DAFT PUNK" },
+      album: {
+        title: "RANDOM ACCESS MEMORIES",
+        price: 45.0,
+        image:
+          "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
+        format: "2LP 10° Aniversario",
+      },
+    },
+    {
+      band: { name: "ARCTIC MONKEYS" },
+      album: {
+        title: "AM (SPECIAL PRESS)",
+        price: 32.0,
+        image:
+          "https://upload.wikimedia.org/wikipedia/en/0/04/Arctic_Monkeys_-_AM.png",
+        format: "Vinilo Rojo Transparente",
+      },
+    },
+    {
+      band: { name: "EL CUARTETO DE NOS" },
+      album: {
+        title: "RARO",
+        price: 29.0,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOcXc37dQLY0X4xpxVVm67ErHt9ixYHBuQpHIT-jwdw&s=10",
+        format: "Edición Deluxe • Vinilo Blanco",
+      },
+    },
+  ];
+
+  // 2. Conectamos los botones de tu grilla a la función addToCart
+  const addButtons = gridEl.querySelectorAll(".btn-add");
+  addButtons.forEach((btn, index) => {
+    if (hardcodedAlbums[index]) {
+      btn.addEventListener("click", () => {
+        addToCart(hardcodedAlbums[index].album, hardcodedAlbums[index].band);
+      });
+    }
+  });
+
+  // 3. También conectamos el disco destacado de The Strokes ("Hero")
+  const heroBtn = document.querySelector(".btn-buy-hero");
+  if (heroBtn) {
+    heroBtn.addEventListener("click", () => {
+      addToCart(
+        {
+          title: "THE NEW ABNORMAL",
+          price: 38.0,
+          image:
+            "https://i.scdn.co/image/ab67616d0000b273e3f1ba3de4659708c25d0f39",
+          format: "180G VINYL",
+        },
+        { name: "THE STROKES" },
+      );
+    });
+  }
 }
 
 /* ===== INIT ===== */
 
 function renderError(containers) {
-  /* fetch() no funciona con el protocolo file://, hay que servir el sitio por HTTP */
   const hint =
     window.location.protocol === "file:"
       ? "Sirve el sitio con «python3 -m http.server 8000» y abre http://localhost:8000/html/"
@@ -463,6 +567,8 @@ async function init() {
   const bandBioEl = document.querySelector("[data-band-bio]");
   const bandAlbumsEl = document.querySelector("[data-band-albums]");
   const albumDetailEl = document.querySelector("[data-album-detail]");
+  // Ahora apuntamos directo a tu clase en HTML, sin necesitar data-attributes
+  const novedadesGridEl = document.querySelector(".releases-grid");
 
   const containers = [
     genresGrid,
@@ -471,7 +577,9 @@ async function init() {
     bandBioEl,
     bandAlbumsEl,
     albumDetailEl,
+    novedadesGridEl,
   ].filter(Boolean);
+
   if (containers.length === 0) return;
 
   try {
@@ -481,6 +589,7 @@ async function init() {
     if (bandBioEl || bandAlbumsEl)
       await renderBandPage(bandBioEl, bandAlbumsEl);
     if (albumDetailEl) await renderAlbumPage(albumDetailEl);
+    if (novedadesGridEl) await renderNovedadesPage(novedadesGridEl);
     attachSearchBehavior();
   } catch (error) {
     console.error("GROOVE STORE: no se pudieron cargar los datos", error);
@@ -488,93 +597,148 @@ async function init() {
   }
 }
 
+/* ===== LÓGICA VISTA DE LA CAJA / CARRITO (caja.html) ===== */
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Seleccionamos el contenedor principal de los discos
+  updateGlobalBadge();
+
   const itemsList = document.querySelector(".items-list");
 
-  // Función maestra que recalcula todos los precios y cantidades
+  function renderCartItems() {
+    if (!itemsList) return;
+
+    const cart = getCart();
+
+    if (cart.length === 0) {
+      itemsList.innerHTML =
+        '<p style="text-align: center; font-weight: bold; padding: 40px 0;">Tu caja está vacía. ¡Ve a buscar algo de música!</p>';
+      updateTotals();
+      return;
+    }
+
+    itemsList.innerHTML = cart
+      .map(
+        (item, index) => `
+        <div class="cart-item" data-index="${index}">
+          <img src="${item.image}" alt="${item.title}" style="width: 60px; height: 60px; object-fit: cover;" />
+          <div class="item-details">
+            <h4>${item.title}</h4>
+            <p>${item.band} · ${item.format}</p>
+            <span class="item-price">$${item.price.toFixed(2)}</span>
+          </div>
+          <div class="quantity-control">
+            <button class="btn-qty-minus">-</button>
+            <input type="number" value="${item.quantity}" readonly />
+            <button class="btn-qty-plus">+</button>
+          </div>
+          <button class="remove-btn">✕</button>
+        </div>`,
+      )
+      .join("");
+
+    updateTotals();
+  }
+
   function updateTotals() {
-    const cartItems = document.querySelectorAll(".cart-item");
+    const cart = getCart();
     let subtotal = 0;
     let totalItems = 0;
 
-    // Recorremos cada disco que quede en el carrito
-    cartItems.forEach((item) => {
-      // Obtenemos el precio (le quitamos el símbolo $ y lo convertimos a número)
-      const priceText = item
-        .querySelector(".item-price")
-        .innerText.replace("$", "");
-      const price = parseFloat(priceText);
-
-      // Obtenemos la cantidad
-      const quantity = parseInt(item.querySelector("input").value);
-
-      // Sumamos al total
-      subtotal += price * quantity;
-      totalItems += quantity;
+    cart.forEach((item) => {
+      subtotal += item.price * item.quantity;
+      totalItems += item.quantity;
     });
 
-    // Calculamos los impuestos (8% basado en tu diseño) y el total final
+    // LÓGICA DE ENVÍO: Gratis si pasa de $100
+    let shippingCost = 0;
+    let shippingText = "GRATIS ⚡";
+    let isFreeShipping = true;
+
+    if (subtotal < 100 && totalItems > 0) {
+      shippingCost = 15.0;
+      shippingText = `$${shippingCost.toFixed(2)}`;
+      isFreeShipping = false;
+    } else if (totalItems === 0) {
+      shippingText = "$0.00";
+      isFreeShipping = false;
+    }
+
     const tax = subtotal * 0.08;
-    const total = subtotal + tax;
+    const total = subtotal + tax + shippingCost;
 
-    // Actualizamos los textos en la página
-    document.querySelector(".item-count").innerHTML = `— ${totalItems} DISCOS`;
-    document.querySelector(".cart-badge").innerText = totalItems;
+    // ACTUALIZAR TEXTOS
+    const itemCountEl = document.querySelector(".item-count");
+    const totalPriceEl = document.querySelector(".total-price");
+    const btnCheckout = document.querySelector(".btn-checkout");
 
-    // Seleccionamos las filas del resumen para actualizar los números
-    const summaryRows = document.querySelectorAll(".summary-row");
-    if (summaryRows.length >= 3) {
-      // Fila del Subtotal
-      summaryRows[0].querySelector("span:first-child").innerText =
-        `Subtotal (${totalItems})`;
-      summaryRows[0].querySelector(".price").innerText =
-        `$${subtotal.toFixed(2)}`;
+    // IDs de resumen (agregados previamente en caja.html)
+    const resumenCantidad = document.getElementById("resumen-cantidad");
+    const resumenSubtotal = document.getElementById("resumen-subtotal");
+    const resumenEnvio = document.getElementById("resumen-envio");
+    const resumenTax = document.getElementById("resumen-tax");
+    const resumenTotal = document.getElementById("resumen-total");
 
-      // Fila del Tax
-      summaryRows[2].querySelector(".price").innerText = `$${tax.toFixed(2)}`;
+    if (itemCountEl) itemCountEl.innerHTML = `— ${totalItems} DISCOS`;
+    if (totalPriceEl) totalPriceEl.innerText = `$${total.toFixed(2)}`;
+
+    // Actualizar el ticket lateral si existen los IDs
+    if (resumenCantidad) resumenCantidad.innerText = `Subtotal (${totalItems})`;
+    if (resumenSubtotal) resumenSubtotal.innerText = `$${subtotal.toFixed(2)}`;
+    if (resumenTax) resumenTax.innerText = `$${tax.toFixed(2)}`;
+    if (resumenTotal) resumenTotal.innerText = `$${total.toFixed(2)}`;
+
+    // Estilos del envío
+    if (resumenEnvio) {
+      resumenEnvio.innerText = shippingText;
+      if (isFreeShipping && totalItems > 0) {
+        resumenEnvio.style.color = "#e23b1e";
+        resumenEnvio.style.fontWeight = "bold";
+      } else {
+        resumenEnvio.style.color = "inherit";
+        resumenEnvio.style.fontWeight = "normal";
+      }
     }
 
-    // El gran total
-    document.querySelector(".total-price").innerText = `$${total.toFixed(2)}`;
-
-    // Si el carrito se queda vacío, mostramos un mensaje
-    if (totalItems === 0) {
-      itemsList.innerHTML =
-        '<p style="text-align: center; font-weight: bold; padding: 40px 0;">Tu caja está vacía. ¡Ve a buscar algo de música!</p>';
-      document.querySelector(".btn-checkout").style.opacity = "0.5";
-      document.querySelector(".btn-checkout").style.pointerEvents = "none";
+    // Botón checkout
+    if (btnCheckout) {
+      btnCheckout.style.opacity = totalItems === 0 ? "0.5" : "1";
+      btnCheckout.style.pointerEvents = totalItems === 0 ? "none" : "auto";
     }
+
+    updateGlobalBadge();
   }
 
-  // Usamos delegación de eventos: escuchamos los clics en toda la lista
   if (itemsList) {
     itemsList.addEventListener("click", (e) => {
-      // 1. Si hicieron clic en la 'X' (botón de eliminar)
+      const cart = getCart();
+      const itemEl = e.target.closest(".cart-item");
+      if (!itemEl) return;
+
+      const index = parseInt(itemEl.dataset.index);
+
       if (e.target.classList.contains("remove-btn")) {
-        const item = e.target.closest(".cart-item");
-        item.remove(); // Quitamos el disco del HTML
-        updateTotals(); // Recalculamos los precios
+        cart.splice(index, 1);
+        saveCart(cart);
+        renderCartItems();
       }
 
-      // 2. Si hicieron clic en los botones de cantidad (+ o -)
+      if (e.target.classList.contains("btn-qty-plus")) {
+        cart[index].quantity += 1;
+        saveCart(cart);
+        renderCartItems();
+      }
+
       if (
-        e.target.tagName === "BUTTON" &&
-        e.target.closest(".quantity-control")
+        e.target.classList.contains("btn-qty-minus") &&
+        cart[index].quantity > 1
       ) {
-        const input = e.target.parentElement.querySelector("input");
-        let quantity = parseInt(input.value);
-
-        if (e.target.innerText === "+") {
-          quantity++;
-        } else if (e.target.innerText === "-" && quantity > 1) {
-          quantity--; // Evitamos que la cantidad sea 0 o negativa
-        }
-
-        input.value = quantity; // Actualizamos el input
-        updateTotals(); // Recalculamos los precios
+        cart[index].quantity -= 1;
+        saveCart(cart);
+        renderCartItems();
       }
     });
+
+    renderCartItems();
   }
 });
 
