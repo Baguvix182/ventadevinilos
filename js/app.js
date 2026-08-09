@@ -743,3 +743,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 init();
+document.addEventListener('DOMContentLoaded', () => {
+    const btnCheckout = document.querySelector('.btn-checkout');
+
+    if (btnCheckout) {
+        btnCheckout.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            // 1. Vaciar el carrito en el almacenamiento local
+            localStorage.removeItem('groove_cart');
+
+            // 2. Redirigir a la página de confirmación de compra
+            window.location.href = 'compra-realizada.html';
+        });
+    }
+});
