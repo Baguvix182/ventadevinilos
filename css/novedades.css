@@ -2,7 +2,7 @@
 :root {
     --bg-main: #F2EDE1;
     --bg-hero: #E23B1E;
-    --bg-footer: #17151A; /* Actualizado al nuevo color */
+    --bg-footer: #17151A;
     --bg-white: #FFFFFF;
     --bg-image-gray: #BDB8AD;
 
@@ -534,21 +534,68 @@ img {
     color: var(--text-gray);
 }
 
-/* ================= RESPONSIVO ================= */
+/* ================= DISEÑO RESPONSIVO ================= */
+
+/* Ajustes para tablets y pantallas medianas */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        position: relative;
+    }
+
+    .header-left {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .header-center {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .header-right {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
     .hero-release {
         grid-template-columns: 1fr;
     }
 
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero-artist {
+        font-size: 2.5rem;
+    }
+
+    .hero-media {
+        padding: 40px 20px;
+    }
+
     .releases-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
 
+/* Ajustes para celulares chicos */
 @media (max-width: 480px) {
     .section-header {
         flex-direction: column;
@@ -556,12 +603,35 @@ img {
         gap: 15px;
     }
 
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-artist {
+        font-size: 2rem;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
     .releases-grid {
         grid-template-columns: 1fr;
     }
 
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-desc {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
