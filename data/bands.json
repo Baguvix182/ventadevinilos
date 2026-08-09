@@ -1326,7 +1326,7 @@
           "year": 1984,
           "format": "LP",
           "price": 27.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7QCZbelKDmL6xf3dlPWNBzxmclBR597i_6koQtobzg&s=10",
           "alt": "Like a Virgin - LP"
         },
         {
@@ -1335,7 +1335,7 @@
           "format": "LP",
           "price": 43.99,
           "featured": true,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://i.scdn.co/image/ab67616d0000b273744ce5f9db16330eb4027f26",
           "alt": "Like a Prayer - LP"
         },
         {
@@ -1343,8 +1343,16 @@
           "year": 1998,
           "format": "2LP",
           "price": 34.99,
-          "image": "../img/placeholder-album.svg",
+          "image": "https://i.scdn.co/image/ab67616d0000b27391d080c66f2425c23c6eadf8",
           "alt": "Ray of Light - 2LP"
+        },
+        {
+          "title": "TRUE BLUE",
+          "year": 1986,
+          "format": "LP",
+          "price": 29.99,
+          "image": "https://i.scdn.co/image/ab67616d0000b273ab2411303d48498dc1d8c137",
+          "alt": "True Blue - LP"
         }
       ]
     },
