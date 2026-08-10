@@ -238,6 +238,11 @@ body {
   display: flex;
   gap: 0.8rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.payment-field {
+  transition: all 0.2s ease;
 }
 
 .btn-payment {

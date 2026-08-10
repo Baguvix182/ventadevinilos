@@ -155,8 +155,8 @@
             </label>
           </div>
 
-          <div class="form-group-list">
-            <div class="form-field">
+          <div class="form-group-list" id="payment-fields">
+            <div class="form-field payment-field payment-card">
               <label for="tarjeta">NÚMERO DE TARJETA</label>
               <input 
                 type="text" 
@@ -167,7 +167,7 @@
               />
             </div>
 
-            <div class="form-row duo">
+            <div class="form-row duo payment-field payment-card">
               <div class="form-field">
                 <label for="venc">VENCIMIENTO</label>
                 <input 
@@ -188,6 +188,26 @@
                   maxlength="4"
                 />
               </div>
+            </div>
+
+            <div class="form-field payment-field payment-paypal" style="display: none;">
+              <label for="paypal-email">CORREO DE PAYPAL</label>
+              <input 
+                type="email" 
+                id="paypal-email" 
+                name="paypal_email" 
+                placeholder="tuemail@paypal.com"
+              />
+            </div>
+
+            <div class="form-field payment-field payment-pay" style="display: none;">
+              <label for="pay-phone">TELÉFONO DE PAY</label>
+              <input 
+                type="tel" 
+                id="pay-phone" 
+                name="pay_phone" 
+                placeholder="+503 7777-8888"
+              />
             </div>
           </div>
         </section>
@@ -219,6 +239,49 @@
 
     </form>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const paymentOptions = document.querySelectorAll('input[name="metodo_pago"]');
+      const paymentFields = document.querySelectorAll('.payment-field');
+      const cardInput = document.getElementById('tarjeta');
+
+      function updatePaymentFields() {
+        const selected = document.querySelector('input[name="metodo_pago"]:checked')?.value || 'tarjeta';
+
+        paymentFields.forEach((field) => {
+          field.style.display = 'none';
+        });
+
+        if (selected === 'paypal') {
+          document.querySelectorAll('.payment-paypal').forEach((field) => {
+            field.style.display = 'flex';
+          });
+        } else if (selected === 'pay') {
+          document.querySelectorAll('.payment-pay').forEach((field) => {
+            field.style.display = 'flex';
+          });
+        } else {
+          document.querySelectorAll('.payment-card').forEach((field) => {
+            field.style.display = 'flex';
+          });
+        }
+      }
+
+      if (cardInput) {
+        cardInput.addEventListener('input', (event) => {
+          const digits = event.target.value.replace(/\D/g, '').slice(0, 16);
+          event.target.value = digits.replace(/(.{4})/g, '$1 ').trim();
+        });
+      }
+
+      paymentOptions.forEach((option) => {
+        option.addEventListener('change', updatePaymentFields);
+      });
+
+      updatePaymentFields();
+    });
+  </script>
 
   <!-- PIE DE PÁGINA-->
   <footer class="footer">
