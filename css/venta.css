@@ -356,6 +356,20 @@ body {
   box-shadow: 2px 2px 0px white;
 }
 
+.btn-submit-order:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0px white;
+}
+
+.btn-submit-order:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0px white;
+}
+
 /* --- FOOTER EN ESPAÑOL --- */
 .footer {
   background-color: #17151a;

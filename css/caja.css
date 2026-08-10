@@ -374,6 +374,7 @@ img {
 }
 
 .btn-checkout {
+  display: block;
   width: 100%;
   background-color: var(--text-dark);
   color: var(--text-white);
@@ -385,6 +386,7 @@ img {
   cursor: pointer;
   transition: var(--transition-fast);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .btn-checkout:hover {

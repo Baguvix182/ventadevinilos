@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GROOVESTORE - Caja</title>
+  <title>GROOVESTORE - Finalizar Compra</title>
   <link rel="icon" href="data:," />
 
   <!-- Fuentes Google -->
@@ -55,7 +55,6 @@
           type="text"
           placeholder="Buscar bandas, álbumes..."
           aria-label="Buscar en el catálogo"
-          value="nir"
         />
       </div>
     </div>
@@ -91,7 +90,6 @@
                 id="nombre" 
                 name="nombre" 
                 placeholder="Ej. Maya Rodríguez" 
-                required 
               />
             </div>
 
@@ -102,7 +100,6 @@
                 id="direccion" 
                 name="direccion" 
                 placeholder="Calle, número, apto / suite" 
-                required 
               />
             </div>
 
@@ -114,7 +111,6 @@
                   id="ciudad" 
                   name="ciudad" 
                   placeholder="Ciudad" 
-                  required 
                 />
               </div>
               <div class="form-field">
@@ -124,7 +120,6 @@
                   id="estado" 
                   name="estado" 
                   placeholder="Estado" 
-                  required 
                 />
               </div>
               <div class="form-field">
@@ -134,7 +129,6 @@
                   id="zip" 
                   name="zip" 
                   placeholder="ZIP" 
-                  required 
                 />
               </div>
             </div>
@@ -170,7 +164,6 @@
                 name="tarjeta" 
                 placeholder="0000 0000 0000 0000" 
                 maxlength="19"
-                required 
               />
             </div>
 
@@ -183,7 +176,6 @@
                   name="venc" 
                   placeholder="MM / YY" 
                   maxlength="7"
-                  required 
                 />
               </div>
               <div class="form-field">
@@ -194,7 +186,6 @@
                   name="cvc" 
                   placeholder="***" 
                   maxlength="4"
-                  required 
                 />
               </div>
             </div>
@@ -208,31 +199,20 @@
         <h2 class="summary-title">TU PEDIDO</h2>
 
         <div class="order-items">
-          <div class="order-item">
-            <span class="item-name">Nevermind</span>
-            <span class="item-price">$34.99</span>
-          </div>
-          <div class="order-item">
-            <span class="item-name">Enema of the State</span>
-            <span class="item-price">$31.99</span>
-          </div>
-          <div class="order-item">
-            <span class="item-name">Raro</span>
-            <span class="item-price">$38.99</span>
-          </div>
+          <!-- Los items se renderizarán aquí desde el JS (app.js) -->
         </div>
 
         <div class="order-subtotal">
           <span>Subtotal + impuestos</span>
-          <span>$114.45</span>
+          <span id="venta-subtotal">$0.00</span>
         </div>
 
         <div class="order-total-row">
           <span class="total-label">TOTAL</span>
-          <span class="total-amount">$114.45</span>
+          <span class="total-amount" id="venta-total">$0.00</span>
         </div>
 
-        <button type="submit" id="btn-realizar-pedido" class="btn-submit-order">
+        <button type="submit" id="btn-realizar-pedido" class="btn-submit-order" disabled>
           REALIZAR PEDIDO <i class="ri-sparkling-fill"></i>
         </button>
       </aside>
@@ -288,5 +268,66 @@
     </div>
   </footer>
 
+  <!-- Script principal (Asegúrate de que la ruta sea correcta) -->
+  <script src="./js/app.js"></script>
+  <script>
+    const checkoutForm = document.querySelector('.checkout-grid');
+    const checkoutButton = document.getElementById('btn-realizar-pedido');
+    const orderItemsContainer = document.querySelector('.order-items');
+    const subtotalElement = document.getElementById('venta-subtotal');
+    const totalElement = document.getElementById('venta-total');
+
+    function getCart() {
+      return JSON.parse(localStorage.getItem('groove_cart')) || [];
+    }
+
+    function renderCheckoutSummary() {
+      const cart = getCart();
+
+      if (!orderItemsContainer) return;
+
+      if (cart.length === 0) {
+        orderItemsContainer.innerHTML = '<div class="order-item"><span>No hay discos en el carrito</span><span>$0.00</span></div>';
+        if (subtotalElement) subtotalElement.innerText = '$0.00';
+        if (totalElement) totalElement.innerText = '$0.00';
+        return;
+      }
+
+      orderItemsContainer.innerHTML = cart
+        .map((item) => `
+          <div class="order-item">
+            <span class="item-name">${item.title} (${item.quantity})</span>
+            <span class="item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+          </div>
+        `)
+        .join('');
+
+      const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      const tax = subtotal * 0.08;
+      const total = subtotal + tax;
+
+      if (subtotalElement) subtotalElement.innerText = `$${subtotal.toFixed(2)}`;
+      if (totalElement) totalElement.innerText = `$${total.toFixed(2)}`;
+    }
+
+    const updateCheckoutButton = () => {
+      const requiredInputs = checkoutForm.querySelectorAll('input[type="text"], input[type="password"]');
+      const allFilled = Array.from(requiredInputs).every((input) => input.value.trim() !== '');
+      const paymentSelected = checkoutForm.querySelector('input[name="metodo_pago"]:checked');
+
+      checkoutButton.disabled = !(allFilled && paymentSelected);
+    };
+
+    checkoutForm.querySelectorAll('input[type="text"], input[type="password"]').forEach((input) => {
+      input.addEventListener('input', updateCheckoutButton);
+    });
+
+    checkoutForm.querySelectorAll('input[name="metodo_pago"]').forEach((input) => {
+      input.addEventListener('change', updateCheckoutButton);
+    });
+
+    renderCheckoutSummary();
+    updateCheckoutButton();
+  </script>
 </body>
 </html>

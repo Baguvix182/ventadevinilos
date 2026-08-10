@@ -743,18 +743,201 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 init();
-document.addEventListener('DOMContentLoaded', () => {
-    const btnCheckout = document.querySelector('.btn-checkout');
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateGlobalBadge();
+
+  const itemsList = document.querySelector(".items-list");
+  const orderItemsContainer = document.querySelector(".order-items");
+  const subtotalEl = document.querySelector(".order-subtotal span:last-child");
+  const totalAmountEl = document.querySelector(".total-amount");
+  const checkoutForm = document.querySelector(".checkout-grid");
+  const btnCheckout = document.querySelector(".btn-checkout");
+
+  function renderCartItems() {
+    if (!itemsList) return;
+
+    const cart = getCart();
+
+    if (cart.length === 0) {
+      itemsList.innerHTML =
+        '<p style="text-align: center; font-weight: bold; padding: 40px 0;">Tu caja está vacía. ¡Ve a buscar algo de música!</p>';
+      updateTotals();
+      return;
+    }
+
+    itemsList.innerHTML = cart
+      .map(
+        (item, index) => `
+        <div class="cart-item" data-index="${index}">
+          <img src="${item.image}" alt="${item.title}" style="width: 60px; height: 60px; object-fit: cover;" />
+          <div class="item-details">
+            <h4>${item.title}</h4>
+            <p>${item.band} · ${item.format}</p>
+            <span class="item-price">$${item.price.toFixed(2)}</span>
+          </div>
+          <div class="quantity-control">
+            <button class="btn-qty-minus">-</button>
+            <input type="number" value="${item.quantity}" readonly />
+            <button class="btn-qty-plus">+</button>
+          </div>
+          <button class="remove-btn">✕</button>
+        </div>`,
+      )
+      .join("");
+
+    updateTotals();
+  }
+
+  function updateTotals() {
+    const cart = getCart();
+    let subtotal = 0;
+    let totalItems = 0;
+
+    cart.forEach((item) => {
+      subtotal += item.price * item.quantity;
+      totalItems += item.quantity;
+    });
+
+    let shippingCost = 0;
+    let shippingText = "GRATIS ⚡";
+    let isFreeShipping = true;
+
+    if (subtotal < 100 && totalItems > 0) {
+      shippingCost = 15.0;
+      shippingText = `$${shippingCost.toFixed(2)}`;
+      isFreeShipping = false;
+    } else if (totalItems === 0) {
+      shippingText = "$0.00";
+      isFreeShipping = false;
+    }
+
+    const tax = subtotal * 0.08;
+    const total = subtotal + tax + shippingCost;
+
+    const itemCountEl = document.querySelector(".item-count");
+    const totalPriceEl = document.querySelector(".total-price");
+    const resumenCantidad = document.getElementById("resumen-cantidad");
+    const resumenSubtotal = document.getElementById("resumen-subtotal");
+    const resumenEnvio = document.getElementById("resumen-envio");
+    const resumenTax = document.getElementById("resumen-tax");
+    const resumenTotal = document.getElementById("resumen-total");
+
+    if (itemCountEl) itemCountEl.innerHTML = `— ${totalItems} DISCOS`;
+    if (totalPriceEl) totalPriceEl.innerText = `$${total.toFixed(2)}`;
+
+    if (resumenCantidad) resumenCantidad.innerText = `Subtotal (${totalItems})`;
+    if (resumenSubtotal) resumenSubtotal.innerText = `$${subtotal.toFixed(2)}`;
+    if (resumenTax) resumenTax.innerText = `$${tax.toFixed(2)}`;
+    if (resumenTotal) resumenTotal.innerText = `$${total.toFixed(2)}`;
+
+    if (resumenEnvio) {
+      resumenEnvio.innerText = shippingText;
+      if (isFreeShipping && totalItems > 0) {
+        resumenEnvio.style.color = "#e23b1e";
+        resumenEnvio.style.fontWeight = "bold";
+      } else {
+        resumenEnvio.style.color = "inherit";
+        resumenEnvio.style.fontWeight = "normal";
+      }
+    }
 
     if (btnCheckout) {
-        btnCheckout.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            // 1. Vaciar el carrito en el almacenamiento local
-            localStorage.removeItem('groove_cart');
-
-            // 2. Redirigir a la página de confirmación de compra
-            window.location.href = 'compra-realizada.html';
-        });
+      btnCheckout.style.opacity = totalItems === 0 ? "0.5" : "1";
+      btnCheckout.style.pointerEvents = totalItems === 0 ? "none" : "auto";
     }
+
+    updateGlobalBadge();
+  }
+
+  function renderCheckoutSummary() {
+    if (!orderItemsContainer) return;
+
+    const cart = getCart();
+
+    if (cart.length === 0) {
+      orderItemsContainer.innerHTML = `
+        <div class="order-item" style="color: #a1a1aa; font-style: italic;">
+          <span>No hay discos en el carrito</span>
+          <span>$0.00</span>
+        </div>`;
+      if (subtotalEl) subtotalEl.innerText = "$0.00";
+      if (totalAmountEl) totalAmountEl.innerText = "$0.00";
+      return;
+    }
+
+    orderItemsContainer.innerHTML = cart
+      .map(
+        (item) => `
+        <div class="order-item">
+          <span class="item-name">${item.title} (${item.quantity})</span>
+          <span class="item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+        </div>`
+      )
+      .join("");
+
+    const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const tax = subtotal * 0.08;
+    const total = subtotal + tax;
+
+    if (subtotalEl) subtotalEl.innerText = `$${subtotal.toFixed(2)}`;
+    if (totalAmountEl) totalAmountEl.innerText = `$${total.toFixed(2)}`;
+  }
+
+  if (itemsList) {
+    itemsList.addEventListener("click", (e) => {
+      const cart = getCart();
+      const itemEl = e.target.closest(".cart-item");
+      if (!itemEl) return;
+
+      const index = parseInt(itemEl.dataset.index);
+
+      if (e.target.classList.contains("remove-btn")) {
+        cart.splice(index, 1);
+        saveCart(cart);
+        renderCartItems();
+      }
+
+      if (e.target.classList.contains("btn-qty-plus")) {
+        cart[index].quantity += 1;
+        saveCart(cart);
+        renderCartItems();
+      }
+
+      if (
+        e.target.classList.contains("btn-qty-minus") &&
+        cart[index].quantity > 1
+      ) {
+        cart[index].quantity -= 1;
+        saveCart(cart);
+        renderCartItems();
+      }
+    });
+
+    renderCartItems();
+  }
+
+  renderCheckoutSummary();
+
+  if (btnCheckout) {
+    btnCheckout.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "venta.html";
+    });
+  }
+
+  if (checkoutForm) {
+    checkoutForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const cart = getCart();
+      if (cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+      }
+
+      localStorage.removeItem("groove_cart");
+      window.location.href = "compra-realizada.html";
+    });
+  }
 });
