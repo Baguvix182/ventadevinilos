@@ -112,10 +112,11 @@
       "records": 5,
       "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
       "alt": "Foster the People",
+
       "bio": {
         "image": "https://cdn-images.dzcdn.net/images/artist/fe79e60f3beec07d6ab8bd6b3bf033e0/500x500.jpg",
         "alt": "Foster the People",
-        "badges": ["INDIE POP", "2009–PRESENTE", "LOS ANGELES, CA"],
+        "badges": ["INDIE ROCK/POP", "2009–PRESENTE", "LOS ANGELES, CA"],
         "history": [
           "Formados en Los Ángeles en 2009, Foster the People nació de la colaboración entre Mark Foster, Jacob Fink y Cubbie Fink, mezclando indie pop con atmósferas psicodélicas.",
           "Con Pumped Up Kicks y Torches, la banda pasó de una propuesta independiente a un fenómeno internacional, consolidando su sonido en la escena alternativa."
@@ -167,9 +168,9 @@
       "bio": {
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1KSurxJEN8Dza0E3jKNBDUMYsBUmihGy1_DHJcp7RTIijh3dbJru_ysM&s=10",
         "alt": "Linkin Park",
-        "badges": ["NU METAL", "1996–PRESENTE", "AGOURA HILLS, CA"],
+        "badges": ["ROCK ALTERNATIVO", "1996–PRESENTE", "AGOURA HILLS, CA"],
         "history": [
-          "Formados en Agoura Hills, California, en 1996, Linkin Park mezcló metal alternativo, rap y electrónica. Su debut, Hybrid Theory (2000), fue el álbum más vendido del nuevo milenio.",
+          "Formados en Agoura Hills, California, en 1996, Linkin Park mezcló rock alternativo, rap y electrónica. Su debut, Hybrid Theory (2000), fue el álbum más vendido del nuevo milenio.",
           "Con Chester Bennington y Mike Shinoda al frente redefinieron el rock de los 2000. Tras la muerte de Bennington en 2017, la banda regresó en 2024 con nueva vocalista y un disco número uno."
         ]
       },
@@ -742,7 +743,7 @@
       "image": "https://cdn.milenio.com/uploads/media/2023/06/02/la-banda-se-presenta-manana.jpg",
       "alt": "Los Fabulosos Cadillacs",
       "bio": {
-        "image": "",
+        "image": "https://cdn.milenio.com/uploads/media/2023/06/02/la-banda-se-presenta-manana.jpg",
         "alt": "Los Fabulosos Cadillacs",
         "badges": ["SKA ROCK", "1985–PRESENTE", "BUENOS AIRES, AR"],
         "history": [
@@ -2463,7 +2464,7 @@
         "badges": ["RAP METAL", "1991–PRESENTE", "LOS ÁNGELES, CA"],
         "history": [
           "Formada en Los Ángeles en 1991, Rage Against the Machine unió hardcore, rap, metal y política en una propuesta única y muy poderosa.",
-          "Con su debut homónimo (1992) y Evil Empire (1996) se convirtieron en una de las bandas más revolucionarias del rock alternativo de los años 90."
+          "Con su debut homónimo (1992) y Evil Empire (1996) se convirtieron en una de las bandas más revolucionarias del metal alternativo de los años 90."
         ]
       },
       "albums": [
