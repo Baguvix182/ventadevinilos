@@ -374,11 +374,6 @@ const albumDetail = (band, album, tracklist = null) => {
 
           <div class="actions-row">
             <button class="add-to-cart-btn">AÑADIR AL CARRITO</button>
-            <button class="wishlist-btn" aria-label="Añadir a favoritos">
-              <svg viewBox="0 0 24 24" width="20" height="20" stroke="#000" stroke-width="2" fill="none" aria-hidden="true">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-              </svg>
-            </button>
           </div>
 
           <div class="tracklist-section">
@@ -882,39 +877,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (subtotalEl) subtotalEl.innerText = `$${subtotal.toFixed(2)}`;
     if (totalAmountEl) totalAmountEl.innerText = `$${total.toFixed(2)}`;
-  }
-
-  if (itemsList) {
-    itemsList.addEventListener("click", (e) => {
-      const cart = getCart();
-      const itemEl = e.target.closest(".cart-item");
-      if (!itemEl) return;
-
-      const index = parseInt(itemEl.dataset.index);
-
-      if (e.target.classList.contains("remove-btn")) {
-        cart.splice(index, 1);
-        saveCart(cart);
-        renderCartItems();
-      }
-
-      if (e.target.classList.contains("btn-qty-plus")) {
-        cart[index].quantity += 1;
-        saveCart(cart);
-        renderCartItems();
-      }
-
-      if (
-        e.target.classList.contains("btn-qty-minus") &&
-        cart[index].quantity > 1
-      ) {
-        cart[index].quantity -= 1;
-        saveCart(cart);
-        renderCartItems();
-      }
-    });
-
-    renderCartItems();
   }
 
   renderCheckoutSummary();
