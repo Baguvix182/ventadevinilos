@@ -743,7 +743,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 init();
-<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded", () => {
   updateGlobalBadge();
@@ -920,7 +919,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCheckoutSummary();
 
-  if (btnCheckout) {
+  if (btnCheckout && !checkoutForm) {
     btnCheckout.addEventListener("click", (e) => {
       e.preventDefault();
       window.location.href = "venta.html";
@@ -942,20 +941,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-=======
-document.addEventListener("DOMContentLoaded", () => {
-  const btnCheckout = document.querySelector(".btn-checkout");
 
-  if (btnCheckout) {
-    btnCheckout.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      // 1. Vaciar el carrito en el almacenamiento local
-      localStorage.removeItem("groove_cart");
-
-      // 2. Redirigir a la página de confirmación de compra
-      window.location.href = "compra-realizada.html";
-    });
-  }
-});
->>>>>>> b2955d82cdcedcecb817f89bd65a244b30e91f7e
