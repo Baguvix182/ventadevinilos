@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GROOVESTORE - Caja</title>
+  <link rel="icon" href="data:," />
+
+  <!-- Fuentes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Iconos Remixicon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="./css/venta.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="header-left">
+      <a
+        href="index.html"
+        class="logo-container"
+        aria-label="Inicio - GrooveStore"
+      >
+        <span class="logo-text">
+          <i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+            style="color: #e23b1e"
+            >STORE</span
+          >
+        </span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">INICIO</a>
+        <a href="noticias.html" class="nav-link">NOTICIAS</a>
+        <a href="novedades.html" class="nav-link">NOVEDADES</a>
+      </nav>
+    </div>
+
+    <div class="header-center">
+      <div class="search-bar">
+        <i class="ri-search-line search-icon" aria-hidden="true"></i>
+        <input
+          type="text"
+          placeholder="Buscar bandas, álbumes..."
+          aria-label="Buscar en el catálogo"
+          value="nir"
+        />
+      </div>
+    </div>
+
+    <div class="header-right">
+      <a
+        href="caja.html"
+        class="btn-cart"
+        aria-label="Ver carrito de compras"
+      >
+        <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL: CHECKOUT -->
+  <main class="checkout-container">
+    <form action="compra-realizada.html" method="GET" class="checkout-grid">
+
+      <!-- COLUMNA IZQUIERDA: FORMULARIOS LLENABLES -->
+      <div class="checkout-forms">
+        
+        <!-- SECCIÓN: ENVIAR A -->
+        <section class="checkout-card">
+          <h2 class="card-title">ENVIAR A</h2>
+          
+          <div class="form-group-list">
+            <div class="form-field">
+              <label for="nombre">NOMBRE COMPLETO</label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Ej. Maya Rodríguez" 
+                required 
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="direccion">DIRECCIÓN</label>
+              <input 
+                type="text" 
+                id="direccion" 
+                name="direccion" 
+                placeholder="Calle, número, apto / suite" 
+                required 
+              />
+            </div>
+
+            <div class="form-row trio">
+              <div class="form-field">
+                <label for="ciudad">CIUDAD</label>
+                <input 
+                  type="text" 
+                  id="ciudad" 
+                  name="ciudad" 
+                  placeholder="Ciudad" 
+                  required 
+                />
+              </div>
+              <div class="form-field">
+                <label for="estado">ESTADO / DEPT</label>
+                <input 
+                  type="text" 
+                  id="estado" 
+                  name="estado" 
+                  placeholder="Estado" 
+                  required 
+                />
+              </div>
+              <div class="form-field">
+                <label for="zip">CÓDIGO POSTAL</label>
+                <input 
+                  type="text" 
+                  id="zip" 
+                  name="zip" 
+                  placeholder="ZIP" 
+                  required 
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN: PAGAR -->
+        <section class="checkout-card">
+          <h2 class="card-title">PAGAR</h2>
+
+          <!-- Seleccionar Método de Pago -->
+          <div class="payment-methods">
+            <label class="btn-payment active">
+              <input type="radio" name="metodo_pago" value="tarjeta" checked class="radio-hidden" />
+              <i class="ri-bank-card-fill"></i> TARJETA
+            </label>
+            <label class="btn-payment">
+              <input type="radio" name="metodo_pago" value="paypal" class="radio-hidden" />
+              PAYPAL
+            </label>
+            <label class="btn-payment">
+              <input type="radio" name="metodo_pago" value="pay" class="radio-hidden" />
+              PAY
+            </label>
+          </div>
+
+          <div class="form-group-list">
+            <div class="form-field">
+              <label for="tarjeta">NÚMERO DE TARJETA</label>
+              <input 
+                type="text" 
+                id="tarjeta" 
+                name="tarjeta" 
+                placeholder="0000 0000 0000 0000" 
+                maxlength="19"
+                required 
+              />
+            </div>
+
+            <div class="form-row duo">
+              <div class="form-field">
+                <label for="venc">VENCIMIENTO</label>
+                <input 
+                  type="text" 
+                  id="venc" 
+                  name="venc" 
+                  placeholder="MM / YY" 
+                  maxlength="7"
+                  required 
+                />
+              </div>
+              <div class="form-field">
+                <label for="cvc">CVC</label>
+                <input 
+                  type="password" 
+                  id="cvc" 
+                  name="cvc" 
+                  placeholder="***" 
+                  maxlength="4"
+                  required 
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- COLUMNA DERECHA: RESUMEN DE PEDIDO -->
+      <aside class="order-summary-card">
+        <h2 class="summary-title">TU PEDIDO</h2>
+
+        <div class="order-items">
+          <div class="order-item">
+            <span class="item-name">Nevermind</span>
+            <span class="item-price">$34.99</span>
+          </div>
+          <div class="order-item">
+            <span class="item-name">Enema of the State</span>
+            <span class="item-price">$31.99</span>
+          </div>
+          <div class="order-item">
+            <span class="item-name">Raro</span>
+            <span class="item-price">$38.99</span>
+          </div>
+        </div>
+
+        <div class="order-subtotal">
+          <span>Subtotal + impuestos</span>
+          <span>$114.45</span>
+        </div>
+
+        <div class="order-total-row">
+          <span class="total-label">TOTAL</span>
+          <span class="total-amount">$114.45</span>
+        </div>
+
+        <button type="submit" id="btn-realizar-pedido" class="btn-submit-order">
+          REALIZAR PEDIDO <i class="ri-sparkling-fill"></i>
+        </button>
+      </aside>
+
+    </form>
+  </main>
+
+  <!-- PIE DE PÁGINA-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col col-brand">
+        <h4 class="footer-logo">GROOVE STORE</h4>
+        <p class="footer-desc">
+          El destino definitivo para los buscadores de vinilos digitales.
+          Prensados premium, hallazgos raros y la cultura que definió la
+          música.
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+          <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">TIENDA</h5>
+        <ul class="footer-links">
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="#">Los más vendidos</a></li>
+          <li><a href="#">Discos usados</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">SOPORTE</h5>
+        <ul class="footer-links">
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">LEGAL</h5>
+        <ul class="footer-links">
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
