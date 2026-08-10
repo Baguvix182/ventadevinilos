@@ -1,100 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GROOVESTORE - Compra Exitosa</title>
-  <link rel="icon" href="data:," />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Compra Exitosa</title>
+    <link rel="icon" href="icon.png.png" />
+    <link rel="icon" href="data:," />
 
-  <!-- Fuentes Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Iconos Remixicon -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Hoja de Estilos -->
-  <link rel="stylesheet" href="../css/compra-realizada.css" />
-</head>
-<body>
-
-  <!-- ENCABEZADO REDUCIDO -->
-  <header class="header">
-    <div class="header-left">
-      <a href="index.html" class="logo-container">
-        <span class="logo-text">
-          <i class="ri-disc-line" style="color: #E23B1E"></i> GROOVE<span style="color: #E23B1E">STORE</span>
-        </span>
-      </a>
-      <nav class="nav-menu">
-        <a href="index.html" class="nav-link">GÉNEROS</a>
-        <a href="noticias.html" class="nav-link">NOTICIAS</a>
-        <a href="novedades.html" class="nav-link">NOVEDADES</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- CONTENIDO PRINCIPAL: CONFIRMACIÓN -->
-  <main class="success-container">
-    <div class="success-card">
-      <h1 class="success-title">¡MUCHAS GRACIAS POR TU COMPRA!</h1>
-      <p class="success-subtitle">Tu pedido ha sido procesado exitosamente</p>
-      
-      <div class="check-icon-circle">
-        <i class="ri-check-line"></i>
+    <link rel="stylesheet" href="../css/compra-realizada.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo-container">
+          <span class="logo-text">
+            <i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+              style="color: #e23b1e"
+              >STORE</span
+            >
+          </span>
+        </a>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">INICIO</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
       </div>
 
-      <div class="success-actions">
-        <a href="index.html" class="btn-return">VOLVER A LA TIENDA</a>
+      <div class="header-right">
+        <a
+          href="caja.html"
+          class="btn-cart"
+          aria-label="Ver carrito de compras"
+        >
+          <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+          <span class="cart-badge">0</span>
+        </a>
       </div>
-    </div>
-  </main>
+    </header>
 
-  <!-- PIE DE PÁGINA (FOOTER) -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col col-brand">
-        <h4 class="footer-logo">GROOVE STORE</h4>
-        <p class="footer-desc">
-          La fuente definitiva de temas raros, vinilos pesados y
-          leyendas de la escena local. Seleccionado con
-          autenticidad y precisión técnica.
-        </p>
-        <div class="social-icons">
-          <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
-          <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+    <main class="success-container">
+      <div class="success-card">
+        <h1 class="success-title">¡MUCHAS GRACIAS POR TU COMPRA!</h1>
+        <p class="success-subtitle">Tu pedido ha sido procesado exitosamente</p>
+
+        <div class="check-icon-circle">
+          <i class="ri-check-line"></i>
+        </div>
+
+        <div class="success-actions">
+          <a href="index.html" class="btn-return">VOLVER A LA TIENDA</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Vinilo"><i class="ri-disc-line"></i></a>
+            <a href="#" aria-label="Tienda"><i class="ri-store-2-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">TIENDA</h5>
+          <ul class="footer-links">
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="#">Los más vendidos</a></li>
+            <li><a href="#">Discos usados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">SOPORTE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">LEGAL</h5>
+          <ul class="footer-links">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h5 class="footer-heading">LA TIENDA</h5>
-        <ul class="footer-links">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Envíos</a></li>
-          <li><a href="#">Devoluciones</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
       </div>
-
-      <div class="footer-col">
-        <h5 class="footer-heading">LEGAL</h5>
-        <ul class="footer-links">
-          <li><a href="#">Términos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Vinyl Riot. All rights reserved. Keep it loud.</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
