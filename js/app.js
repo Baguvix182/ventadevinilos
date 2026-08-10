@@ -975,7 +975,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCheckoutSummary();
 
-  if (btnCheckout) {
+  if (btnCheckout && !checkoutForm) {
     btnCheckout.addEventListener("click", (e) => {
       e.preventDefault();
       window.location.href = "venta.html";
