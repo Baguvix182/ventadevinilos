@@ -86,31 +86,60 @@ function normalizeText(value) {
     .toLowerCase();
 }
 
-/* ===== BÚSQUEDA EN TIEMPO REAL ===== */
+/* ===== BÚSQUEDA EN TIEMPO REAL (ÁLBUMES, BANDAS Y NOTICIAS) ===== */
 
 let searchCatalogCache = null;
 
 async function getSearchCatalog() {
   if (searchCatalogCache) return searchCatalogCache;
 
-  const bandsByGenre = await loadJSON("bands.json");
-  const bands = Object.values(bandsByGenre).flat();
+  let catalog = [];
 
-  searchCatalogCache = bands.flatMap((band) => [
-    {
-      type: "band",
-      title: band.name,
-      subtitle: band.city || "Banda",
-      href: `band.html?band=${encodeURIComponent(band.id)}`,
-    },
-    ...(band.albums || []).map((album) => ({
-      type: "album",
-      title: album.title,
-      subtitle: band.name,
-      href: `album.html?band=${encodeURIComponent(band.id)}&album=${encodeURIComponent(slugify(album.title))}`,
-    })),
-  ]);
+  try {
+    const bandsByGenre = await loadJSON("bands.json");
+    const bands = Object.values(bandsByGenre).flat();
 
+    catalog = bands.flatMap((band) => [
+      {
+        type: "band",
+        title: band.name,
+        subtitle: band.city || "Banda",
+        href: `band.html?band=${encodeURIComponent(band.id)}`,
+      },
+      ...(band.albums || []).map((album) => ({
+        type: "album",
+        title: album.title,
+        subtitle: band.name,
+        href: `album.html?band=${encodeURIComponent(band.id)}&album=${encodeURIComponent(slugify(album.title))}`,
+      })),
+    ]);
+  } catch (e) {
+    console.warn(
+      "BÚSQUEDA: No se cargó bands.json o la vista no lo requiere.",
+      e,
+    );
+  }
+
+  const newsCards = document.querySelectorAll(".news-card");
+  newsCards.forEach((card, index) => {
+    const titleEl = card.querySelector(".news-title, .new-tittle");
+    const descEl = card.querySelector(".news-description");
+    const title = titleEl ? titleEl.innerText.trim() : `Noticia ${index + 1}`;
+    const desc = descEl ? descEl.innerText.trim() : "Noticias";
+
+    if (!card.id) {
+      card.id = `noticia-${index + 1}`;
+    }
+
+    catalog.push({
+      type: "news",
+      title: title,
+      subtitle: desc.slice(0, 45) + "...",
+      href: `noticias.html#${card.id}`,
+    });
+  });
+
+  searchCatalogCache = catalog;
   return searchCatalogCache;
 }
 
@@ -151,36 +180,42 @@ function hideSearchPanel(panel) {
 
 async function handleSearchInput(panel, input) {
   const query = input.value.trim();
+  const normalizedQuery = normalizeText(query);
 
+  // Si no has escrito nada, el panel se oculta.
   if (!query) {
     hideSearchPanel(panel);
     return;
   }
 
   const catalog = await getSearchCatalog();
-  const normalizedQuery = normalizeText(query);
+
+  // Buscamos coincidencias en tu catálogo general
   const results = catalog.filter((item) => {
     const haystack = `${item.title} ${item.subtitle}`;
     return normalizeText(haystack).includes(normalizedQuery);
   });
 
+  // REGLA DE ORO: Si no hay resultados, el panel no se muestra y la página sigue normal
   if (!results.length) {
-    panel.innerHTML = `
-      <div style="padding: 0.75rem 0.85rem; color: #666; font-size: 0.95rem;">
-        No se encontraron resultados para “${query}”.
-      </div>`;
-    positionSearchPanel(panel, input);
-    panel.style.display = "block";
+    hideSearchPanel(panel);
     return;
   }
 
+  // Generamos el menú desplegable sin alterar la página de fondo
   const markup = results
     .slice(0, 8)
     .map(
       (item) => `
         <a href="${item.href}" style="display:block; text-decoration:none; color:inherit; padding:0.75rem 0.85rem; border-radius:10px; margin-bottom:0.35rem; background:#fafafa;" data-search-result>
           <div style="font-size:0.92rem; font-weight:700; text-transform:uppercase; color:#111;">${item.title}</div>
-          <div style="font-size:0.8rem; color:#777; margin-top:0.2rem;">${item.type === "band" ? "BANDA" : "ÁLBUM"} · ${item.subtitle}</div>
+          <div style="font-size:0.8rem; color:#777; margin-top:0.2rem;">${
+            item.type === "band"
+              ? "BANDA"
+              : item.type === "album"
+                ? "ÁLBUM"
+                : "NOTICIA"
+          } · ${item.subtitle}</div>
         </a>`,
     )
     .join("");
@@ -201,11 +236,39 @@ function attachSearchBehavior() {
 
   searchInputs.forEach((input) => {
     input.addEventListener("input", () => handleSearchInput(panel, input));
+
     input.addEventListener("focus", () => {
       if (input.value.trim()) handleSearchInput(panel, input);
     });
-    input.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closePanel();
+
+    input.addEventListener("keydown", async (event) => {
+      if (event.key === "Escape") {
+        closePanel();
+      } else if (event.key === "Enter") {
+        event.preventDefault();
+
+        const firstResult = panel.querySelector("[data-search-result]");
+        if (firstResult) {
+          window.location.href = firstResult.getAttribute("href");
+          closePanel();
+          return;
+        }
+
+        const query = input.value.trim();
+        if (!query) return;
+
+        const catalog = await getSearchCatalog();
+        const normalizedQuery = normalizeText(query);
+        const match = catalog.find((item) => {
+          const haystack = `${item.title} ${item.subtitle}`;
+          return normalizeText(haystack).includes(normalizedQuery);
+        });
+
+        if (match) {
+          window.location.href = match.href;
+          closePanel();
+        }
+      }
     });
   });
 
@@ -479,9 +542,7 @@ async function renderAlbumPage(detailEl) {
   }
 }
 
-// === NOVEDADES PAGE (Adaptado a tus tarjetas estáticas) ===
 async function renderNovedadesPage(gridEl) {
-  // 1. Array con los datos exactos de las tres tarjetas que dejaste en el HTML
   const hardcodedAlbums = [
     {
       band: { name: "DAFT PUNK" },
@@ -515,7 +576,6 @@ async function renderNovedadesPage(gridEl) {
     },
   ];
 
-  // 2. Conectamos los botones de tu grilla a la función addToCart
   const addButtons = gridEl.querySelectorAll(".btn-add");
   addButtons.forEach((btn, index) => {
     if (hardcodedAlbums[index]) {
@@ -525,7 +585,6 @@ async function renderNovedadesPage(gridEl) {
     }
   });
 
-  // 3. También conectamos el disco destacado de The Strokes ("Hero")
   const heroBtn = document.querySelector(".btn-buy-hero");
   if (heroBtn) {
     heroBtn.addEventListener("click", () => {
@@ -562,7 +621,6 @@ async function init() {
   const bandBioEl = document.querySelector("[data-band-bio]");
   const bandAlbumsEl = document.querySelector("[data-band-albums]");
   const albumDetailEl = document.querySelector("[data-album-detail]");
-  // Ahora apuntamos directo a tu clase en HTML, sin necesitar data-attributes
   const novedadesGridEl = document.querySelector(".releases-grid");
 
   const containers = [
@@ -575,6 +633,8 @@ async function init() {
     novedadesGridEl,
   ].filter(Boolean);
 
+  attachSearchBehavior();
+
   if (containers.length === 0) return;
 
   try {
@@ -585,7 +645,6 @@ async function init() {
       await renderBandPage(bandBioEl, bandAlbumsEl);
     if (albumDetailEl) await renderAlbumPage(albumDetailEl);
     if (novedadesGridEl) await renderNovedadesPage(novedadesGridEl);
-    attachSearchBehavior();
   } catch (error) {
     console.error("GROOVE STORE: no se pudieron cargar los datos", error);
     renderError(containers);
@@ -644,7 +703,6 @@ document.addEventListener("DOMContentLoaded", () => {
       totalItems += item.quantity;
     });
 
-    // LÓGICA DE ENVÍO: Gratis si pasa de $100
     let shippingCost = 0;
     let shippingText = "GRATIS ⚡";
     let isFreeShipping = true;
@@ -661,12 +719,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const tax = subtotal * 0.08;
     const total = subtotal + tax + shippingCost;
 
-    // ACTUALIZAR TEXTOS
     const itemCountEl = document.querySelector(".item-count");
     const totalPriceEl = document.querySelector(".total-price");
     const btnCheckout = document.querySelector(".btn-checkout");
 
-    // IDs de resumen (agregados previamente en caja.html)
     const resumenCantidad = document.getElementById("resumen-cantidad");
     const resumenSubtotal = document.getElementById("resumen-subtotal");
     const resumenEnvio = document.getElementById("resumen-envio");
@@ -676,13 +732,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (itemCountEl) itemCountEl.innerHTML = `— ${totalItems} DISCOS`;
     if (totalPriceEl) totalPriceEl.innerText = `$${total.toFixed(2)}`;
 
-    // Actualizar el ticket lateral si existen los IDs
     if (resumenCantidad) resumenCantidad.innerText = `Subtotal (${totalItems})`;
     if (resumenSubtotal) resumenSubtotal.innerText = `$${subtotal.toFixed(2)}`;
     if (resumenTax) resumenTax.innerText = `$${tax.toFixed(2)}`;
     if (resumenTotal) resumenTotal.innerText = `$${total.toFixed(2)}`;
 
-    // Estilos del envío
     if (resumenEnvio) {
       resumenEnvio.innerText = shippingText;
       if (isFreeShipping && totalItems > 0) {
@@ -694,7 +748,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Botón checkout
     if (btnCheckout) {
       btnCheckout.style.opacity = totalItems === 0 ? "0.5" : "1";
       btnCheckout.style.pointerEvents = totalItems === 0 ? "none" : "auto";
@@ -867,11 +920,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="order-item">
           <span class="item-name">${item.title} (${item.quantity})</span>
           <span class="item-price">$${(item.price * item.quantity).toFixed(2)}</span>
-        </div>`
+        </div>`,
       )
       .join("");
 
-    const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const subtotal = cart.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0,
+    );
     const tax = subtotal * 0.08;
     const total = subtotal + tax;
 
@@ -904,3 +960,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const btnCheckout = document.querySelector(".btn-checkout");
+
+  if (btnCheckout) {
+    btnCheckout.addEventListener("click", (e) => {
+      e.preventDefault();
+      localStorage.removeItem("groove_cart");
+      window.location.href = "compra-realizada.html";
+    });
+  }
+});
