@@ -593,19 +593,24 @@ img {
     align-items: center;
   }
 
-  /* Fila 1: Logo centrado y Navegación */
+  /* Fila 1: Logo a la izquierda y Navegación */
   .header-left {
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8rem;
+    width: 100%;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
     width: 100%;
   }
 
   .logo-text {
     font-size: 2.1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .nav-menu {
