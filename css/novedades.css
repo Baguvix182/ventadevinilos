@@ -40,6 +40,9 @@ body {
   color: var(--text-dark);
   line-height: 1.5;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -162,6 +165,7 @@ img {
 .btn-cart {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   background-color: var(--bg-main);
   border: 2px solid var(--text-dark);
@@ -465,12 +469,11 @@ img {
 }
 
 /* ================= FOOTER ================= */
-/* ================= FOOTER ================= */
 .footer {
   background-color: var(--bg-footer);
   color: var(--text-white);
   padding: 60px 5% 30px 5%;
-  margin-top: 60px;
+  margin-top: auto;
 }
 
 .footer-container {
@@ -481,7 +484,6 @@ img {
   margin: 0 auto;
 }
 
-/* El título principal y los subtítulos ahora son rojos y con fuente Anton */
 .footer-logo {
   font-family: var(--font-heading);
   font-size: 1.8rem;
@@ -516,7 +518,6 @@ img {
   margin-bottom: 12px;
 }
 
-/* Enlaces y textos en gris claro */
 .footer-links span,
 .social-link {
   font-size: 0.85rem;
@@ -532,14 +533,12 @@ img {
   color: var(--text-white);
 }
 
-/* Forzamos a que los íconos sociales sean grises para igualar tu imagen */
 .facebook-link,
 .instagram-link,
 .twitter-link {
   color: var(--text-light-gray) !important;
 }
 
-/* Sección inferior con la línea separadora */
 .footer-bottom {
   max-width: 1100px;
   margin: 50px auto 0 auto;
@@ -555,7 +554,6 @@ img {
   color: var(--text-light-gray);
 }
 
-/* Estilos para los íconos de pago (si decides agregarlos al HTML) */
 .payment-icons {
   display: flex;
   gap: 12px;
@@ -563,21 +561,154 @@ img {
   color: var(--text-light-gray);
 }
 
-/* ================= DISEÑO RESPONSIVO ================= */
+/* ================= MEDIA QUERIES (ADAPTACIÓN MÓVIL) ================= */
 
 @media (max-width: 992px) {
+  .hero-release {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media {
+    padding: 40px 20px;
+    overflow: hidden;
+  }
+
+  .releases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Teléfonos (Estructura Header en Grid + Ajustes de Novedades) */
+@media (max-width: 768px) {
+  /* Header Grid en 2 Filas */
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem 0.8rem;
+    padding: 1.2rem 1rem;
+    align-items: center;
+  }
+
+  /* Fila 1: Logo centrado y Navegación */
+  .header-left {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .logo-text {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 800;
+  }
+
+  /* Fila 2: Carrito a la izquierda */
+  .header-right {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-cart {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+  }
+
+  /* Fila 2: Buscador a la derecha (Ancho completo) */
+  .header-center {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 44px;
+    border: 1px solid var(--border-color);
+  }
+
+  /* Sección Novedades */
+  .releases-container {
+    padding: 0 15px;
+    margin: 20px auto 40px auto;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 25px 20px;
+  }
+
+  .hero-artist {
+    font-size: 2.4rem;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn-buy-hero {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Teléfonos Pequeños */
 @media (max-width: 480px) {
+  .releases-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
+    text-align: center;
     gap: 30px;
   }
 
   .footer-desc {
+    margin: 0 auto;
     max-width: 100%;
+  }
+
+  .social-link {
+    justify-content: center;
   }
 }
