@@ -6,7 +6,6 @@
     <title>GROOVESTORE - Finalizar Compra</title>
     <link rel="icon" href="data:," />
     <link rel="icon" href="icon.png.png" />
-    <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,17 +13,14 @@
       rel="stylesheet"
     />
 
-    <!-- Iconos Remixicon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <!-- Hoja de Estilos -->
     <link rel="stylesheet" href="./css/venta.css" />
   </head>
   <body>
-    <!-- ENCABEZADO -->
     <header class="header">
       <div class="header-left">
         <a
@@ -70,12 +66,9 @@
       </div>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL: CHECKOUT -->
     <main class="checkout-container">
       <form action="compra-realizada.html" method="GET" class="checkout-grid">
-        <!-- COLUMNA IZQUIERDA: FORMULARIOS LLENABLES -->
         <div class="checkout-forms">
-          <!-- SECCIÓN: ENVIAR A -->
           <section class="checkout-card">
             <h2 class="card-title">ENVIAR A</h2>
 
@@ -127,11 +120,9 @@
             </div>
           </section>
 
-          <!-- SECCIÓN: PAGAR -->
           <section class="checkout-card">
             <h2 class="card-title">PAGAR</h2>
 
-            <!-- Seleccionar Método de Pago -->
             <div class="payment-methods">
               <label class="btn-payment active">
                 <input
@@ -142,24 +133,6 @@
                   class="radio-hidden"
                 />
                 <i class="ri-bank-card-fill"></i> TARJETA
-              </label>
-              <label class="btn-payment">
-                <input
-                  type="radio"
-                  name="metodo_pago"
-                  value="paypal"
-                  class="radio-hidden"
-                />
-                PAYPAL
-              </label>
-              <label class="btn-payment">
-                <input
-                  type="radio"
-                  name="metodo_pago"
-                  value="pay"
-                  class="radio-hidden"
-                />
-                PAY
               </label>
             </div>
 
@@ -197,43 +170,14 @@
                   />
                 </div>
               </div>
-
-              <div
-                class="form-field payment-field payment-paypal"
-                style="display: none"
-              >
-                <label for="paypal-email">CORREO DE PAYPAL</label>
-                <input
-                  type="email"
-                  id="paypal-email"
-                  name="paypal_email"
-                  placeholder="tuemail@paypal.com"
-                />
-              </div>
-
-              <div
-                class="form-field payment-field payment-pay"
-                style="display: none"
-              >
-                <label for="pay-phone">TELÉFONO DE PAY</label>
-                <input
-                  type="tel"
-                  id="pay-phone"
-                  name="pay_phone"
-                  placeholder="+503 7777-8888"
-                />
-              </div>
             </div>
           </section>
         </div>
 
-        <!-- COLUMNA DERECHA: RESUMEN DE PEDIDO -->
         <aside class="order-summary-card">
           <h2 class="summary-title">TU PEDIDO</h2>
 
-          <div class="order-items">
-            <!-- Los items se renderizarán aquí desde el JS (app.js) -->
-          </div>
+          <div class="order-items"></div>
 
           <div class="order-subtotal">
             <span>Subtotal + impuestos</span>
@@ -262,32 +206,7 @@
         const paymentOptions = document.querySelectorAll(
           'input[name="metodo_pago"]',
         );
-        const paymentFields = document.querySelectorAll(".payment-field");
         const cardInput = document.getElementById("tarjeta");
-
-        function updatePaymentFields() {
-          const selected =
-            document.querySelector('input[name="metodo_pago"]:checked')
-              ?.value || "tarjeta";
-
-          paymentFields.forEach((field) => {
-            field.style.display = "none";
-          });
-
-          if (selected === "paypal") {
-            document.querySelectorAll(".payment-paypal").forEach((field) => {
-              field.style.display = "flex";
-            });
-          } else if (selected === "pay") {
-            document.querySelectorAll(".payment-pay").forEach((field) => {
-              field.style.display = "flex";
-            });
-          } else {
-            document.querySelectorAll(".payment-card").forEach((field) => {
-              field.style.display = "flex";
-            });
-          }
-        }
 
         if (cardInput) {
           cardInput.addEventListener("input", (event) => {
@@ -295,16 +214,9 @@
             event.target.value = digits.replace(/(.{4})/g, "$1 ").trim();
           });
         }
-
-        paymentOptions.forEach((option) => {
-          option.addEventListener("change", updatePaymentFields);
-        });
-
-        updatePaymentFields();
       });
     </script>
 
-    <!-- PIE DE PÁGINA-->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col col-brand">
@@ -373,7 +285,6 @@
       </div>
     </footer>
 
-    <!-- Script principal (Asegúrate de que la ruta sea correcta) -->
     <script src="./js/app.js"></script>
     <script>
       const checkoutForm = document.querySelector(".checkout-grid");

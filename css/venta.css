@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-/* --- ENCABEZADO --- */
+/* --- ENCABEZADO (ESCRITORIO) --- */
 .header {
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ body {
   text-decoration: none;
   color: var(--text-dark);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.5px;
   position: relative;
@@ -106,7 +106,7 @@ body {
   width: 100%;
   margin-left: 0.5rem;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   background: transparent;
   color: var(--text-dark);
 }
@@ -169,7 +169,6 @@ body {
   gap: 2rem;
 }
 
-/* Tarjetas de Formulario */
 .checkout-card {
   background-color: var(--card-bg);
   border: 2px solid var(--border-black);
@@ -242,7 +241,6 @@ body {
   flex: 1;
 }
 
-/* METODOS DE PAGO SELECCIONABLES */
 .payment-methods {
   display: flex;
   gap: 0.8rem;
@@ -279,7 +277,6 @@ body {
   box-shadow: 3px 3px 0px var(--accent-red);
 }
 
-/* --- RESUMEN DE PEDIDO (COLUMNA OSCURA) --- */
 .order-summary-card {
   background-color: var(--dark-bg);
   color: white;
@@ -379,7 +376,7 @@ body {
   box-shadow: 2px 2px 0px white;
 }
 
-/* --- FOOTER EN ESPAÑOL --- */
+/* --- FOOTER --- */
 .footer {
   background-color: #17151a;
   color: #fff;
@@ -467,9 +464,8 @@ body {
 
 /* ================= MEDIA QUERIES (ADAPTACIÓN A MÓVILES) ================= */
 
-/* Pantallas medianas (Tablets) */
+/* Tablets */
 @media (max-width: 992px) {
-  /* Apila la columna de formularios y la del resumen verticalmente */
   .checkout-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -480,25 +476,77 @@ body {
   }
 }
 
-/* Pantallas pequeñas (Teléfonos) */
+/* Teléfonos (Réplica exacta de la captura) */
 @media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem 0.8rem;
+    padding: 1.2rem 1rem;
+    align-items: center;
+  }
+
+  /* Fila 1 y 2: Logo arriba y Menú debajo */
+  .header-left {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .logo-text {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 800;
+  }
+
+  /* Fila 3: Carrito a la izquierda */
+  .header-right {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-cart {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Fila 3: Buscador a la derecha (ocupa todo el ancho restante) */
+  .header-center {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #d1d1d1;
+  }
+
+  /* Formularios */
   .checkout-container {
-    padding: 0 1rem; /* Reduce el espacio lateral */
+    padding: 0 1rem;
     margin: 1.5rem auto;
   }
 
-  /* El encabezado se adapta a pantallas más pequeñas */
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .header-left {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Los inputs que estaban en fila (duo, trio) ahora ocupan todo el ancho y se apilan */
   .form-row,
   .form-row.duo,
   .form-row.trio {
@@ -506,21 +554,14 @@ body {
     gap: 1.2rem;
   }
 
-  /* Se reduce el padding de las tarjetas para ganar espacio en pantalla */
   .checkout-card,
   .order-summary-card {
     padding: 1.5rem;
   }
 }
 
-/* Teléfonos muy pequeños */
+/* Teléfonos pequeños */
 @media (max-width: 480px) {
-  .nav-menu {
-    width: 100%;
-    justify-content: space-between;
-    margin-left: 0;
-  }
-
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
@@ -530,7 +571,6 @@ body {
     margin: 0 auto;
   }
 
-  /* Centrar los botones de redes en móvil */
   .footer-links a {
     justify-content: center;
   }
