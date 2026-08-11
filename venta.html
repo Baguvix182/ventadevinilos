@@ -1,402 +1,455 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GROOVESTORE - Finalizar Compra</title>
-  <link rel="icon" href="data:," />
- <link rel="icon" href="icon.png.png" />
-  <!-- Fuentes Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROOVESTORE - Finalizar Compra</title>
+    <link rel="icon" href="data:," />
+    <link rel="icon" href="icon.png.png" />
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Iconos Remixicon -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+    <!-- Iconos Remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Hoja de Estilos -->
-  <link rel="stylesheet" href="./css/venta.css" />
-</head>
-<body>
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="./css/venta.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <div class="header-left">
+        <a
+          href="index.html"
+          class="logo-container"
+          aria-label="Inicio - GrooveStore"
+        >
+          <span class="logo-text">
+            <i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
+              style="color: #e23b1e"
+              >STORE</span
+            >
+          </span>
+        </a>
 
-  <!-- ENCABEZADO -->
-  <header class="header">
-    <div class="header-left">
-      <a
-        href="index.html"
-        class="logo-container"
-        aria-label="Inicio - GrooveStore"
-      >
-        <span class="logo-text">
-          <i class="ri-disc-line" style="color: #e23b1e"></i> GROOVE<span
-            style="color: #e23b1e"
-            >STORE</span
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">INICIO</a>
+          <a href="noticias.html" class="nav-link">NOTICIAS</a>
+          <a href="novedades.html" class="nav-link">NOVEDADES</a>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <div class="search-bar">
+          <i class="ri-search-line search-icon" aria-hidden="true"></i>
+          <input
+            type="text"
+            placeholder="Buscar bandas, álbumes..."
+            aria-label="Buscar en el catálogo"
+          />
+        </div>
+      </div>
+
+      <div class="header-right">
+        <a
+          href="caja.html"
+          class="btn-cart"
+          aria-label="Ver carrito de compras"
+        >
+          <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: CHECKOUT -->
+    <main class="checkout-container">
+      <form action="compra-realizada.html" method="GET" class="checkout-grid">
+        <!-- COLUMNA IZQUIERDA: FORMULARIOS LLENABLES -->
+        <div class="checkout-forms">
+          <!-- SECCIÓN: ENVIAR A -->
+          <section class="checkout-card">
+            <h2 class="card-title">ENVIAR A</h2>
+
+            <div class="form-group-list">
+              <div class="form-field">
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ej. Maya Rodríguez"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="direccion">DIRECCIÓN</label>
+                <input
+                  type="text"
+                  id="direccion"
+                  name="direccion"
+                  placeholder="Calle, número, apto / suite"
+                />
+              </div>
+
+              <div class="form-row trio">
+                <div class="form-field">
+                  <label for="ciudad">CIUDAD</label>
+                  <input
+                    type="text"
+                    id="ciudad"
+                    name="ciudad"
+                    placeholder="Ciudad"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="estado">ESTADO / DEPT</label>
+                  <input
+                    type="text"
+                    id="estado"
+                    name="estado"
+                    placeholder="Estado"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="zip">CÓDIGO POSTAL</label>
+                  <input type="text" id="zip" name="zip" placeholder="ZIP" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECCIÓN: PAGAR -->
+          <section class="checkout-card">
+            <h2 class="card-title">PAGAR</h2>
+
+            <!-- Seleccionar Método de Pago -->
+            <div class="payment-methods">
+              <label class="btn-payment active">
+                <input
+                  type="radio"
+                  name="metodo_pago"
+                  value="tarjeta"
+                  checked
+                  class="radio-hidden"
+                />
+                <i class="ri-bank-card-fill"></i> TARJETA
+              </label>
+              <label class="btn-payment">
+                <input
+                  type="radio"
+                  name="metodo_pago"
+                  value="paypal"
+                  class="radio-hidden"
+                />
+                PAYPAL
+              </label>
+              <label class="btn-payment">
+                <input
+                  type="radio"
+                  name="metodo_pago"
+                  value="pay"
+                  class="radio-hidden"
+                />
+                PAY
+              </label>
+            </div>
+
+            <div class="form-group-list" id="payment-fields">
+              <div class="form-field payment-field payment-card">
+                <label for="tarjeta">NÚMERO DE TARJETA</label>
+                <input
+                  type="text"
+                  id="tarjeta"
+                  name="tarjeta"
+                  placeholder="0000 0000 0000 0000"
+                  maxlength="19"
+                />
+              </div>
+
+              <div class="form-row duo payment-field payment-card">
+                <div class="form-field">
+                  <label for="venc">VENCIMIENTO</label>
+                  <input
+                    type="text"
+                    id="venc"
+                    name="venc"
+                    placeholder="MM / YY"
+                    maxlength="7"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="cvc">CVC</label>
+                  <input
+                    type="password"
+                    id="cvc"
+                    name="cvc"
+                    placeholder="***"
+                    maxlength="4"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="form-field payment-field payment-paypal"
+                style="display: none"
+              >
+                <label for="paypal-email">CORREO DE PAYPAL</label>
+                <input
+                  type="email"
+                  id="paypal-email"
+                  name="paypal_email"
+                  placeholder="tuemail@paypal.com"
+                />
+              </div>
+
+              <div
+                class="form-field payment-field payment-pay"
+                style="display: none"
+              >
+                <label for="pay-phone">TELÉFONO DE PAY</label>
+                <input
+                  type="tel"
+                  id="pay-phone"
+                  name="pay_phone"
+                  placeholder="+503 7777-8888"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- COLUMNA DERECHA: RESUMEN DE PEDIDO -->
+        <aside class="order-summary-card">
+          <h2 class="summary-title">TU PEDIDO</h2>
+
+          <div class="order-items">
+            <!-- Los items se renderizarán aquí desde el JS (app.js) -->
+          </div>
+
+          <div class="order-subtotal">
+            <span>Subtotal + impuestos</span>
+            <span id="venta-subtotal">$0.00</span>
+          </div>
+
+          <div class="order-total-row">
+            <span class="total-label">TOTAL</span>
+            <span class="total-amount" id="venta-total">$0.00</span>
+          </div>
+
+          <button
+            type="submit"
+            id="btn-realizar-pedido"
+            class="btn-submit-order"
+            disabled
           >
-        </span>
-      </a>
+            REALIZAR PEDIDO <i class="ri-sparkling-fill"></i>
+          </button>
+        </aside>
+      </form>
+    </main>
 
-      <nav class="nav-menu">
-        <a href="index.html" class="nav-link">INICIO</a>
-        <a href="noticias.html" class="nav-link">NOTICIAS</a>
-        <a href="novedades.html" class="nav-link">NOVEDADES</a>
-      </nav>
-    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const paymentOptions = document.querySelectorAll(
+          'input[name="metodo_pago"]',
+        );
+        const paymentFields = document.querySelectorAll(".payment-field");
+        const cardInput = document.getElementById("tarjeta");
 
-    <div class="header-center">
-      <div class="search-bar">
-        <i class="ri-search-line search-icon" aria-hidden="true"></i>
-        <input
-          type="text"
-          placeholder="Buscar bandas, álbumes..."
-          aria-label="Buscar en el catálogo"
-        />
-      </div>
-    </div>
+        function updatePaymentFields() {
+          const selected =
+            document.querySelector('input[name="metodo_pago"]:checked')
+              ?.value || "tarjeta";
 
-    <div class="header-right">
-      <a
-        href="caja.html"
-        class="btn-cart"
-        aria-label="Ver carrito de compras"
-      >
-        <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
-        <span class="cart-badge">0</span>
-      </a>
-    </div>
-  </header>
-
-  <!-- CONTENIDO PRINCIPAL: CHECKOUT -->
-  <main class="checkout-container">
-    <form action="compra-realizada.html" method="GET" class="checkout-grid">
-
-      <!-- COLUMNA IZQUIERDA: FORMULARIOS LLENABLES -->
-      <div class="checkout-forms">
-        
-        <!-- SECCIÓN: ENVIAR A -->
-        <section class="checkout-card">
-          <h2 class="card-title">ENVIAR A</h2>
-          
-          <div class="form-group-list">
-            <div class="form-field">
-              <label for="nombre">NOMBRE COMPLETO</label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
-                placeholder="Ej. Maya Rodríguez" 
-              />
-            </div>
-
-            <div class="form-field">
-              <label for="direccion">DIRECCIÓN</label>
-              <input 
-                type="text" 
-                id="direccion" 
-                name="direccion" 
-                placeholder="Calle, número, apto / suite" 
-              />
-            </div>
-
-            <div class="form-row trio">
-              <div class="form-field">
-                <label for="ciudad">CIUDAD</label>
-                <input 
-                  type="text" 
-                  id="ciudad" 
-                  name="ciudad" 
-                  placeholder="Ciudad" 
-                />
-              </div>
-              <div class="form-field">
-                <label for="estado">ESTADO / DEPT</label>
-                <input 
-                  type="text" 
-                  id="estado" 
-                  name="estado" 
-                  placeholder="Estado" 
-                />
-              </div>
-              <div class="form-field">
-                <label for="zip">CÓDIGO POSTAL</label>
-                <input 
-                  type="text" 
-                  id="zip" 
-                  name="zip" 
-                  placeholder="ZIP" 
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECCIÓN: PAGAR -->
-        <section class="checkout-card">
-          <h2 class="card-title">PAGAR</h2>
-
-          <!-- Seleccionar Método de Pago -->
-          <div class="payment-methods">
-            <label class="btn-payment active">
-              <input type="radio" name="metodo_pago" value="tarjeta" checked class="radio-hidden" />
-              <i class="ri-bank-card-fill"></i> TARJETA
-            </label>
-            <label class="btn-payment">
-              <input type="radio" name="metodo_pago" value="paypal" class="radio-hidden" />
-              PAYPAL
-            </label>
-            <label class="btn-payment">
-              <input type="radio" name="metodo_pago" value="pay" class="radio-hidden" />
-              PAY
-            </label>
-          </div>
-
-          <div class="form-group-list" id="payment-fields">
-            <div class="form-field payment-field payment-card">
-              <label for="tarjeta">NÚMERO DE TARJETA</label>
-              <input 
-                type="text" 
-                id="tarjeta" 
-                name="tarjeta" 
-                placeholder="0000 0000 0000 0000" 
-                maxlength="19"
-              />
-            </div>
-
-            <div class="form-row duo payment-field payment-card">
-              <div class="form-field">
-                <label for="venc">VENCIMIENTO</label>
-                <input 
-                  type="text" 
-                  id="venc" 
-                  name="venc" 
-                  placeholder="MM / YY" 
-                  maxlength="7"
-                />
-              </div>
-              <div class="form-field">
-                <label for="cvc">CVC</label>
-                <input 
-                  type="password" 
-                  id="cvc" 
-                  name="cvc" 
-                  placeholder="***" 
-                  maxlength="4"
-                />
-              </div>
-            </div>
-
-            <div class="form-field payment-field payment-paypal" style="display: none;">
-              <label for="paypal-email">CORREO DE PAYPAL</label>
-              <input 
-                type="email" 
-                id="paypal-email" 
-                name="paypal_email" 
-                placeholder="tuemail@paypal.com"
-              />
-            </div>
-
-            <div class="form-field payment-field payment-pay" style="display: none;">
-              <label for="pay-phone">TELÉFONO DE PAY</label>
-              <input 
-                type="tel" 
-                id="pay-phone" 
-                name="pay_phone" 
-                placeholder="+503 7777-8888"
-              />
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <!-- COLUMNA DERECHA: RESUMEN DE PEDIDO -->
-      <aside class="order-summary-card">
-        <h2 class="summary-title">TU PEDIDO</h2>
-
-        <div class="order-items">
-          <!-- Los items se renderizarán aquí desde el JS (app.js) -->
-        </div>
-
-        <div class="order-subtotal">
-          <span>Subtotal + impuestos</span>
-          <span id="venta-subtotal">$0.00</span>
-        </div>
-
-        <div class="order-total-row">
-          <span class="total-label">TOTAL</span>
-          <span class="total-amount" id="venta-total">$0.00</span>
-        </div>
-
-        <button type="submit" id="btn-realizar-pedido" class="btn-submit-order" disabled>
-          REALIZAR PEDIDO <i class="ri-sparkling-fill"></i>
-        </button>
-      </aside>
-
-    </form>
-  </main>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const paymentOptions = document.querySelectorAll('input[name="metodo_pago"]');
-      const paymentFields = document.querySelectorAll('.payment-field');
-      const cardInput = document.getElementById('tarjeta');
-
-      function updatePaymentFields() {
-        const selected = document.querySelector('input[name="metodo_pago"]:checked')?.value || 'tarjeta';
-
-        paymentFields.forEach((field) => {
-          field.style.display = 'none';
-        });
-
-        if (selected === 'paypal') {
-          document.querySelectorAll('.payment-paypal').forEach((field) => {
-            field.style.display = 'flex';
+          paymentFields.forEach((field) => {
+            field.style.display = "none";
           });
-        } else if (selected === 'pay') {
-          document.querySelectorAll('.payment-pay').forEach((field) => {
-            field.style.display = 'flex';
-          });
-        } else {
-          document.querySelectorAll('.payment-card').forEach((field) => {
-            field.style.display = 'flex';
+
+          if (selected === "paypal") {
+            document.querySelectorAll(".payment-paypal").forEach((field) => {
+              field.style.display = "flex";
+            });
+          } else if (selected === "pay") {
+            document.querySelectorAll(".payment-pay").forEach((field) => {
+              field.style.display = "flex";
+            });
+          } else {
+            document.querySelectorAll(".payment-card").forEach((field) => {
+              field.style.display = "flex";
+            });
+          }
+        }
+
+        if (cardInput) {
+          cardInput.addEventListener("input", (event) => {
+            const digits = event.target.value.replace(/\D/g, "").slice(0, 16);
+            event.target.value = digits.replace(/(.{4})/g, "$1 ").trim();
           });
         }
-      }
 
-      if (cardInput) {
-        cardInput.addEventListener('input', (event) => {
-          const digits = event.target.value.replace(/\D/g, '').slice(0, 16);
-          event.target.value = digits.replace(/(.{4})/g, '$1 ').trim();
+        paymentOptions.forEach((option) => {
+          option.addEventListener("change", updatePaymentFields);
         });
-      }
 
-      paymentOptions.forEach((option) => {
-        option.addEventListener('change', updatePaymentFields);
+        updatePaymentFields();
       });
+    </script>
 
-      updatePaymentFields();
-    });
-  </script>
+    <!-- PIE DE PÁGINA-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <h4 class="footer-logo">GROOVE STORE</h4>
+          <p class="footer-desc">
+            El destino definitivo para los buscadores de vinilos digitales.
+            Prensados premium, hallazgos raros y la cultura que definió la
+            música.
+          </p>
+        </div>
 
-  <!-- PIE DE PÁGINA-->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col col-brand">
-        <h4 class="footer-logo">GROOVE STORE</h4>
-        <p class="footer-desc">
-          El destino definitivo para los buscadores de vinilos digitales.
-          Prensados premium, hallazgos raros y la cultura que definió la
-          música.
-        </p>
+        <div class="footer-col">
+          <h5 class="footer-heading">UBICACION</h5>
+          <ul class="footer-links">
+            <li><span>Sonzacate, Sonsonate</span></li>
+            <li><span>El Salvador</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">NUMERO DE TELEFONO</h5>
+          <ul class="footer-links">
+            <li><span>+503 2222-3333</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 class="footer-heading">REDES</h5>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                class="social-link facebook-link"
+              >
+                <i class="ri-facebook-fill"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener"
+                class="social-link instagram-link"
+              >
+                <i class="ri-instagram-line"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                class="social-link twitter-link"
+              >
+                <i class="ri-twitter-x-line"></i> Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h5 class="footer-heading">UBICACION</h5>
-        <ul class="footer-links">
-          <li><span>Sonzacate, Sonsonate</span></li>
-          <li><span>El Salvador</span></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
       </div>
+    </footer>
 
-      <div class="footer-col">
-        <h5 class="footer-heading">NUMERO DE TELEFONO</h5>
-        <ul class="footer-links">
-          <li><span>+503 2222-3333</span></li>
-        </ul>
-      </div>
+    <!-- Script principal (Asegúrate de que la ruta sea correcta) -->
+    <script src="./js/app.js"></script>
+    <script>
+      const checkoutForm = document.querySelector(".checkout-grid");
+      const checkoutButton = document.getElementById("btn-realizar-pedido");
+      const orderItemsContainer = document.querySelector(".order-items");
+      const subtotalElement = document.getElementById("venta-subtotal");
+      const totalElement = document.getElementById("venta-total");
 
-      <div class="footer-col">
-        <h5 class="footer-heading">REDES</h5>
-        <ul class="footer-links">
-          <li>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link facebook-link">
-              <i class="ri-facebook-fill"></i> Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link instagram-link">
-              <i class="ri-instagram-line"></i> Instagram
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link twitter-link">
-              <i class="ri-twitter-x-line"></i> Twitter
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 GROOVE STORE. All rights reserved. Keep it loud.</p>
-    </div>
-  </footer>
-
-  <!-- Script principal (Asegúrate de que la ruta sea correcta) -->
-  <script src="./js/app.js"></script>
-  <script>
-    const checkoutForm = document.querySelector('.checkout-grid');
-    const checkoutButton = document.getElementById('btn-realizar-pedido');
-    const orderItemsContainer = document.querySelector('.order-items');
-    const subtotalElement = document.getElementById('venta-subtotal');
-    const totalElement = document.getElementById('venta-total');
-
-    function getCart() {
-      return JSON.parse(localStorage.getItem('groove_cart')) || [];
-    }
-
-    function renderCheckoutSummary() {
-      const cart = getCart();
-
-      if (!orderItemsContainer) return;
-
-      if (cart.length === 0) {
-        orderItemsContainer.innerHTML = '<div class="order-item"><span>No hay discos en el carrito</span><span>$0.00</span></div>';
-        if (subtotalElement) subtotalElement.innerText = '$0.00';
-        if (totalElement) totalElement.innerText = '$0.00';
-        return;
+      function getCart() {
+        return JSON.parse(localStorage.getItem("groove_cart")) || [];
       }
 
-      orderItemsContainer.innerHTML = cart
-        .map((item) => `
+      function renderCheckoutSummary() {
+        const cart = getCart();
+
+        if (!orderItemsContainer) return;
+
+        if (cart.length === 0) {
+          orderItemsContainer.innerHTML =
+            '<div class="order-item"><span>No hay discos en el carrito</span><span>$0.00</span></div>';
+          if (subtotalElement) subtotalElement.innerText = "$0.00";
+          if (totalElement) totalElement.innerText = "$0.00";
+          return;
+        }
+
+        orderItemsContainer.innerHTML = cart
+          .map(
+            (item) => `
           <div class="order-item">
             <span class="item-name">${item.title} (${item.quantity})</span>
             <span class="item-price">$${(item.price * item.quantity).toFixed(2)}</span>
           </div>
-        `)
-        .join('');
+        `,
+          )
+          .join("");
 
-      const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-      const tax = subtotal * 0.08;
-      const total = subtotal + tax;
+        const subtotal = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0,
+        );
+        const tax = subtotal * 0.08;
+        const total = subtotal + tax;
 
-      if (subtotalElement) subtotalElement.innerText = `$${subtotal.toFixed(2)}`;
-      if (totalElement) totalElement.innerText = `$${total.toFixed(2)}`;
-    }
+        if (subtotalElement)
+          subtotalElement.innerText = `$${subtotal.toFixed(2)}`;
+        if (totalElement) totalElement.innerText = `$${total.toFixed(2)}`;
+      }
 
-    const updateCheckoutButton = () => {
-      const requiredInputs = checkoutForm.querySelectorAll('input[type="text"], input[type="password"]');
-      const allFilled = Array.from(requiredInputs).every((input) => input.value.trim() !== '');
-      const paymentSelected = checkoutForm.querySelector('input[name="metodo_pago"]:checked');
+      const updateCheckoutButton = () => {
+        const requiredInputs = checkoutForm.querySelectorAll(
+          'input[type="text"], input[type="password"]',
+        );
+        const allFilled = Array.from(requiredInputs).every(
+          (input) => input.value.trim() !== "",
+        );
+        const paymentSelected = checkoutForm.querySelector(
+          'input[name="metodo_pago"]:checked',
+        );
 
-      checkoutButton.disabled = !(allFilled && paymentSelected);
-    };
+        checkoutButton.disabled = !(allFilled && paymentSelected);
+      };
 
-    checkoutForm.querySelectorAll('input[type="text"], input[type="password"]').forEach((input) => {
-      input.addEventListener('input', updateCheckoutButton);
-    });
+      checkoutForm
+        .querySelectorAll('input[type="text"], input[type="password"]')
+        .forEach((input) => {
+          input.addEventListener("input", updateCheckoutButton);
+        });
 
-    checkoutForm.querySelectorAll('input[name="metodo_pago"]').forEach((input) => {
-      input.addEventListener('change', updateCheckoutButton);
-    });
+      checkoutForm
+        .querySelectorAll('input[name="metodo_pago"]')
+        .forEach((input) => {
+          input.addEventListener("change", updateCheckoutButton);
+        });
 
-    renderCheckoutSummary();
-    updateCheckoutButton();
-  </script>
-</body>
+      renderCheckoutSummary();
+      updateCheckoutButton();
+    </script>
+  </body>
 </html>

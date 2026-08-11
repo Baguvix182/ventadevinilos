@@ -323,101 +323,115 @@ img {
 .footer {
   background-color: var(--bg-footer);
   color: var(--text-white);
-  padding: 60px 5% 20px 5%;
+  padding: 60px 5% 30px 5%;
   margin-top: 60px;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 40px;
-  margin-bottom: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/* Títulos rojos y en fuente Anton */
 .footer-logo {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--accent-red);
   letter-spacing: 1px;
   margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-heading {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--accent-red);
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .footer-desc {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--text-light-gray);
   line-height: 1.6;
-  max-width: 300px;
-  margin-bottom: 20px;
+  max-width: 320px;
 }
 
-.social-icons {
-  display: flex;
-  gap: 12px;
-}
-
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--accent-red);
-  color: var(--accent-red);
-  border-radius: 2px;
-  text-decoration: none;
+.footer-links {
+  list-style: none;
+  padding: 0;
 }
 
 .footer-links li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.footer-links span {
-  font-size: 0.75rem;
+/* Enlaces y textos en gris claro */
+.footer-links span,
+.social-link {
+  font-size: 0.85rem;
   color: var(--text-light-gray);
   text-decoration: none;
-
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
+  gap: 8px;
+  transition: var(--transition-fast);
+}
+
+.social-link:hover {
+  color: var(--text-white);
+}
+
+/* Íconos sociales en gris */
+.facebook-link,
+.instagram-link,
+.twitter-link {
+  color: var(--text-light-gray) !important;
+}
+
+/* Sección inferior con la línea separadora */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 50px auto 0 auto;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .footer-bottom p {
-  font-size: 0.65rem;
-  color: var(--text-gray);
-}
-
-.payment-methods {
-  display: flex;
-  gap: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   color: var(--text-light-gray);
 }
 
-/* ================= MEDIA QUERIES (RESPONSIVE) ================= */
-@media (max-width: 1200px) {
-  .news-title {
-    font-size: 2rem;
-  }
+/* Estilos para los íconos de pago */
+.payment-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 1.3rem;
+  color: var(--text-light-gray);
 }
+
+/* ================= DISEÑO RESPONSIVO ================= */
 
 @media (max-width: 992px) {
   .header {
     flex-wrap: wrap;
     gap: 15px;
   }
+
   .header-center {
     order: 3;
     max-width: 100%;
     width: 100%;
     margin: 10px 0 0 0;
   }
-  .news-card {
-    grid-template-columns: 1fr;
-  }
-  .news-image-wrapper {
-    height: 250px;
-  }
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -429,14 +443,18 @@ img {
     align-items: flex-start;
     gap: 15px;
   }
+
   .nav-menu {
     gap: 15px;
   }
-  .news-title {
-    font-size: 1.8rem;
+
+  /* Las tarjetas de noticias se apilan en tablets/móviles */
+  .news-card {
+    grid-template-columns: 1fr;
   }
-  .news-content {
-    padding: 25px;
+
+  .news-image-wrapper {
+    min-height: 200px;
   }
 }
 
@@ -444,24 +462,23 @@ img {
   .header {
     padding: 15px 5%;
   }
+
   .header-left,
   .nav-menu {
     width: 100%;
     justify-content: space-between;
   }
+
   .nav-link {
     font-size: 0.7rem;
   }
-  .news-title {
-    font-size: 1.5rem;
-  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
+
+  .footer-desc {
+    max-width: 100%;
   }
 }

@@ -6,7 +6,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   background-color: #f7f3ec; /* Color beige/crema original */
   color: #1a1a1a;
   display: flex;
@@ -292,88 +294,110 @@ body {
 /* ----------------------------------
    Footer
 ---------------------------------- */
+/* =========================================
+   FOOTER Y DISEÑO RESPONSIVO (CORREGIDO)
+   ========================================= */
+
 .footer {
-  background-color: #262421;
-  color: #a0a0a0;
-  padding: 40px 40px 30px;
-}
-
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  background-color: #17151a;
+  color: #fff;
+  padding: 3rem 5% 1.5rem 5%;
+  margin-top: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.footer-logo {
-  color: #ff3b00;
-  font-family: Impact, "Arial Black", sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  margin-bottom: 12px;
-}
-
-.footer-desc {
-  font-size: 11px;
-  line-height: 1.6;
-  max-width: 360px;
-  margin-bottom: 20px;
-  color: #999999;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-box {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #444444;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #cccccc;
-  text-decoration: none;
-  border-radius: 2px;
-}
-
-.footer-col h3 {
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 700;
+.footer-section h3 {
+  font-family: "Anton", sans-serif;
+  color: var(--accent-red);
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
-.footer-col ul {
+.footer-section ul {
   list-style: none;
+  padding: 0;
 }
 
-.footer-col ul li {
-  margin-bottom: 8px;
+.footer-section ul li {
+  margin-bottom: 0.6rem;
 }
 
-.footer-col ul li a {
-  color: #a0a0a0;
-  font-size: 12px;
+.footer-section a,
+.footer-section p {
+  color: #9ca3af;
   text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
-.footer-col ul li a:hover {
-  color: #ffffff;
+.footer-section a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: none;
 }
 
-/* Adaptabilidad a dispositivos móviles */
-@media (max-width: 800px) {
-  .checkout-grid {
-    grid-template-columns: 1fr;
+/* Colores para redes sociales */
+.facebook-link {
+  color: #1877f2;
+}
+.instagram-link {
+  color: #e1306c;
+}
+.twitter-link {
+  color: #1da1f2;
+}
+
+/* =========================================
+   MEDIA QUERIES (MÓVILES Y TABLETS)
+   ========================================= */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
-  .form-row-3 {
-    grid-template-columns: 1fr;
+
+  .article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .footer-container {
+
+  .article img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  footer {
+    /* Pasa a 1 sola columna en dispositivos pequeños */
     grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search input {
+    flex: 1;
+  }
+
+  .article img {
+    max-width: 100%;
   }
 }

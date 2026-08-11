@@ -1,3 +1,4 @@
+/* ================= VARIABLES CSS (:root) ================= */
 :root {
   --bg-color: #f4efe6;
   --card-bg: #f9f6f0;
@@ -16,7 +17,7 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: var(--text-dark);
   min-height: 100vh;
   display: flex;
@@ -44,7 +45,7 @@ body {
 }
 
 .logo-text {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 1px;
   color: var(--text-dark);
@@ -60,7 +61,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: var(--text-dark);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -69,7 +70,7 @@ body {
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -104,7 +105,7 @@ body {
   outline: none;
   width: 100%;
   margin-left: 0.5rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.8rem;
   background: transparent;
   color: var(--text-dark);
@@ -177,7 +178,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 1.15rem;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
@@ -197,7 +198,7 @@ body {
 }
 
 .form-field label {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
@@ -205,7 +206,7 @@ body {
 .form-field input {
   border: 2px solid var(--border-black);
   padding: 0.75rem 1rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.95rem;
   background: white;
   color: var(--text-dark);
@@ -227,11 +228,19 @@ body {
   gap: 1rem;
 }
 
-.form-row.trio .form-field:nth-child(1) { flex: 2; }
-.form-row.trio .form-field:nth-child(2) { flex: 1; }
-.form-row.trio .form-field:nth-child(3) { flex: 1.2; }
+.form-row.trio .form-field:nth-child(1) {
+  flex: 2;
+}
+.form-row.trio .form-field:nth-child(2) {
+  flex: 1;
+}
+.form-row.trio .form-field:nth-child(3) {
+  flex: 1.2;
+}
 
-.form-row.duo .form-field { flex: 1; }
+.form-row.duo .form-field {
+  flex: 1;
+}
 
 /* METODOS DE PAGO SELECCIONABLES */
 .payment-methods {
@@ -249,7 +258,7 @@ body {
   background: white;
   border: 2px solid var(--border-black);
   padding: 0.65rem 1.2rem;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 0.85rem;
   cursor: pointer;
   display: flex;
@@ -282,7 +291,7 @@ body {
 }
 
 .summary-title {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 1.15rem;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
@@ -323,13 +332,13 @@ body {
 }
 
 .total-label {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
 
 .total-amount {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 2rem;
   color: var(--accent-red);
 }
@@ -341,13 +350,15 @@ body {
   gap: 0.5rem;
   background-color: var(--accent-red);
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 1.1rem;
   padding: 1rem;
   border: 2px solid white;
   box-shadow: 4px 4px 0px white;
   cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
   width: 100%;
 }
 
@@ -358,13 +369,6 @@ body {
 
 .btn-submit-order:active {
   transform: translate(0px, 0px);
-  box-shadow: 2px 2px 0px white;
-}
-
-.btn-submit-order:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-  transform: none;
   box-shadow: 2px 2px 0px white;
 }
 
@@ -392,7 +396,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   color: var(--accent-red);
   font-size: 1.8rem;
   letter-spacing: 1px;
@@ -407,7 +411,7 @@ body {
 }
 
 .footer-heading {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   color: var(--accent-red);
   letter-spacing: 1px;
   font-size: 0.95rem;
@@ -459,4 +463,75 @@ body {
 .footer-bottom p {
   color: #8b8f98;
   font-size: 0.7rem;
+}
+
+/* ================= MEDIA QUERIES (ADAPTACIÓN A MÓVILES) ================= */
+
+/* Pantallas medianas (Tablets) */
+@media (max-width: 992px) {
+  /* Apila la columna de formularios y la del resumen verticalmente */
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Pantallas pequeñas (Teléfonos) */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 0 1rem; /* Reduce el espacio lateral */
+    margin: 1.5rem auto;
+  }
+
+  /* El encabezado se adapta a pantallas más pequeñas */
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Los inputs que estaban en fila (duo, trio) ahora ocupan todo el ancho y se apilan */
+  .form-row,
+  .form-row.duo,
+  .form-row.trio {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  /* Se reduce el padding de las tarjetas para ganar espacio en pantalla */
+  .checkout-card,
+  .order-summary-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+  .nav-menu {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-desc {
+    margin: 0 auto;
+  }
+
+  /* Centrar los botones de redes en móvil */
+  .footer-links a {
+    justify-content: center;
+  }
 }
