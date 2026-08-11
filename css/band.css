@@ -530,41 +530,11 @@ img {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
-.social-icons a:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: var(--color-light);
-}
-
-.social-icons i {
-    font-size: 18px;
-}
-
-.footer-heading {
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    color: var(--color-primary);
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-links a {
+.footer-links span {
     color: #A0A0A0;
-    transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-    color: var(--color-light);
-}
 
 .footer-bottom {
     margin: 25px 0 0 0;
@@ -583,12 +553,6 @@ img {
 
 .footer-social-mini a {
     color: #666;
-    transition: color 0.2s ease;
-}
-
-.footer-social-mini a:hover {
-    color: var(--color-light);
-}
 
 /* ==========================================================================
    RESPONSIVE (MEDIA QUERIES)

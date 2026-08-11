@@ -300,41 +300,18 @@ img {
   border: 1px solid var(--accent-red);
   color: var(--accent-red);
   border-radius: 2px;
-}
-
-.social-icons a:hover {
-  background-color: var(--accent-red);
-  color: var(--text-white);
-}
-
-.social-icons i {
-  font-size: 16px;
-}
-
-.footer-heading {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  color: var(--accent-red);
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  text-decoration: none;
 }
 
 .footer-links li {
   margin-bottom: 10px;
 }
 
-.footer-links a {
+.footer-links span {
   font-size: 0.75rem;
   color: var(--text-light-gray);
-}
+  text-decoration: none;
 
-.footer-links a:hover {
-  color: var(--text-white);
-  padding-left: 3px;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 20px;
   text-align: left;
 }
