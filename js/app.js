@@ -45,7 +45,7 @@ function addToCart(album, band) {
   }
 
   saveCart(cart);
-  alert(`¡"${album.title}" añadido a tu caja! 🚀`);
+  alert(`¡"${album.title}" añadido a tu caja! `);
 }
 
 /* ===== CARGA DE DATOS Y HELPERS ===== */
@@ -715,7 +715,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let shippingText = "GRATIS ⚡";
     let isFreeShipping = true;
 
-    if (subtotal < 100 && totalItems > 0) {
+    if (subtotal < 150 && totalItems > 0) {
       shippingCost = 15.0;
       shippingText = `$${shippingCost.toFixed(2)}`;
       isFreeShipping = false;
@@ -794,7 +794,7 @@ document.addEventListener("DOMContentLoaded", () => {
       (sum, item) => sum + item.price * item.quantity,
       0,
     );
-    let shippingCost = subtotal < 100 && cart.length > 0 ? 15.0 : 0;
+    let shippingCost = subtotal < 150 && cart.length > 0 ? 15.0 : 0;
     const tax = subtotal * 0.08;
     const total = subtotal + tax + shippingCost;
 

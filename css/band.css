@@ -8,7 +8,7 @@
   --color-light: #ffffff;
   --color-gray: #57534c;
   --color-footer-bg: #17151a;
-  --text-light-gray: #a8a8a8; /* Agregado para el footer unificado */
+  --text-light-gray: #a8a8a8;
 
   --font-heading: "Anton", sans-serif;
   --font-body: "Space Grotesk", sans-serif;
@@ -67,6 +67,7 @@ img {
   align-items: center;
   padding: 20px 5%;
   background-color: var(--bg-main);
+  gap: 20px;
 }
 
 .header-left {
@@ -118,7 +119,8 @@ img {
 
 .header-center {
   flex: 1;
-  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
   margin: 0 20px;
 }
 
@@ -129,6 +131,8 @@ img {
   border: 1px solid #cccccc;
   padding: 8px 15px;
   border-radius: 2px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .search-icon {
@@ -144,6 +148,7 @@ img {
   font-family: var(--font-body);
   font-size: 0.8rem;
   color: var(--color-dark);
+  background-color: transparent;
 }
 
 .header-right {
@@ -162,6 +167,7 @@ img {
   font-weight: 800;
   position: relative;
   box-shadow: 2px 2px 0px var(--color-dark);
+  cursor: pointer;
 }
 
 .btn-cart:hover {
@@ -345,7 +351,6 @@ img {
   z-index: 2;
 }
 
-/* Borde naranja para la tarjeta activa / resaltada */
 .album-card.active-card {
   border-left: 3px solid var(--color-primary);
   border-bottom: 3px solid var(--color-primary);
@@ -607,9 +612,26 @@ img {
     padding: 15px 5%;
   }
 
+  .header-left {
+    flex: 1 1 100%;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .header-right {
+    order: 2;
+    margin-right: 15px;
+  }
+
   .header-center {
     order: 3;
-    flex: 1 1 100%;
+    flex: 1;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .search-bar {
+    max-width: 100%;
   }
 
   .main-content {
@@ -650,12 +672,19 @@ img {
   }
 }
 
-/* 768px */
+/* 768px (AQUÍ ESTÁ LA MAGIA PARA EL TELÉFONO) */
 @media screen and (max-width: 768px) {
   .header-left {
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
   }
 
   .artist-title {
